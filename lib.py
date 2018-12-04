@@ -3,6 +3,7 @@ from collections import deque
 from dbm import gnu
 from pickle import dumps,loads
 from threading import Timer
+import logging
 
 ##循环loop定时器
 class LoopTimer(Timer):
@@ -32,10 +33,11 @@ class OneTimer(Timer):
 线程安全的广播
 """
 class GroupMessage():
-    def __init__(self, profix="", idlist=[]):
+    def __init__(self, profix="", idlist=[],loglevel=logging.ERROR):
         self.profix = profix
         self.idlist = idlist
         self.init = False
+        self.log = logging.basicConfig(level=loglevel)
 
     def initAllGroup(self):
         try:
@@ -46,7 +48,7 @@ class GroupMessage():
             self.init = True
             return True
         except Exception as e:
-            print(e)
+            self.log.debug(e)
             return False
 
     def removeQueue(self,id):
@@ -61,7 +63,7 @@ class GroupMessage():
                 self.allQueue[queue].put(message)
             return True
         except Exception as e:
-            print(e)
+            self.log.debug(e)
             return False
 
     def addAllQueue(self,id):
@@ -119,7 +121,7 @@ class GroupMessage():
                 self.allQueue[self.profix + str(id)].put(message)
                 return True
             except Exception as e:
-                print(e)
+                self.log.debug(e)
                 return False
         else:
             try:
@@ -127,7 +129,7 @@ class GroupMessage():
                 self.allQueue[self.profix + str(id)].put(message)
                 return True
             except Exception as e:
-                print(e)
+                self.log.debug(e)
                 return False
 
 
@@ -136,7 +138,7 @@ class GroupMessage():
             try:
                 return self.allQueue[self.profix+str(id)].get_nowait()
             except Exception as e:
-                print(e)
+                self.log.debug(e)
                 return None
         else:
             return None
@@ -145,10 +147,12 @@ class GroupMessage():
 可以被序列化的广播
 """
 class GroupMessageUnSafe():
-    def __init__(self,profix="",idlist=[]):
+    def __init__(self,profix="",idlist=[],loglevel=logging.ERROR):
         self.profix = profix
         self.idlist = idlist
         self.init = False
+        self.log = logging.basicConfig(level=loglevel)
+
 
     def initAllGroup(self):
         try:
@@ -159,7 +163,7 @@ class GroupMessageUnSafe():
             self.init = True
             return True
         except Exception as e:
-            print(e)
+            self.log.debug(e)
             return False
 
     def removeQueue(self,id):
@@ -174,7 +178,7 @@ class GroupMessageUnSafe():
                 self.allQueue[queue].append(message)
             return True
         except Exception as e:
-            print(e)
+            self.log.debug(e)
             return False
 
 
@@ -233,7 +237,7 @@ class GroupMessageUnSafe():
                 self.allQueue[self.profix + str(id)].append(message)
                 return True
             except Exception as e:
-                print(e)
+                self.log.debug(e)
                 return False
         else:
             try:
@@ -241,7 +245,7 @@ class GroupMessageUnSafe():
                 self.allQueue[self.profix + str(id)].append(message)
                 return True
             except Exception as e:
-                print(e)
+                self.log.debug(e)
                 return False
 
     def poll(self,id=None):
@@ -249,7 +253,7 @@ class GroupMessageUnSafe():
             try:
                 return self.allQueue[self.profix+str(id)].popleft()
             except Exception as e:
-                print(e)
+                self.log.debug(e)
                 return None
         else:
             return None
@@ -263,7 +267,7 @@ class GroupMessageUnSafeSaveDisk(GroupMessageUnSafe):
         try:
             LoopTimer(time,self.save).start()
         except Exception as e:
-            print(e)
+            self.log.debug(e)
 
     def initAllGroup(self):
         try:
@@ -278,7 +282,7 @@ class GroupMessageUnSafeSaveDisk(GroupMessageUnSafe):
                 self.init = True
             return True
         except Exception as e:
-            print(e)
+            self.log.debug(e)
             return False
 
 
@@ -289,9 +293,10 @@ class GroupMessageUnSafeSaveDisk(GroupMessageUnSafe):
             self.db["allQueue"] = dumps(self.allQueue)
             self.db["profix"] = dumps(self.profix)
             self.db.sync()
-            print("保存成功")
+            self.log.debug("init ok")
             return True
         except Exception as e:
+            self.log.debug(e)
             return False
         finally:
             self.db.close()
@@ -305,10 +310,10 @@ class GroupMessageUnSafeSaveDisk(GroupMessageUnSafe):
             self.idlist = []
             for id in self.allQueue.keys():
                 self.idlist.append(id)
-            print("载入成功")
+            self.log.debug("load ok")
             return True
         except Exception as e:
-            print("load error:",e)
+            self.log.debug(e)
             return False
         finally:
             self.db.close()
@@ -317,7 +322,7 @@ class GroupMessageUnSafeSaveDisk(GroupMessageUnSafe):
 基于gnu数据库的队列
 """
 class GnuQueue():
-    def __init__(self,index="index.db",queue="gunQueue"):
+    def __init__(self,index="index.db",queue="gunQueue",loglevel=logging.ERROR):
         self.name = queue
         self.name_write = queue + "__write"
         self.name_read = queue + "__read"
@@ -326,13 +331,14 @@ class GnuQueue():
         self.queue = gnu.open(self.namefile,"c")
         self.write_id = self.index.get(self.name_write,b"1").decode()
         self.read_id = self.index.get(self.name_read,b"1").decode()
+        self.log = logging.basicConfig(level=loglevel)
 
     def push(self,message = ""):
         try:
             self.queue["key_" + self.write_id] = str(message)
             return True
         except Exception as e:
-            print("push:",e)
+            self.log.debug(e)
             return False
         finally:
             self.write_id = str(int(self.write_id) + 1)
@@ -348,7 +354,7 @@ class GnuQueue():
                 self.index[str(self.name_read)] = str(self.read_id)
             return val
         except Exception as e:
-            print("pull:",e)
+            self.log.debug(e)
             return None
         finally:
             self.index.sync()

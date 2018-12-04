@@ -18,7 +18,7 @@ if __name__ == '__main__':
     print(a.setGroup)
     a.sendGroup("chat","helloworldsadasdasd")
     a.sendGroup("chat","helloworldsadasdasdas")
-    for _ in range(1,5):
+    for _ in range(0,2):
         print(a.poll(660))
         print(a.poll(661))
         print(a.poll(662))
