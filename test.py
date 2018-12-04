@@ -1,11 +1,12 @@
 import lib
 import datetime
+import logging
 e = []
 if __name__ == '__main__':
     aatime = datetime.datetime.now()
     for c in range(1,3):
         e.append(c)
-    a = lib.GroupMessageUnSafe(profix="id:", idlist=e)
+    a = lib.GroupMessageUnSafe(profix="id:", idlist=e,loglevel=logging.INFO)
     a.initAllGroup()
     print("100000 queue init",(datetime.datetime.now() -aatime).microseconds/1000000,"s")
     bbtime = datetime.datetime.now()

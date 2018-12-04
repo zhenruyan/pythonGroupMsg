@@ -37,7 +37,8 @@ class GroupMessage():
         self.profix = profix
         self.idlist = idlist
         self.init = False
-        self.log = logging.basicConfig(level=loglevel)
+        self.log = logging
+        self.log.basicConfig(level=loglevel)
 
     def initAllGroup(self):
         try:
@@ -151,7 +152,8 @@ class GroupMessageUnSafe():
         self.profix = profix
         self.idlist = idlist
         self.init = False
-        self.log = logging.basicConfig(level=loglevel)
+        self.log = logging
+        self.log.basicConfig(level=loglevel)
 
 
     def initAllGroup(self):
@@ -331,7 +333,8 @@ class GnuQueue():
         self.queue = gnu.open(self.namefile,"c")
         self.write_id = self.index.get(self.name_write,b"1").decode()
         self.read_id = self.index.get(self.name_read,b"1").decode()
-        self.log = logging.basicConfig(level=loglevel)
+        self.log = logging
+        self.log.basicConfig(level=loglevel)
 
     def push(self,message = ""):
         try:
