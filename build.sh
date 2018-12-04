@@ -1,1 +1,3 @@
-python ./setup.py build_ext  --inplace
+python setup.py sdist build
+python setup.py bdist_wheel --universal
+
