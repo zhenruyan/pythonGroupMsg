@@ -3,12 +3,12 @@
 /* BEGIN: Cython Metadata
 {
     "distutils": {
-        "name": "clib",
+        "name": "lib",
         "sources": [
-            "clib.pyx"
+            "lib.py"
         ]
     },
-    "module_name": "clib"
+    "module_name": "lib"
 }
 END: Cython Metadata */
 
@@ -617,8 +617,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__clib
-#define __PYX_HAVE_API__clib
+#define __PYX_HAVE__lib
+#define __PYX_HAVE_API__lib
 /* Early includes */
 #ifdef _OPENMP
 #include <omp.h>
@@ -827,12 +827,12 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "clib.pyx",
+  "lib.py",
 };
 
 /*--- Type declarations ---*/
-struct __pyx_obj_4clib___pyx_scope_struct__delayed;
-struct __pyx_obj_4clib___pyx_scope_struct_1_decorator;
+struct __pyx_obj_3lib___pyx_scope_struct__delayed;
+struct __pyx_obj_3lib___pyx_scope_struct_1_decorator;
 struct __pyx_defaults;
 typedef struct __pyx_defaults __pyx_defaults;
 struct __pyx_defaults1;
@@ -856,29 +856,29 @@ struct __pyx_defaults3 {
   PyObject *__pyx_arg_idlist;
 };
 
-/* "clib.pyx":19
+/* "lib.py":19
  *             self.function(*self.args, **self.kwargs)
  * #
  * def delayed(seconds):             # <<<<<<<<<<<<<<
  *     def decorator(f):
  *         def wrapper(*args, **kargs):
  */
-struct __pyx_obj_4clib___pyx_scope_struct__delayed {
+struct __pyx_obj_3lib___pyx_scope_struct__delayed {
   PyObject_HEAD
   PyObject *__pyx_v_seconds;
 };
 
 
-/* "clib.pyx":20
+/* "lib.py":20
  * #
  * def delayed(seconds):
  *     def decorator(f):             # <<<<<<<<<<<<<<
  *         def wrapper(*args, **kargs):
  *             t = LoopTimer(seconds, f, args, kargs)
  */
-struct __pyx_obj_4clib___pyx_scope_struct_1_decorator {
+struct __pyx_obj_3lib___pyx_scope_struct_1_decorator {
   PyObject_HEAD
-  struct __pyx_obj_4clib___pyx_scope_struct__delayed *__pyx_outer_scope;
+  struct __pyx_obj_3lib___pyx_scope_struct__delayed *__pyx_outer_scope;
   PyObject *__pyx_v_f;
 };
 
@@ -1374,14 +1374,14 @@ static int __Pyx_check_binary_version(void);
 static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 
-/* Module declarations from 'clib' */
-static PyTypeObject *__pyx_ptype_4clib___pyx_scope_struct__delayed = 0;
-static PyTypeObject *__pyx_ptype_4clib___pyx_scope_struct_1_decorator = 0;
-#define __Pyx_MODULE_NAME "clib"
-extern int __pyx_module_is_main_clib;
-int __pyx_module_is_main_clib = 0;
+/* Module declarations from 'lib' */
+static PyTypeObject *__pyx_ptype_3lib___pyx_scope_struct__delayed = 0;
+static PyTypeObject *__pyx_ptype_3lib___pyx_scope_struct_1_decorator = 0;
+#define __Pyx_MODULE_NAME "lib"
+extern int __pyx_module_is_main_lib;
+int __pyx_module_is_main_lib = 0;
 
-/* Implementation of 'clib' */
+/* Implementation of 'lib' */
 static const char __pyx_k_1[] = "1";
 static const char __pyx_k_c[] = "c";
 static const char __pyx_k_e[] = "e";
@@ -1399,12 +1399,12 @@ static const char __pyx_k_end[] = "end";
 static const char __pyx_k_get[] = "get";
 static const char __pyx_k_gnu[] = "gnu";
 static const char __pyx_k_key[] = "key_";
+static const char __pyx_k_lib[] = "lib";
 static const char __pyx_k_put[] = "put";
 static const char __pyx_k_run[] = "run";
 static const char __pyx_k_set[] = "set";
 static const char __pyx_k_val[] = "val";
 static const char __pyx_k_args[] = "args";
-static const char __pyx_k_clib[] = "clib";
 static const char __pyx_k_db_2[] = ".db";
 static const char __pyx_k_file[] = "file";
 static const char __pyx_k_init[] = "__init__";
@@ -1443,6 +1443,7 @@ static const char __pyx_k_import[] = "__import__";
 static const char __pyx_k_init_2[] = "init";
 static const char __pyx_k_is_set[] = "is_set";
 static const char __pyx_k_kwargs[] = "kwargs";
+static const char __pyx_k_lib_py[] = "lib.py";
 static const char __pyx_k_module[] = "__module__";
 static const char __pyx_k_name_2[] = "__name__";
 static const char __pyx_k_pickle[] = "pickle";
@@ -1463,7 +1464,6 @@ static const char __pyx_k_OneTimer[] = "OneTimer";
 static const char __pyx_k_addGroup[] = "addGroup";
 static const char __pyx_k_allQueue[] = "allQueue";
 static const char __pyx_k_autoSave[] = "autoSave";
-static const char __pyx_k_clib_pyx[] = "clib.pyx";
 static const char __pyx_k_finished[] = "finished";
 static const char __pyx_k_function[] = "function";
 static const char __pyx_k_gunQueue[] = "gunQueue";
@@ -1578,8 +1578,6 @@ static PyObject *__pyx_n_s_append;
 static PyObject *__pyx_n_s_args;
 static PyObject *__pyx_n_s_autoSave;
 static PyObject *__pyx_n_s_c;
-static PyObject *__pyx_n_s_clib;
-static PyObject *__pyx_kp_s_clib_pyx;
 static PyObject *__pyx_n_s_cline_in_traceback;
 static PyObject *__pyx_n_s_close;
 static PyObject *__pyx_n_s_collections;
@@ -1620,6 +1618,8 @@ static PyObject *__pyx_n_s_kargs;
 static PyObject *__pyx_n_s_key;
 static PyObject *__pyx_n_s_keys;
 static PyObject *__pyx_n_s_kwargs;
+static PyObject *__pyx_n_s_lib;
+static PyObject *__pyx_kp_s_lib_py;
 static PyObject *__pyx_n_s_load;
 static PyObject *__pyx_kp_s_load_error;
 static PyObject *__pyx_n_s_loads;
@@ -1672,46 +1672,46 @@ static PyObject *__pyx_n_s_wait;
 static PyObject *__pyx_n_s_wrapper;
 static PyObject *__pyx_n_s_write;
 static PyObject *__pyx_n_s_write_id;
-static PyObject *__pyx_pf_4clib_2__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_4clib_9LoopTimer___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_interval, PyObject *__pyx_v_function, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs); /* proto */
-static PyObject *__pyx_pf_4clib_9LoopTimer_2run(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_4clib_7delayed_9decorator_wrapper(PyObject *__pyx_self, PyObject *__pyx_v_args, PyObject *__pyx_v_kargs); /* proto */
-static PyObject *__pyx_pf_4clib_7delayed_decorator(PyObject *__pyx_self, PyObject *__pyx_v_f); /* proto */
-static PyObject *__pyx_pf_4clib_delayed(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_seconds); /* proto */
-static PyObject *__pyx_pf_4clib_4__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_4clib_8OneTimer___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_interval, PyObject *__pyx_v_function, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs); /* proto */
-static PyObject *__pyx_pf_4clib_6__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_4clib_12GroupMessage___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_profix, PyObject *__pyx_v_idlist); /* proto */
-static PyObject *__pyx_pf_4clib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_4clib_12GroupMessage_4sendAllQueue(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_message); /* proto */
-static PyObject *__pyx_pf_4clib_12GroupMessage_6addAllQueue(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id); /* proto */
-static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_id); /* proto */
-static PyObject *__pyx_pf_4clib_12GroupMessage_10removeIdOfGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_id); /* proto */
-static PyObject *__pyx_pf_4clib_12GroupMessage_12removeGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group); /* proto */
-static PyObject *__pyx_pf_4clib_12GroupMessage_14sendGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_message); /* proto */
-static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id, PyObject *__pyx_v_message); /* proto */
-static PyObject *__pyx_pf_4clib_12GroupMessage_18poll(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id); /* proto */
-static PyObject *__pyx_pf_4clib_8__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_profix, PyObject *__pyx_v_idlist); /* proto */
-static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_4sendAllQueue(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_message); /* proto */
-static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_6addAllQueue(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id); /* proto */
-static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_id); /* proto */
-static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_10sendGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_message); /* proto */
-static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_12removeIdOfGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_id); /* proto */
-static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_14removeGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group); /* proto */
-static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id, PyObject *__pyx_v_message); /* proto */
-static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_18poll(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id); /* proto */
-static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_autoSave(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_time); /* proto */
-static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_file); /* proto */
-static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_file); /* proto */
-static PyObject *__pyx_pf_4clib_8GnuQueue___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_index, PyObject *__pyx_v_queue); /* proto */
-static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_message); /* proto */
-static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_4clib_8GnuQueue_6close(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_tp_new_4clib___pyx_scope_struct__delayed(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_4clib___pyx_scope_struct_1_decorator(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_pf_3lib_2__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_3lib_9LoopTimer___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_interval, PyObject *__pyx_v_function, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs); /* proto */
+static PyObject *__pyx_pf_3lib_9LoopTimer_2run(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_3lib_7delayed_9decorator_wrapper(PyObject *__pyx_self, PyObject *__pyx_v_args, PyObject *__pyx_v_kargs); /* proto */
+static PyObject *__pyx_pf_3lib_7delayed_decorator(PyObject *__pyx_self, PyObject *__pyx_v_f); /* proto */
+static PyObject *__pyx_pf_3lib_delayed(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_seconds); /* proto */
+static PyObject *__pyx_pf_3lib_4__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_3lib_8OneTimer___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_interval, PyObject *__pyx_v_function, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs); /* proto */
+static PyObject *__pyx_pf_3lib_6__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_3lib_12GroupMessage___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_profix, PyObject *__pyx_v_idlist); /* proto */
+static PyObject *__pyx_pf_3lib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_3lib_12GroupMessage_4sendAllQueue(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_message); /* proto */
+static PyObject *__pyx_pf_3lib_12GroupMessage_6addAllQueue(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id); /* proto */
+static PyObject *__pyx_pf_3lib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_id); /* proto */
+static PyObject *__pyx_pf_3lib_12GroupMessage_10removeIdOfGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_id); /* proto */
+static PyObject *__pyx_pf_3lib_12GroupMessage_12removeGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group); /* proto */
+static PyObject *__pyx_pf_3lib_12GroupMessage_14sendGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_message); /* proto */
+static PyObject *__pyx_pf_3lib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id, PyObject *__pyx_v_message); /* proto */
+static PyObject *__pyx_pf_3lib_12GroupMessage_18poll(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id); /* proto */
+static PyObject *__pyx_pf_3lib_8__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_3lib_18GroupMessageUnSafe___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_profix, PyObject *__pyx_v_idlist); /* proto */
+static PyObject *__pyx_pf_3lib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_3lib_18GroupMessageUnSafe_4sendAllQueue(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_message); /* proto */
+static PyObject *__pyx_pf_3lib_18GroupMessageUnSafe_6addAllQueue(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id); /* proto */
+static PyObject *__pyx_pf_3lib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_id); /* proto */
+static PyObject *__pyx_pf_3lib_18GroupMessageUnSafe_10sendGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_message); /* proto */
+static PyObject *__pyx_pf_3lib_18GroupMessageUnSafe_12removeIdOfGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_id); /* proto */
+static PyObject *__pyx_pf_3lib_18GroupMessageUnSafe_14removeGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group); /* proto */
+static PyObject *__pyx_pf_3lib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id, PyObject *__pyx_v_message); /* proto */
+static PyObject *__pyx_pf_3lib_18GroupMessageUnSafe_18poll(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id); /* proto */
+static PyObject *__pyx_pf_3lib_26GroupMessageUnSafeSaveDisk_autoSave(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_time); /* proto */
+static PyObject *__pyx_pf_3lib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_3lib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_file); /* proto */
+static PyObject *__pyx_pf_3lib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_file); /* proto */
+static PyObject *__pyx_pf_3lib_8GnuQueue___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_index, PyObject *__pyx_v_queue); /* proto */
+static PyObject *__pyx_pf_3lib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_message); /* proto */
+static PyObject *__pyx_pf_3lib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_3lib_8GnuQueue_6close(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_tp_new_3lib___pyx_scope_struct__delayed(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_3lib___pyx_scope_struct_1_decorator(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_int_1;
 static PyObject *__pyx_int_10;
 static PyObject *__pyx_tuple_;
@@ -1799,7 +1799,7 @@ static PyObject *__pyx_codeobj__84;
 static PyObject *__pyx_codeobj__86;
 /* Late includes */
 
-/* "clib.pyx":9
+/* "lib.py":9
  * ##loop
  * class LoopTimer(Timer):
  *     def __init__(self, interval, function, args=[], kwargs={}):             # <<<<<<<<<<<<<<
@@ -1807,7 +1807,7 @@ static PyObject *__pyx_codeobj__86;
  *     def run(self):
  */
 
-static PyObject *__pyx_pf_4clib_2__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
+static PyObject *__pyx_pf_3lib_2__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1838,7 +1838,7 @@ static PyObject *__pyx_pf_4clib_2__defaults__(CYTHON_UNUSED PyObject *__pyx_self
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("clib.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -1847,9 +1847,9 @@ static PyObject *__pyx_pf_4clib_2__defaults__(CYTHON_UNUSED PyObject *__pyx_self
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_9LoopTimer_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_9LoopTimer_1__init__ = {"__init__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_9LoopTimer_1__init__, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_9LoopTimer_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_9LoopTimer_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_9LoopTimer_1__init__ = {"__init__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_9LoopTimer_1__init__, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_9LoopTimer_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_interval = 0;
   PyObject *__pyx_v_function = 0;
@@ -1937,18 +1937,18 @@ static PyObject *__pyx_pw_4clib_9LoopTimer_1__init__(PyObject *__pyx_self, PyObj
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__init__", 0, 3, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 9, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.LoopTimer.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.LoopTimer.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_9LoopTimer___init__(__pyx_self, __pyx_v_self, __pyx_v_interval, __pyx_v_function, __pyx_v_args, __pyx_v_kwargs);
+  __pyx_r = __pyx_pf_3lib_9LoopTimer___init__(__pyx_self, __pyx_v_self, __pyx_v_interval, __pyx_v_function, __pyx_v_args, __pyx_v_kwargs);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_9LoopTimer___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_interval, PyObject *__pyx_v_function, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs) {
+static PyObject *__pyx_pf_3lib_9LoopTimer___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_interval, PyObject *__pyx_v_function, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1958,7 +1958,7 @@ static PyObject *__pyx_pf_4clib_9LoopTimer___init__(CYTHON_UNUSED PyObject *__py
   PyObject *__pyx_t_5 = NULL;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "clib.pyx":10
+  /* "lib.py":10
  * class LoopTimer(Timer):
  *     def __init__(self, interval, function, args=[], kwargs={}):
  *         Timer.__init__(self, interval, function, args, kwargs)             # <<<<<<<<<<<<<<
@@ -2026,7 +2026,7 @@ static PyObject *__pyx_pf_4clib_9LoopTimer___init__(CYTHON_UNUSED PyObject *__py
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":9
+  /* "lib.py":9
  * ##loop
  * class LoopTimer(Timer):
  *     def __init__(self, interval, function, args=[], kwargs={}):             # <<<<<<<<<<<<<<
@@ -2042,7 +2042,7 @@ static PyObject *__pyx_pf_4clib_9LoopTimer___init__(CYTHON_UNUSED PyObject *__py
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("clib.LoopTimer.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.LoopTimer.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2050,7 +2050,7 @@ static PyObject *__pyx_pf_4clib_9LoopTimer___init__(CYTHON_UNUSED PyObject *__py
   return __pyx_r;
 }
 
-/* "clib.pyx":11
+/* "lib.py":11
  *     def __init__(self, interval, function, args=[], kwargs={}):
  *         Timer.__init__(self, interval, function, args, kwargs)
  *     def run(self):             # <<<<<<<<<<<<<<
@@ -2059,20 +2059,20 @@ static PyObject *__pyx_pf_4clib_9LoopTimer___init__(CYTHON_UNUSED PyObject *__py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_9LoopTimer_3run(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_9LoopTimer_3run = {"run", (PyCFunction)__pyx_pw_4clib_9LoopTimer_3run, METH_O, 0};
-static PyObject *__pyx_pw_4clib_9LoopTimer_3run(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_3lib_9LoopTimer_3run(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_9LoopTimer_3run = {"run", (PyCFunction)__pyx_pw_3lib_9LoopTimer_3run, METH_O, 0};
+static PyObject *__pyx_pw_3lib_9LoopTimer_3run(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("run (wrapper)", 0);
-  __pyx_r = __pyx_pf_4clib_9LoopTimer_2run(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_3lib_9LoopTimer_2run(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_9LoopTimer_2run(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_3lib_9LoopTimer_2run(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2082,7 +2082,7 @@ static PyObject *__pyx_pf_4clib_9LoopTimer_2run(CYTHON_UNUSED PyObject *__pyx_se
   int __pyx_t_5;
   __Pyx_RefNannySetupContext("run", 0);
 
-  /* "clib.pyx":12
+  /* "lib.py":12
  *         Timer.__init__(self, interval, function, args, kwargs)
  *     def run(self):
  *         while True:             # <<<<<<<<<<<<<<
@@ -2091,7 +2091,7 @@ static PyObject *__pyx_pf_4clib_9LoopTimer_2run(CYTHON_UNUSED PyObject *__pyx_se
  */
   while (1) {
 
-    /* "clib.pyx":13
+    /* "lib.py":13
  *     def run(self):
  *         while True:
  *             self.finished.wait(self.interval)             # <<<<<<<<<<<<<<
@@ -2123,7 +2123,7 @@ static PyObject *__pyx_pf_4clib_9LoopTimer_2run(CYTHON_UNUSED PyObject *__pyx_se
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clib.pyx":14
+    /* "lib.py":14
  *         while True:
  *             self.finished.wait(self.interval)
  *             if self.finished.is_set():             # <<<<<<<<<<<<<<
@@ -2154,7 +2154,7 @@ static PyObject *__pyx_pf_4clib_9LoopTimer_2run(CYTHON_UNUSED PyObject *__pyx_se
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     if (__pyx_t_5) {
 
-      /* "clib.pyx":15
+      /* "lib.py":15
  *             self.finished.wait(self.interval)
  *             if self.finished.is_set():
  *                 self.finished.set()             # <<<<<<<<<<<<<<
@@ -2183,7 +2183,7 @@ static PyObject *__pyx_pf_4clib_9LoopTimer_2run(CYTHON_UNUSED PyObject *__pyx_se
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "clib.pyx":16
+      /* "lib.py":16
  *             if self.finished.is_set():
  *                 self.finished.set()
  *                 break             # <<<<<<<<<<<<<<
@@ -2192,7 +2192,7 @@ static PyObject *__pyx_pf_4clib_9LoopTimer_2run(CYTHON_UNUSED PyObject *__pyx_se
  */
       goto __pyx_L4_break;
 
-      /* "clib.pyx":14
+      /* "lib.py":14
  *         while True:
  *             self.finished.wait(self.interval)
  *             if self.finished.is_set():             # <<<<<<<<<<<<<<
@@ -2201,7 +2201,7 @@ static PyObject *__pyx_pf_4clib_9LoopTimer_2run(CYTHON_UNUSED PyObject *__pyx_se
  */
     }
 
-    /* "clib.pyx":17
+    /* "lib.py":17
  *                 self.finished.set()
  *                 break
  *             self.function(*self.args, **self.kwargs)             # <<<<<<<<<<<<<<
@@ -2239,7 +2239,7 @@ static PyObject *__pyx_pf_4clib_9LoopTimer_2run(CYTHON_UNUSED PyObject *__pyx_se
   }
   __pyx_L4_break:;
 
-  /* "clib.pyx":11
+  /* "lib.py":11
  *     def __init__(self, interval, function, args=[], kwargs={}):
  *         Timer.__init__(self, interval, function, args, kwargs)
  *     def run(self):             # <<<<<<<<<<<<<<
@@ -2255,7 +2255,7 @@ static PyObject *__pyx_pf_4clib_9LoopTimer_2run(CYTHON_UNUSED PyObject *__pyx_se
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("clib.LoopTimer.run", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.LoopTimer.run", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2263,7 +2263,7 @@ static PyObject *__pyx_pf_4clib_9LoopTimer_2run(CYTHON_UNUSED PyObject *__pyx_se
   return __pyx_r;
 }
 
-/* "clib.pyx":19
+/* "lib.py":19
  *             self.function(*self.args, **self.kwargs)
  * #
  * def delayed(seconds):             # <<<<<<<<<<<<<<
@@ -2272,20 +2272,20 @@ static PyObject *__pyx_pf_4clib_9LoopTimer_2run(CYTHON_UNUSED PyObject *__pyx_se
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_1delayed(PyObject *__pyx_self, PyObject *__pyx_v_seconds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_1delayed = {"delayed", (PyCFunction)__pyx_pw_4clib_1delayed, METH_O, 0};
-static PyObject *__pyx_pw_4clib_1delayed(PyObject *__pyx_self, PyObject *__pyx_v_seconds) {
+static PyObject *__pyx_pw_3lib_1delayed(PyObject *__pyx_self, PyObject *__pyx_v_seconds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_1delayed = {"delayed", (PyCFunction)__pyx_pw_3lib_1delayed, METH_O, 0};
+static PyObject *__pyx_pw_3lib_1delayed(PyObject *__pyx_self, PyObject *__pyx_v_seconds) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("delayed (wrapper)", 0);
-  __pyx_r = __pyx_pf_4clib_delayed(__pyx_self, ((PyObject *)__pyx_v_seconds));
+  __pyx_r = __pyx_pf_3lib_delayed(__pyx_self, ((PyObject *)__pyx_v_seconds));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "clib.pyx":20
+/* "lib.py":20
  * #
  * def delayed(seconds):
  *     def decorator(f):             # <<<<<<<<<<<<<<
@@ -2294,20 +2294,20 @@ static PyObject *__pyx_pw_4clib_1delayed(PyObject *__pyx_self, PyObject *__pyx_v
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_7delayed_1decorator(PyObject *__pyx_self, PyObject *__pyx_v_f); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_7delayed_1decorator = {"decorator", (PyCFunction)__pyx_pw_4clib_7delayed_1decorator, METH_O, 0};
-static PyObject *__pyx_pw_4clib_7delayed_1decorator(PyObject *__pyx_self, PyObject *__pyx_v_f) {
+static PyObject *__pyx_pw_3lib_7delayed_1decorator(PyObject *__pyx_self, PyObject *__pyx_v_f); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_7delayed_1decorator = {"decorator", (PyCFunction)__pyx_pw_3lib_7delayed_1decorator, METH_O, 0};
+static PyObject *__pyx_pw_3lib_7delayed_1decorator(PyObject *__pyx_self, PyObject *__pyx_v_f) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("decorator (wrapper)", 0);
-  __pyx_r = __pyx_pf_4clib_7delayed_decorator(__pyx_self, ((PyObject *)__pyx_v_f));
+  __pyx_r = __pyx_pf_3lib_7delayed_decorator(__pyx_self, ((PyObject *)__pyx_v_f));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "clib.pyx":21
+/* "lib.py":21
  * def delayed(seconds):
  *     def decorator(f):
  *         def wrapper(*args, **kargs):             # <<<<<<<<<<<<<<
@@ -2316,9 +2316,9 @@ static PyObject *__pyx_pw_4clib_7delayed_1decorator(PyObject *__pyx_self, PyObje
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_7delayed_9decorator_1wrapper(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_7delayed_9decorator_1wrapper = {"wrapper", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_7delayed_9decorator_1wrapper, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_7delayed_9decorator_1wrapper(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_7delayed_9decorator_1wrapper(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_7delayed_9decorator_1wrapper = {"wrapper", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_7delayed_9decorator_1wrapper, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_7delayed_9decorator_1wrapper(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_args = 0;
   PyObject *__pyx_v_kargs = 0;
   PyObject *__pyx_r = 0;
@@ -2329,7 +2329,7 @@ static PyObject *__pyx_pw_4clib_7delayed_9decorator_1wrapper(PyObject *__pyx_sel
   __Pyx_GOTREF(__pyx_v_kargs);
   __Pyx_INCREF(__pyx_args);
   __pyx_v_args = __pyx_args;
-  __pyx_r = __pyx_pf_4clib_7delayed_9decorator_wrapper(__pyx_self, __pyx_v_args, __pyx_v_kargs);
+  __pyx_r = __pyx_pf_3lib_7delayed_9decorator_wrapper(__pyx_self, __pyx_v_args, __pyx_v_kargs);
 
   /* function exit code */
   __Pyx_XDECREF(__pyx_v_args);
@@ -2338,9 +2338,9 @@ static PyObject *__pyx_pw_4clib_7delayed_9decorator_1wrapper(PyObject *__pyx_sel
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_7delayed_9decorator_wrapper(PyObject *__pyx_self, PyObject *__pyx_v_args, PyObject *__pyx_v_kargs) {
-  struct __pyx_obj_4clib___pyx_scope_struct_1_decorator *__pyx_cur_scope;
-  struct __pyx_obj_4clib___pyx_scope_struct_1_decorator *__pyx_outer_scope;
+static PyObject *__pyx_pf_3lib_7delayed_9decorator_wrapper(PyObject *__pyx_self, PyObject *__pyx_v_args, PyObject *__pyx_v_kargs) {
+  struct __pyx_obj_3lib___pyx_scope_struct_1_decorator *__pyx_cur_scope;
+  struct __pyx_obj_3lib___pyx_scope_struct_1_decorator *__pyx_outer_scope;
   PyObject *__pyx_v_t = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -2350,10 +2350,10 @@ static PyObject *__pyx_pf_4clib_7delayed_9decorator_wrapper(PyObject *__pyx_self
   int __pyx_t_4;
   PyObject *__pyx_t_5 = NULL;
   __Pyx_RefNannySetupContext("wrapper", 0);
-  __pyx_outer_scope = (struct __pyx_obj_4clib___pyx_scope_struct_1_decorator *) __Pyx_CyFunction_GetClosure(__pyx_self);
+  __pyx_outer_scope = (struct __pyx_obj_3lib___pyx_scope_struct_1_decorator *) __Pyx_CyFunction_GetClosure(__pyx_self);
   __pyx_cur_scope = __pyx_outer_scope;
 
-  /* "clib.pyx":22
+  /* "lib.py":22
  *     def decorator(f):
  *         def wrapper(*args, **kargs):
  *             t = LoopTimer(seconds, f, args, kargs)             # <<<<<<<<<<<<<<
@@ -2418,7 +2418,7 @@ static PyObject *__pyx_pf_4clib_7delayed_9decorator_wrapper(PyObject *__pyx_self
   __pyx_v_t = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clib.pyx":23
+  /* "lib.py":23
  *         def wrapper(*args, **kargs):
  *             t = LoopTimer(seconds, f, args, kargs)
  *             t.start()             # <<<<<<<<<<<<<<
@@ -2444,7 +2444,7 @@ static PyObject *__pyx_pf_4clib_7delayed_9decorator_wrapper(PyObject *__pyx_self
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":21
+  /* "lib.py":21
  * def delayed(seconds):
  *     def decorator(f):
  *         def wrapper(*args, **kargs):             # <<<<<<<<<<<<<<
@@ -2460,7 +2460,7 @@ static PyObject *__pyx_pf_4clib_7delayed_9decorator_wrapper(PyObject *__pyx_self
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("clib.delayed.decorator.wrapper", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.delayed.decorator.wrapper", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_t);
@@ -2469,7 +2469,7 @@ static PyObject *__pyx_pf_4clib_7delayed_9decorator_wrapper(PyObject *__pyx_self
   return __pyx_r;
 }
 
-/* "clib.pyx":20
+/* "lib.py":20
  * #
  * def delayed(seconds):
  *     def decorator(f):             # <<<<<<<<<<<<<<
@@ -2477,41 +2477,41 @@ static PyObject *__pyx_pf_4clib_7delayed_9decorator_wrapper(PyObject *__pyx_self
  *             t = LoopTimer(seconds, f, args, kargs)
  */
 
-static PyObject *__pyx_pf_4clib_7delayed_decorator(PyObject *__pyx_self, PyObject *__pyx_v_f) {
-  struct __pyx_obj_4clib___pyx_scope_struct_1_decorator *__pyx_cur_scope;
+static PyObject *__pyx_pf_3lib_7delayed_decorator(PyObject *__pyx_self, PyObject *__pyx_v_f) {
+  struct __pyx_obj_3lib___pyx_scope_struct_1_decorator *__pyx_cur_scope;
   PyObject *__pyx_v_wrapper = 0;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("decorator", 0);
-  __pyx_cur_scope = (struct __pyx_obj_4clib___pyx_scope_struct_1_decorator *)__pyx_tp_new_4clib___pyx_scope_struct_1_decorator(__pyx_ptype_4clib___pyx_scope_struct_1_decorator, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_3lib___pyx_scope_struct_1_decorator *)__pyx_tp_new_3lib___pyx_scope_struct_1_decorator(__pyx_ptype_3lib___pyx_scope_struct_1_decorator, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_4clib___pyx_scope_struct_1_decorator *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_3lib___pyx_scope_struct_1_decorator *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 20, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
-  __pyx_cur_scope->__pyx_outer_scope = (struct __pyx_obj_4clib___pyx_scope_struct__delayed *) __Pyx_CyFunction_GetClosure(__pyx_self);
+  __pyx_cur_scope->__pyx_outer_scope = (struct __pyx_obj_3lib___pyx_scope_struct__delayed *) __Pyx_CyFunction_GetClosure(__pyx_self);
   __Pyx_INCREF(((PyObject *)__pyx_cur_scope->__pyx_outer_scope));
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
   __pyx_cur_scope->__pyx_v_f = __pyx_v_f;
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_f);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_f);
 
-  /* "clib.pyx":21
+  /* "lib.py":21
  * def delayed(seconds):
  *     def decorator(f):
  *         def wrapper(*args, **kargs):             # <<<<<<<<<<<<<<
  *             t = LoopTimer(seconds, f, args, kargs)
  *             t.start()
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_7delayed_9decorator_1wrapper, 0, __pyx_n_s_delayed_locals_decorator_locals, ((PyObject*)__pyx_cur_scope), __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 21, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_7delayed_9decorator_1wrapper, 0, __pyx_n_s_delayed_locals_decorator_locals, ((PyObject*)__pyx_cur_scope), __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_wrapper = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clib.pyx":24
+  /* "lib.py":24
  *             t = LoopTimer(seconds, f, args, kargs)
  *             t.start()
  *         return wrapper             # <<<<<<<<<<<<<<
@@ -2523,7 +2523,7 @@ static PyObject *__pyx_pf_4clib_7delayed_decorator(PyObject *__pyx_self, PyObjec
   __pyx_r = __pyx_v_wrapper;
   goto __pyx_L0;
 
-  /* "clib.pyx":20
+  /* "lib.py":20
  * #
  * def delayed(seconds):
  *     def decorator(f):             # <<<<<<<<<<<<<<
@@ -2534,7 +2534,7 @@ static PyObject *__pyx_pf_4clib_7delayed_decorator(PyObject *__pyx_self, PyObjec
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("clib.delayed.decorator", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.delayed.decorator", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_wrapper);
@@ -2544,7 +2544,7 @@ static PyObject *__pyx_pf_4clib_7delayed_decorator(PyObject *__pyx_self, PyObjec
   return __pyx_r;
 }
 
-/* "clib.pyx":19
+/* "lib.py":19
  *             self.function(*self.args, **self.kwargs)
  * #
  * def delayed(seconds):             # <<<<<<<<<<<<<<
@@ -2552,16 +2552,16 @@ static PyObject *__pyx_pf_4clib_7delayed_decorator(PyObject *__pyx_self, PyObjec
  *         def wrapper(*args, **kargs):
  */
 
-static PyObject *__pyx_pf_4clib_delayed(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_seconds) {
-  struct __pyx_obj_4clib___pyx_scope_struct__delayed *__pyx_cur_scope;
+static PyObject *__pyx_pf_3lib_delayed(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_seconds) {
+  struct __pyx_obj_3lib___pyx_scope_struct__delayed *__pyx_cur_scope;
   PyObject *__pyx_v_decorator = 0;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("delayed", 0);
-  __pyx_cur_scope = (struct __pyx_obj_4clib___pyx_scope_struct__delayed *)__pyx_tp_new_4clib___pyx_scope_struct__delayed(__pyx_ptype_4clib___pyx_scope_struct__delayed, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_3lib___pyx_scope_struct__delayed *)__pyx_tp_new_3lib___pyx_scope_struct__delayed(__pyx_ptype_3lib___pyx_scope_struct__delayed, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_4clib___pyx_scope_struct__delayed *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_3lib___pyx_scope_struct__delayed *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 19, __pyx_L1_error)
   } else {
@@ -2571,19 +2571,19 @@ static PyObject *__pyx_pf_4clib_delayed(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_seconds);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_seconds);
 
-  /* "clib.pyx":20
+  /* "lib.py":20
  * #
  * def delayed(seconds):
  *     def decorator(f):             # <<<<<<<<<<<<<<
  *         def wrapper(*args, **kargs):
  *             t = LoopTimer(seconds, f, args, kargs)
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_7delayed_1decorator, 0, __pyx_n_s_delayed_locals_decorator, ((PyObject*)__pyx_cur_scope), __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__4)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_7delayed_1decorator, 0, __pyx_n_s_delayed_locals_decorator, ((PyObject*)__pyx_cur_scope), __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__4)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_decorator = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "clib.pyx":25
+  /* "lib.py":25
  *             t.start()
  *         return wrapper
  *     return decorator             # <<<<<<<<<<<<<<
@@ -2595,7 +2595,7 @@ static PyObject *__pyx_pf_4clib_delayed(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   __pyx_r = __pyx_v_decorator;
   goto __pyx_L0;
 
-  /* "clib.pyx":19
+  /* "lib.py":19
  *             self.function(*self.args, **self.kwargs)
  * #
  * def delayed(seconds):             # <<<<<<<<<<<<<<
@@ -2606,7 +2606,7 @@ static PyObject *__pyx_pf_4clib_delayed(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("clib.delayed", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.delayed", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_decorator);
@@ -2616,7 +2616,7 @@ static PyObject *__pyx_pf_4clib_delayed(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   return __pyx_r;
 }
 
-/* "clib.pyx":28
+/* "lib.py":28
  * #
  * class OneTimer(Timer):
  *     def __init__(self, interval, function, args=[], kwargs={}):             # <<<<<<<<<<<<<<
@@ -2624,7 +2624,7 @@ static PyObject *__pyx_pf_4clib_delayed(CYTHON_UNUSED PyObject *__pyx_self, PyOb
  * 
  */
 
-static PyObject *__pyx_pf_4clib_4__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
+static PyObject *__pyx_pf_3lib_4__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2655,7 +2655,7 @@ static PyObject *__pyx_pf_4clib_4__defaults__(CYTHON_UNUSED PyObject *__pyx_self
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("clib.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2664,9 +2664,9 @@ static PyObject *__pyx_pf_4clib_4__defaults__(CYTHON_UNUSED PyObject *__pyx_self
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_8OneTimer_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_8OneTimer_1__init__ = {"__init__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_8OneTimer_1__init__, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_8OneTimer_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_8OneTimer_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_8OneTimer_1__init__ = {"__init__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_8OneTimer_1__init__, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_8OneTimer_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_interval = 0;
   PyObject *__pyx_v_function = 0;
@@ -2754,18 +2754,18 @@ static PyObject *__pyx_pw_4clib_8OneTimer_1__init__(PyObject *__pyx_self, PyObje
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__init__", 0, 3, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 28, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.OneTimer.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.OneTimer.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_8OneTimer___init__(__pyx_self, __pyx_v_self, __pyx_v_interval, __pyx_v_function, __pyx_v_args, __pyx_v_kwargs);
+  __pyx_r = __pyx_pf_3lib_8OneTimer___init__(__pyx_self, __pyx_v_self, __pyx_v_interval, __pyx_v_function, __pyx_v_args, __pyx_v_kwargs);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_8OneTimer___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_interval, PyObject *__pyx_v_function, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs) {
+static PyObject *__pyx_pf_3lib_8OneTimer___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_interval, PyObject *__pyx_v_function, PyObject *__pyx_v_args, PyObject *__pyx_v_kwargs) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2775,7 +2775,7 @@ static PyObject *__pyx_pf_4clib_8OneTimer___init__(CYTHON_UNUSED PyObject *__pyx
   PyObject *__pyx_t_5 = NULL;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "clib.pyx":29
+  /* "lib.py":29
  * class OneTimer(Timer):
  *     def __init__(self, interval, function, args=[], kwargs={}):
  *         Timer.__init__(self, interval, function, args, kwargs)             # <<<<<<<<<<<<<<
@@ -2843,7 +2843,7 @@ static PyObject *__pyx_pf_4clib_8OneTimer___init__(CYTHON_UNUSED PyObject *__pyx
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":28
+  /* "lib.py":28
  * #
  * class OneTimer(Timer):
  *     def __init__(self, interval, function, args=[], kwargs={}):             # <<<<<<<<<<<<<<
@@ -2859,7 +2859,7 @@ static PyObject *__pyx_pf_4clib_8OneTimer___init__(CYTHON_UNUSED PyObject *__pyx
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("clib.OneTimer.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.OneTimer.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2867,7 +2867,7 @@ static PyObject *__pyx_pf_4clib_8OneTimer___init__(CYTHON_UNUSED PyObject *__pyx
   return __pyx_r;
 }
 
-/* "clib.pyx":35
+/* "lib.py":35
  * """
  * class GroupMessage():
  *     def __init__(self, profix="", idlist=[]):             # <<<<<<<<<<<<<<
@@ -2875,7 +2875,7 @@ static PyObject *__pyx_pf_4clib_8OneTimer___init__(CYTHON_UNUSED PyObject *__pyx
  *         self.idlist = idlist
  */
 
-static PyObject *__pyx_pf_4clib_6__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
+static PyObject *__pyx_pf_3lib_6__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2906,7 +2906,7 @@ static PyObject *__pyx_pf_4clib_6__defaults__(CYTHON_UNUSED PyObject *__pyx_self
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("clib.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2915,9 +2915,9 @@ static PyObject *__pyx_pf_4clib_6__defaults__(CYTHON_UNUSED PyObject *__pyx_self
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_12GroupMessage_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_12GroupMessage_1__init__ = {"__init__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_12GroupMessage_1__init__, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_12GroupMessage_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_12GroupMessage_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_12GroupMessage_1__init__ = {"__init__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_12GroupMessage_1__init__, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_12GroupMessage_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_profix = 0;
   PyObject *__pyx_v_idlist = 0;
@@ -2983,23 +2983,23 @@ static PyObject *__pyx_pw_4clib_12GroupMessage_1__init__(PyObject *__pyx_self, P
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__init__", 0, 1, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 35, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessage.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessage.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_12GroupMessage___init__(__pyx_self, __pyx_v_self, __pyx_v_profix, __pyx_v_idlist);
+  __pyx_r = __pyx_pf_3lib_12GroupMessage___init__(__pyx_self, __pyx_v_self, __pyx_v_profix, __pyx_v_idlist);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_12GroupMessage___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_profix, PyObject *__pyx_v_idlist) {
+static PyObject *__pyx_pf_3lib_12GroupMessage___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_profix, PyObject *__pyx_v_idlist) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "clib.pyx":36
+  /* "lib.py":36
  * class GroupMessage():
  *     def __init__(self, profix="", idlist=[]):
  *         self.profix = profix             # <<<<<<<<<<<<<<
@@ -3008,7 +3008,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage___init__(CYTHON_UNUSED PyObject *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_profix, __pyx_v_profix) < 0) __PYX_ERR(0, 36, __pyx_L1_error)
 
-  /* "clib.pyx":37
+  /* "lib.py":37
  *     def __init__(self, profix="", idlist=[]):
  *         self.profix = profix
  *         self.idlist = idlist             # <<<<<<<<<<<<<<
@@ -3017,7 +3017,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage___init__(CYTHON_UNUSED PyObject *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_idlist, __pyx_v_idlist) < 0) __PYX_ERR(0, 37, __pyx_L1_error)
 
-  /* "clib.pyx":38
+  /* "lib.py":38
  *         self.profix = profix
  *         self.idlist = idlist
  *         self.init = False             # <<<<<<<<<<<<<<
@@ -3026,7 +3026,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage___init__(CYTHON_UNUSED PyObject *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_init_2, Py_False) < 0) __PYX_ERR(0, 38, __pyx_L1_error)
 
-  /* "clib.pyx":35
+  /* "lib.py":35
  * """
  * class GroupMessage():
  *     def __init__(self, profix="", idlist=[]):             # <<<<<<<<<<<<<<
@@ -3038,7 +3038,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage___init__(CYTHON_UNUSED PyObject *
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_AddTraceback("clib.GroupMessage.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessage.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3046,7 +3046,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage___init__(CYTHON_UNUSED PyObject *
   return __pyx_r;
 }
 
-/* "clib.pyx":40
+/* "lib.py":40
  *         self.init = False
  * 
  *     def initAllGroup(self):             # <<<<<<<<<<<<<<
@@ -3055,20 +3055,20 @@ static PyObject *__pyx_pf_4clib_12GroupMessage___init__(CYTHON_UNUSED PyObject *
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_12GroupMessage_3initAllGroup(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_12GroupMessage_3initAllGroup = {"initAllGroup", (PyCFunction)__pyx_pw_4clib_12GroupMessage_3initAllGroup, METH_O, 0};
-static PyObject *__pyx_pw_4clib_12GroupMessage_3initAllGroup(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_3lib_12GroupMessage_3initAllGroup(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_12GroupMessage_3initAllGroup = {"initAllGroup", (PyCFunction)__pyx_pw_3lib_12GroupMessage_3initAllGroup, METH_O, 0};
+static PyObject *__pyx_pw_3lib_12GroupMessage_3initAllGroup(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("initAllGroup (wrapper)", 0);
-  __pyx_r = __pyx_pf_4clib_12GroupMessage_2initAllGroup(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_3lib_12GroupMessage_2initAllGroup(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_3lib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_v_id = NULL;
   PyObject *__pyx_v_e = NULL;
   PyObject *__pyx_r = NULL;
@@ -3087,7 +3087,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObj
   int __pyx_t_12;
   __Pyx_RefNannySetupContext("initAllGroup", 0);
 
-  /* "clib.pyx":41
+  /* "lib.py":41
  * 
  *     def initAllGroup(self):
  *         try:             # <<<<<<<<<<<<<<
@@ -3103,7 +3103,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObj
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "clib.pyx":42
+      /* "lib.py":42
  *     def initAllGroup(self):
  *         try:
  *             self.allQueue = {}             # <<<<<<<<<<<<<<
@@ -3115,7 +3115,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObj
       if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_allQueue, __pyx_t_4) < 0) __PYX_ERR(0, 42, __pyx_L3_error)
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clib.pyx":43
+      /* "lib.py":43
  *         try:
  *             self.allQueue = {}
  *             self.setGroup = {}             # <<<<<<<<<<<<<<
@@ -3127,7 +3127,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObj
       if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_setGroup, __pyx_t_4) < 0) __PYX_ERR(0, 43, __pyx_L3_error)
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clib.pyx":44
+      /* "lib.py":44
  *             self.allQueue = {}
  *             self.setGroup = {}
  *             for id in self.idlist:             # <<<<<<<<<<<<<<
@@ -3179,7 +3179,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObj
         __Pyx_XDECREF_SET(__pyx_v_id, __pyx_t_4);
         __pyx_t_4 = 0;
 
-        /* "clib.pyx":45
+        /* "lib.py":45
  *             self.setGroup = {}
  *             for id in self.idlist:
  *                 self.allQueue[self.profix+str(id)] = Queue()             # <<<<<<<<<<<<<<
@@ -3218,7 +3218,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObj
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "clib.pyx":44
+        /* "lib.py":44
  *             self.allQueue = {}
  *             self.setGroup = {}
  *             for id in self.idlist:             # <<<<<<<<<<<<<<
@@ -3228,7 +3228,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObj
       }
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-      /* "clib.pyx":46
+      /* "lib.py":46
  *             for id in self.idlist:
  *                 self.allQueue[self.profix+str(id)] = Queue()
  *             self.init = True             # <<<<<<<<<<<<<<
@@ -3237,7 +3237,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObj
  */
       if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_init_2, Py_True) < 0) __PYX_ERR(0, 46, __pyx_L3_error)
 
-      /* "clib.pyx":47
+      /* "lib.py":47
  *                 self.allQueue[self.profix+str(id)] = Queue()
  *             self.init = True
  *             return True             # <<<<<<<<<<<<<<
@@ -3249,7 +3249,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObj
       __pyx_r = Py_True;
       goto __pyx_L7_try_return;
 
-      /* "clib.pyx":41
+      /* "lib.py":41
  * 
  *     def initAllGroup(self):
  *         try:             # <<<<<<<<<<<<<<
@@ -3265,7 +3265,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObj
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "clib.pyx":48
+    /* "lib.py":48
  *             self.init = True
  *             return True
  *         except Exception as e:             # <<<<<<<<<<<<<<
@@ -3274,7 +3274,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObj
  */
     __pyx_t_12 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
     if (__pyx_t_12) {
-      __Pyx_AddTraceback("clib.GroupMessage.initAllGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("lib.GroupMessage.initAllGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
       if (__Pyx_GetException(&__pyx_t_5, &__pyx_t_4, &__pyx_t_11) < 0) __PYX_ERR(0, 48, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_GOTREF(__pyx_t_4);
@@ -3282,7 +3282,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObj
       __Pyx_INCREF(__pyx_t_4);
       __pyx_v_e = __pyx_t_4;
 
-      /* "clib.pyx":49
+      /* "lib.py":49
  *             return True
  *         except Exception as e:
  *             print(e)             # <<<<<<<<<<<<<<
@@ -3291,7 +3291,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObj
  */
       if (__Pyx_PrintOne(0, __pyx_v_e) < 0) __PYX_ERR(0, 49, __pyx_L5_except_error)
 
-      /* "clib.pyx":50
+      /* "lib.py":50
  *         except Exception as e:
  *             print(e)
  *             return False             # <<<<<<<<<<<<<<
@@ -3309,7 +3309,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObj
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "clib.pyx":41
+    /* "lib.py":41
  * 
  *     def initAllGroup(self):
  *         try:             # <<<<<<<<<<<<<<
@@ -3335,7 +3335,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObj
     goto __pyx_L0;
   }
 
-  /* "clib.pyx":40
+  /* "lib.py":40
  *         self.init = False
  * 
  *     def initAllGroup(self):             # <<<<<<<<<<<<<<
@@ -3351,7 +3351,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObj
   __Pyx_XDECREF(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_10);
   __Pyx_XDECREF(__pyx_t_11);
-  __Pyx_AddTraceback("clib.GroupMessage.initAllGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessage.initAllGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_id);
@@ -3361,7 +3361,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObj
   return __pyx_r;
 }
 
-/* "clib.pyx":52
+/* "lib.py":52
  *             return False
  * 
  *     def sendAllQueue(self,message=""):             # <<<<<<<<<<<<<<
@@ -3370,9 +3370,9 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_2initAllGroup(CYTHON_UNUSED PyObj
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_12GroupMessage_5sendAllQueue(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_12GroupMessage_5sendAllQueue = {"sendAllQueue", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_12GroupMessage_5sendAllQueue, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_12GroupMessage_5sendAllQueue(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_12GroupMessage_5sendAllQueue(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_12GroupMessage_5sendAllQueue = {"sendAllQueue", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_12GroupMessage_5sendAllQueue, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_12GroupMessage_5sendAllQueue(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_message = 0;
   PyObject *__pyx_r = 0;
@@ -3424,18 +3424,18 @@ static PyObject *__pyx_pw_4clib_12GroupMessage_5sendAllQueue(PyObject *__pyx_sel
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("sendAllQueue", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 52, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessage.sendAllQueue", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessage.sendAllQueue", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_12GroupMessage_4sendAllQueue(__pyx_self, __pyx_v_self, __pyx_v_message);
+  __pyx_r = __pyx_pf_3lib_12GroupMessage_4sendAllQueue(__pyx_self, __pyx_v_self, __pyx_v_message);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_12GroupMessage_4sendAllQueue(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_message) {
+static PyObject *__pyx_pf_3lib_12GroupMessage_4sendAllQueue(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_message) {
   PyObject *__pyx_v_queue = NULL;
   PyObject *__pyx_v_e = NULL;
   PyObject *__pyx_r = NULL;
@@ -3452,7 +3452,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_4sendAllQueue(CYTHON_UNUSED PyObj
   int __pyx_t_10;
   __Pyx_RefNannySetupContext("sendAllQueue", 0);
 
-  /* "clib.pyx":53
+  /* "lib.py":53
  * 
  *     def sendAllQueue(self,message=""):
  *         try:             # <<<<<<<<<<<<<<
@@ -3468,7 +3468,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_4sendAllQueue(CYTHON_UNUSED PyObj
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "clib.pyx":54
+      /* "lib.py":54
  *     def sendAllQueue(self,message=""):
  *         try:
  *             for queue in self.allQueue.keys():             # <<<<<<<<<<<<<<
@@ -3538,7 +3538,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_4sendAllQueue(CYTHON_UNUSED PyObj
         __Pyx_XDECREF_SET(__pyx_v_queue, __pyx_t_4);
         __pyx_t_4 = 0;
 
-        /* "clib.pyx":55
+        /* "lib.py":55
  *         try:
  *             for queue in self.allQueue.keys():
  *                 self.allQueue[queue].put(message)             # <<<<<<<<<<<<<<
@@ -3570,7 +3570,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_4sendAllQueue(CYTHON_UNUSED PyObj
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "clib.pyx":54
+        /* "lib.py":54
  *     def sendAllQueue(self,message=""):
  *         try:
  *             for queue in self.allQueue.keys():             # <<<<<<<<<<<<<<
@@ -3580,7 +3580,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_4sendAllQueue(CYTHON_UNUSED PyObj
       }
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-      /* "clib.pyx":56
+      /* "lib.py":56
  *             for queue in self.allQueue.keys():
  *                 self.allQueue[queue].put(message)
  *             return True             # <<<<<<<<<<<<<<
@@ -3592,7 +3592,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_4sendAllQueue(CYTHON_UNUSED PyObj
       __pyx_r = Py_True;
       goto __pyx_L7_try_return;
 
-      /* "clib.pyx":53
+      /* "lib.py":53
  * 
  *     def sendAllQueue(self,message=""):
  *         try:             # <<<<<<<<<<<<<<
@@ -3606,7 +3606,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_4sendAllQueue(CYTHON_UNUSED PyObj
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-    /* "clib.pyx":57
+    /* "lib.py":57
  *                 self.allQueue[queue].put(message)
  *             return True
  *         except Exception as e:             # <<<<<<<<<<<<<<
@@ -3615,7 +3615,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_4sendAllQueue(CYTHON_UNUSED PyObj
  */
     __pyx_t_10 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
     if (__pyx_t_10) {
-      __Pyx_AddTraceback("clib.GroupMessage.sendAllQueue", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("lib.GroupMessage.sendAllQueue", __pyx_clineno, __pyx_lineno, __pyx_filename);
       if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_4, &__pyx_t_5) < 0) __PYX_ERR(0, 57, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_4);
@@ -3623,7 +3623,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_4sendAllQueue(CYTHON_UNUSED PyObj
       __Pyx_INCREF(__pyx_t_4);
       __pyx_v_e = __pyx_t_4;
 
-      /* "clib.pyx":58
+      /* "lib.py":58
  *             return True
  *         except Exception as e:
  *             print(e)             # <<<<<<<<<<<<<<
@@ -3632,7 +3632,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_4sendAllQueue(CYTHON_UNUSED PyObj
  */
       if (__Pyx_PrintOne(0, __pyx_v_e) < 0) __PYX_ERR(0, 58, __pyx_L5_except_error)
 
-      /* "clib.pyx":59
+      /* "lib.py":59
  *         except Exception as e:
  *             print(e)
  *             return False             # <<<<<<<<<<<<<<
@@ -3650,7 +3650,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_4sendAllQueue(CYTHON_UNUSED PyObj
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "clib.pyx":53
+    /* "lib.py":53
  * 
  *     def sendAllQueue(self,message=""):
  *         try:             # <<<<<<<<<<<<<<
@@ -3676,7 +3676,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_4sendAllQueue(CYTHON_UNUSED PyObj
     goto __pyx_L0;
   }
 
-  /* "clib.pyx":52
+  /* "lib.py":52
  *             return False
  * 
  *     def sendAllQueue(self,message=""):             # <<<<<<<<<<<<<<
@@ -3690,7 +3690,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_4sendAllQueue(CYTHON_UNUSED PyObj
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_9);
-  __Pyx_AddTraceback("clib.GroupMessage.sendAllQueue", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessage.sendAllQueue", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_queue);
@@ -3700,7 +3700,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_4sendAllQueue(CYTHON_UNUSED PyObj
   return __pyx_r;
 }
 
-/* "clib.pyx":61
+/* "lib.py":61
  *             return False
  * 
  *     def addAllQueue(self,id):             # <<<<<<<<<<<<<<
@@ -3709,9 +3709,9 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_4sendAllQueue(CYTHON_UNUSED PyObj
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_12GroupMessage_7addAllQueue(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_12GroupMessage_7addAllQueue = {"addAllQueue", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_12GroupMessage_7addAllQueue, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_12GroupMessage_7addAllQueue(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_12GroupMessage_7addAllQueue(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_12GroupMessage_7addAllQueue = {"addAllQueue", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_12GroupMessage_7addAllQueue, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_12GroupMessage_7addAllQueue(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_id = 0;
   PyObject *__pyx_r = 0;
@@ -3759,18 +3759,18 @@ static PyObject *__pyx_pw_4clib_12GroupMessage_7addAllQueue(PyObject *__pyx_self
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("addAllQueue", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 61, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessage.addAllQueue", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessage.addAllQueue", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_12GroupMessage_6addAllQueue(__pyx_self, __pyx_v_self, __pyx_v_id);
+  __pyx_r = __pyx_pf_3lib_12GroupMessage_6addAllQueue(__pyx_self, __pyx_v_self, __pyx_v_id);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_12GroupMessage_6addAllQueue(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id) {
+static PyObject *__pyx_pf_3lib_12GroupMessage_6addAllQueue(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3781,7 +3781,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_6addAllQueue(CYTHON_UNUSED PyObje
   int __pyx_t_6;
   __Pyx_RefNannySetupContext("addAllQueue", 0);
 
-  /* "clib.pyx":62
+  /* "lib.py":62
  * 
  *     def addAllQueue(self,id):
  *         self.allQueue[self.profix+str(id)]=Queue()             # <<<<<<<<<<<<<<
@@ -3820,7 +3820,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_6addAllQueue(CYTHON_UNUSED PyObje
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":63
+  /* "lib.py":63
  *     def addAllQueue(self,id):
  *         self.allQueue[self.profix+str(id)]=Queue()
  *         self.idlist.append(id)             # <<<<<<<<<<<<<<
@@ -3832,7 +3832,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_6addAllQueue(CYTHON_UNUSED PyObje
   __pyx_t_6 = __Pyx_PyObject_Append(__pyx_t_1, __pyx_v_id); if (unlikely(__pyx_t_6 == ((int)-1))) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":61
+  /* "lib.py":61
  *             return False
  * 
  *     def addAllQueue(self,id):             # <<<<<<<<<<<<<<
@@ -3849,7 +3849,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_6addAllQueue(CYTHON_UNUSED PyObje
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("clib.GroupMessage.addAllQueue", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessage.addAllQueue", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3857,7 +3857,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_6addAllQueue(CYTHON_UNUSED PyObje
   return __pyx_r;
 }
 
-/* "clib.pyx":66
+/* "lib.py":66
  * 
  * 
  *     def addGroup(self,group="",id=None):             # <<<<<<<<<<<<<<
@@ -3866,9 +3866,9 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_6addAllQueue(CYTHON_UNUSED PyObje
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_12GroupMessage_9addGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_12GroupMessage_9addGroup = {"addGroup", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_12GroupMessage_9addGroup, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_12GroupMessage_9addGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_12GroupMessage_9addGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_12GroupMessage_9addGroup = {"addGroup", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_12GroupMessage_9addGroup, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_12GroupMessage_9addGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_group = 0;
   PyObject *__pyx_v_id = 0;
@@ -3933,18 +3933,18 @@ static PyObject *__pyx_pw_4clib_12GroupMessage_9addGroup(PyObject *__pyx_self, P
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("addGroup", 0, 1, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 66, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessage.addGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessage.addGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_12GroupMessage_8addGroup(__pyx_self, __pyx_v_self, __pyx_v_group, __pyx_v_id);
+  __pyx_r = __pyx_pf_3lib_12GroupMessage_8addGroup(__pyx_self, __pyx_v_self, __pyx_v_group, __pyx_v_id);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_id) {
+static PyObject *__pyx_pf_3lib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_id) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3956,7 +3956,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
   PyObject *__pyx_t_7 = NULL;
   __Pyx_RefNannySetupContext("addGroup", 0);
 
-  /* "clib.pyx":67
+  /* "lib.py":67
  * 
  *     def addGroup(self,group="",id=None):
  *         if (self.profix+str(id)) in self.allQueue.keys():             # <<<<<<<<<<<<<<
@@ -3997,7 +3997,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
   __pyx_t_6 = (__pyx_t_5 != 0);
   if (__pyx_t_6) {
 
-    /* "clib.pyx":68
+    /* "lib.py":68
  *     def addGroup(self,group="",id=None):
  *         if (self.profix+str(id)) in self.allQueue.keys():
  *             if group in self.setGroup.keys():             # <<<<<<<<<<<<<<
@@ -4029,7 +4029,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
     __pyx_t_5 = (__pyx_t_6 != 0);
     if (__pyx_t_5) {
 
-      /* "clib.pyx":69
+      /* "lib.py":69
  *         if (self.profix+str(id)) in self.allQueue.keys():
  *             if group in self.setGroup.keys():
  *                 self.setGroup[group].add(self.profix+str(id))             # <<<<<<<<<<<<<<
@@ -4070,7 +4070,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-      /* "clib.pyx":70
+      /* "lib.py":70
  *             if group in self.setGroup.keys():
  *                 self.setGroup[group].add(self.profix+str(id))
  *                 return self.setGroup[group]             # <<<<<<<<<<<<<<
@@ -4087,7 +4087,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
       __pyx_t_4 = 0;
       goto __pyx_L0;
 
-      /* "clib.pyx":68
+      /* "lib.py":68
  *     def addGroup(self,group="",id=None):
  *         if (self.profix+str(id)) in self.allQueue.keys():
  *             if group in self.setGroup.keys():             # <<<<<<<<<<<<<<
@@ -4096,7 +4096,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
  */
     }
 
-    /* "clib.pyx":72
+    /* "lib.py":72
  *                 return self.setGroup[group]
  *             else:
  *                 self.setGroup[group] = set()             # <<<<<<<<<<<<<<
@@ -4112,7 +4112,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clib.pyx":73
+      /* "lib.py":73
  *             else:
  *                 self.setGroup[group] = set()
  *                 self.setGroup[group].add(self.profix+str(id))             # <<<<<<<<<<<<<<
@@ -4153,7 +4153,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clib.pyx":74
+      /* "lib.py":74
  *                 self.setGroup[group] = set()
  *                 self.setGroup[group].add(self.profix+str(id))
  *                 return self.setGroup[group]             # <<<<<<<<<<<<<<
@@ -4171,7 +4171,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
       goto __pyx_L0;
     }
 
-    /* "clib.pyx":67
+    /* "lib.py":67
  * 
  *     def addGroup(self,group="",id=None):
  *         if (self.profix+str(id)) in self.allQueue.keys():             # <<<<<<<<<<<<<<
@@ -4180,7 +4180,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
  */
   }
 
-  /* "clib.pyx":76
+  /* "lib.py":76
  *                 return self.setGroup[group]
  *         else:
  *             self.allQueue[self.profix+str(id)] = deque()             # <<<<<<<<<<<<<<
@@ -4220,7 +4220,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "clib.pyx":77
+    /* "lib.py":77
  *         else:
  *             self.allQueue[self.profix+str(id)] = deque()
  *             if group in self.setGroup.keys():             # <<<<<<<<<<<<<<
@@ -4252,7 +4252,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
     __pyx_t_6 = (__pyx_t_5 != 0);
     if (__pyx_t_6) {
 
-      /* "clib.pyx":78
+      /* "lib.py":78
  *             self.allQueue[self.profix+str(id)] = deque()
  *             if group in self.setGroup.keys():
  *                 self.setGroup[group].add(self.profix + str(id))             # <<<<<<<<<<<<<<
@@ -4293,7 +4293,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-      /* "clib.pyx":79
+      /* "lib.py":79
  *             if group in self.setGroup.keys():
  *                 self.setGroup[group].add(self.profix + str(id))
  *                 return self.setGroup[group]             # <<<<<<<<<<<<<<
@@ -4310,7 +4310,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
       __pyx_t_4 = 0;
       goto __pyx_L0;
 
-      /* "clib.pyx":77
+      /* "lib.py":77
  *         else:
  *             self.allQueue[self.profix+str(id)] = deque()
  *             if group in self.setGroup.keys():             # <<<<<<<<<<<<<<
@@ -4319,7 +4319,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
  */
     }
 
-    /* "clib.pyx":81
+    /* "lib.py":81
  *                 return self.setGroup[group]
  *             else:
  *                 self.setGroup[group] = set()             # <<<<<<<<<<<<<<
@@ -4335,7 +4335,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clib.pyx":82
+      /* "lib.py":82
  *             else:
  *                 self.setGroup[group] = set()
  *                 self.setGroup[group].add(self.profix + str(id))             # <<<<<<<<<<<<<<
@@ -4376,7 +4376,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clib.pyx":83
+      /* "lib.py":83
  *                 self.setGroup[group] = set()
  *                 self.setGroup[group].add(self.profix + str(id))
  *                 return self.setGroup[group]             # <<<<<<<<<<<<<<
@@ -4395,7 +4395,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
     }
   }
 
-  /* "clib.pyx":66
+  /* "lib.py":66
  * 
  * 
  *     def addGroup(self,group="",id=None):             # <<<<<<<<<<<<<<
@@ -4410,7 +4410,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("clib.GroupMessage.addGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessage.addGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -4418,7 +4418,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
   return __pyx_r;
 }
 
-/* "clib.pyx":85
+/* "lib.py":85
  *                 return self.setGroup[group]
  * 
  *     def removeIdOfGroup(self,group,id):             # <<<<<<<<<<<<<<
@@ -4427,9 +4427,9 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_8addGroup(CYTHON_UNUSED PyObject 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_12GroupMessage_11removeIdOfGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_12GroupMessage_11removeIdOfGroup = {"removeIdOfGroup", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_12GroupMessage_11removeIdOfGroup, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_12GroupMessage_11removeIdOfGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_12GroupMessage_11removeIdOfGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_12GroupMessage_11removeIdOfGroup = {"removeIdOfGroup", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_12GroupMessage_11removeIdOfGroup, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_12GroupMessage_11removeIdOfGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_group = 0;
   PyObject *__pyx_v_id = 0;
@@ -4488,18 +4488,18 @@ static PyObject *__pyx_pw_4clib_12GroupMessage_11removeIdOfGroup(PyObject *__pyx
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("removeIdOfGroup", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 85, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessage.removeIdOfGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessage.removeIdOfGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_12GroupMessage_10removeIdOfGroup(__pyx_self, __pyx_v_self, __pyx_v_group, __pyx_v_id);
+  __pyx_r = __pyx_pf_3lib_12GroupMessage_10removeIdOfGroup(__pyx_self, __pyx_v_self, __pyx_v_group, __pyx_v_id);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_12GroupMessage_10removeIdOfGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_id) {
+static PyObject *__pyx_pf_3lib_12GroupMessage_10removeIdOfGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_id) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4511,7 +4511,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_10removeIdOfGroup(CYTHON_UNUSED P
   PyObject *__pyx_t_7 = NULL;
   __Pyx_RefNannySetupContext("removeIdOfGroup", 0);
 
-  /* "clib.pyx":86
+  /* "lib.py":86
  * 
  *     def removeIdOfGroup(self,group,id):
  *         if group in self.setGroup.keys():             # <<<<<<<<<<<<<<
@@ -4543,7 +4543,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_10removeIdOfGroup(CYTHON_UNUSED P
   __pyx_t_5 = (__pyx_t_4 != 0);
   if (__pyx_t_5) {
 
-    /* "clib.pyx":87
+    /* "lib.py":87
  *     def removeIdOfGroup(self,group,id):
  *         if group in self.setGroup.keys():
  *             if (self.profix+str(id)) in self.setGroup[group]:             # <<<<<<<<<<<<<<
@@ -4569,7 +4569,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_10removeIdOfGroup(CYTHON_UNUSED P
     __pyx_t_4 = (__pyx_t_5 != 0);
     if (__pyx_t_4) {
 
-      /* "clib.pyx":88
+      /* "lib.py":88
  *         if group in self.setGroup.keys():
  *             if (self.profix+str(id)) in self.setGroup[group]:
  *                 self.setGroup[group].remove((self.profix+str(id)))             # <<<<<<<<<<<<<<
@@ -4610,7 +4610,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_10removeIdOfGroup(CYTHON_UNUSED P
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "clib.pyx":89
+      /* "lib.py":89
  *             if (self.profix+str(id)) in self.setGroup[group]:
  *                 self.setGroup[group].remove((self.profix+str(id)))
  *                 return True             # <<<<<<<<<<<<<<
@@ -4622,7 +4622,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_10removeIdOfGroup(CYTHON_UNUSED P
       __pyx_r = Py_True;
       goto __pyx_L0;
 
-      /* "clib.pyx":87
+      /* "lib.py":87
  *     def removeIdOfGroup(self,group,id):
  *         if group in self.setGroup.keys():
  *             if (self.profix+str(id)) in self.setGroup[group]:             # <<<<<<<<<<<<<<
@@ -4631,7 +4631,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_10removeIdOfGroup(CYTHON_UNUSED P
  */
     }
 
-    /* "clib.pyx":90
+    /* "lib.py":90
  *                 self.setGroup[group].remove((self.profix+str(id)))
  *                 return True
  *             return False             # <<<<<<<<<<<<<<
@@ -4643,7 +4643,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_10removeIdOfGroup(CYTHON_UNUSED P
     __pyx_r = Py_False;
     goto __pyx_L0;
 
-    /* "clib.pyx":86
+    /* "lib.py":86
  * 
  *     def removeIdOfGroup(self,group,id):
  *         if group in self.setGroup.keys():             # <<<<<<<<<<<<<<
@@ -4652,7 +4652,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_10removeIdOfGroup(CYTHON_UNUSED P
  */
   }
 
-  /* "clib.pyx":91
+  /* "lib.py":91
  *                 return True
  *             return False
  *         return False             # <<<<<<<<<<<<<<
@@ -4664,7 +4664,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_10removeIdOfGroup(CYTHON_UNUSED P
   __pyx_r = Py_False;
   goto __pyx_L0;
 
-  /* "clib.pyx":85
+  /* "lib.py":85
  *                 return self.setGroup[group]
  * 
  *     def removeIdOfGroup(self,group,id):             # <<<<<<<<<<<<<<
@@ -4679,7 +4679,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_10removeIdOfGroup(CYTHON_UNUSED P
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("clib.GroupMessage.removeIdOfGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessage.removeIdOfGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -4687,7 +4687,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_10removeIdOfGroup(CYTHON_UNUSED P
   return __pyx_r;
 }
 
-/* "clib.pyx":93
+/* "lib.py":93
  *         return False
  * 
  *     def removeGroup(self,group):             # <<<<<<<<<<<<<<
@@ -4696,9 +4696,9 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_10removeIdOfGroup(CYTHON_UNUSED P
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_12GroupMessage_13removeGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_12GroupMessage_13removeGroup = {"removeGroup", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_12GroupMessage_13removeGroup, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_12GroupMessage_13removeGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_12GroupMessage_13removeGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_12GroupMessage_13removeGroup = {"removeGroup", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_12GroupMessage_13removeGroup, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_12GroupMessage_13removeGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_group = 0;
   PyObject *__pyx_r = 0;
@@ -4746,18 +4746,18 @@ static PyObject *__pyx_pw_4clib_12GroupMessage_13removeGroup(PyObject *__pyx_sel
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("removeGroup", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 93, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessage.removeGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessage.removeGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_12GroupMessage_12removeGroup(__pyx_self, __pyx_v_self, __pyx_v_group);
+  __pyx_r = __pyx_pf_3lib_12GroupMessage_12removeGroup(__pyx_self, __pyx_v_self, __pyx_v_group);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_12GroupMessage_12removeGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group) {
+static PyObject *__pyx_pf_3lib_12GroupMessage_12removeGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4767,7 +4767,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_12removeGroup(CYTHON_UNUSED PyObj
   int __pyx_t_5;
   __Pyx_RefNannySetupContext("removeGroup", 0);
 
-  /* "clib.pyx":94
+  /* "lib.py":94
  * 
  *     def removeGroup(self,group):
  *         if group in self.setGroup.keys():             # <<<<<<<<<<<<<<
@@ -4799,7 +4799,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_12removeGroup(CYTHON_UNUSED PyObj
   __pyx_t_5 = (__pyx_t_4 != 0);
   if (__pyx_t_5) {
 
-    /* "clib.pyx":95
+    /* "lib.py":95
  *     def removeGroup(self,group):
  *         if group in self.setGroup.keys():
  *             del self.setGroup[group]             # <<<<<<<<<<<<<<
@@ -4811,7 +4811,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_12removeGroup(CYTHON_UNUSED PyObj
     if (unlikely(PyObject_DelItem(__pyx_t_1, __pyx_v_group) < 0)) __PYX_ERR(0, 95, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clib.pyx":96
+    /* "lib.py":96
  *         if group in self.setGroup.keys():
  *             del self.setGroup[group]
  *             return True             # <<<<<<<<<<<<<<
@@ -4823,7 +4823,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_12removeGroup(CYTHON_UNUSED PyObj
     __pyx_r = Py_True;
     goto __pyx_L0;
 
-    /* "clib.pyx":94
+    /* "lib.py":94
  * 
  *     def removeGroup(self,group):
  *         if group in self.setGroup.keys():             # <<<<<<<<<<<<<<
@@ -4832,7 +4832,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_12removeGroup(CYTHON_UNUSED PyObj
  */
   }
 
-  /* "clib.pyx":97
+  /* "lib.py":97
  *             del self.setGroup[group]
  *             return True
  *         return False             # <<<<<<<<<<<<<<
@@ -4844,7 +4844,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_12removeGroup(CYTHON_UNUSED PyObj
   __pyx_r = Py_False;
   goto __pyx_L0;
 
-  /* "clib.pyx":93
+  /* "lib.py":93
  *         return False
  * 
  *     def removeGroup(self,group):             # <<<<<<<<<<<<<<
@@ -4857,7 +4857,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_12removeGroup(CYTHON_UNUSED PyObj
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("clib.GroupMessage.removeGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessage.removeGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -4865,7 +4865,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_12removeGroup(CYTHON_UNUSED PyObj
   return __pyx_r;
 }
 
-/* "clib.pyx":99
+/* "lib.py":99
  *         return False
  * 
  *     def sendGroup(self,group="",message=""):             # <<<<<<<<<<<<<<
@@ -4874,9 +4874,9 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_12removeGroup(CYTHON_UNUSED PyObj
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_12GroupMessage_15sendGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_12GroupMessage_15sendGroup = {"sendGroup", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_12GroupMessage_15sendGroup, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_12GroupMessage_15sendGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_12GroupMessage_15sendGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_12GroupMessage_15sendGroup = {"sendGroup", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_12GroupMessage_15sendGroup, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_12GroupMessage_15sendGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_group = 0;
   PyObject *__pyx_v_message = 0;
@@ -4941,18 +4941,18 @@ static PyObject *__pyx_pw_4clib_12GroupMessage_15sendGroup(PyObject *__pyx_self,
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("sendGroup", 0, 1, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 99, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessage.sendGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessage.sendGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_12GroupMessage_14sendGroup(__pyx_self, __pyx_v_self, __pyx_v_group, __pyx_v_message);
+  __pyx_r = __pyx_pf_3lib_12GroupMessage_14sendGroup(__pyx_self, __pyx_v_self, __pyx_v_group, __pyx_v_message);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_12GroupMessage_14sendGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_message) {
+static PyObject *__pyx_pf_3lib_12GroupMessage_14sendGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_message) {
   PyObject *__pyx_v_queuename = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -4966,7 +4966,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_14sendGroup(CYTHON_UNUSED PyObjec
   PyObject *__pyx_t_8 = NULL;
   __Pyx_RefNannySetupContext("sendGroup", 0);
 
-  /* "clib.pyx":100
+  /* "lib.py":100
  * 
  *     def sendGroup(self,group="",message=""):
  *         if group in self.setGroup:             # <<<<<<<<<<<<<<
@@ -4980,7 +4980,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_14sendGroup(CYTHON_UNUSED PyObjec
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
-    /* "clib.pyx":101
+    /* "lib.py":101
  *     def sendGroup(self,group="",message=""):
  *         if group in self.setGroup:
  *             for queuename in self.setGroup[group]:             # <<<<<<<<<<<<<<
@@ -5035,7 +5035,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_14sendGroup(CYTHON_UNUSED PyObjec
       __pyx_v_queuename = __pyx_t_4;
       __pyx_t_4 = 0;
 
-      /* "clib.pyx":102
+      /* "lib.py":102
  *         if group in self.setGroup:
  *             for queuename in self.setGroup[group]:
  *                 if queuename in self.allQueue.keys():             # <<<<<<<<<<<<<<
@@ -5067,7 +5067,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_14sendGroup(CYTHON_UNUSED PyObjec
       __pyx_t_2 = (__pyx_t_3 != 0);
       if (__pyx_t_2) {
 
-        /* "clib.pyx":103
+        /* "lib.py":103
  *             for queuename in self.setGroup[group]:
  *                 if queuename in self.allQueue.keys():
  *                     self.allQueue[queuename].put(message)             # <<<<<<<<<<<<<<
@@ -5099,7 +5099,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_14sendGroup(CYTHON_UNUSED PyObjec
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "clib.pyx":104
+        /* "lib.py":104
  *                 if queuename in self.allQueue.keys():
  *                     self.allQueue[queuename].put(message)
  *                     return True             # <<<<<<<<<<<<<<
@@ -5112,7 +5112,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_14sendGroup(CYTHON_UNUSED PyObjec
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         goto __pyx_L0;
 
-        /* "clib.pyx":102
+        /* "lib.py":102
  *         if group in self.setGroup:
  *             for queuename in self.setGroup[group]:
  *                 if queuename in self.allQueue.keys():             # <<<<<<<<<<<<<<
@@ -5121,7 +5121,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_14sendGroup(CYTHON_UNUSED PyObjec
  */
       }
 
-      /* "clib.pyx":106
+      /* "lib.py":106
  *                     return True
  *                 else:
  *                     return False             # <<<<<<<<<<<<<<
@@ -5136,7 +5136,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_14sendGroup(CYTHON_UNUSED PyObjec
         goto __pyx_L0;
       }
 
-      /* "clib.pyx":101
+      /* "lib.py":101
  *     def sendGroup(self,group="",message=""):
  *         if group in self.setGroup:
  *             for queuename in self.setGroup[group]:             # <<<<<<<<<<<<<<
@@ -5146,7 +5146,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_14sendGroup(CYTHON_UNUSED PyObjec
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clib.pyx":100
+    /* "lib.py":100
  * 
  *     def sendGroup(self,group="",message=""):
  *         if group in self.setGroup:             # <<<<<<<<<<<<<<
@@ -5156,7 +5156,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_14sendGroup(CYTHON_UNUSED PyObjec
     goto __pyx_L3;
   }
 
-  /* "clib.pyx":108
+  /* "lib.py":108
  *                     return False
  *         else:
  *             return False             # <<<<<<<<<<<<<<
@@ -5171,7 +5171,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_14sendGroup(CYTHON_UNUSED PyObjec
   }
   __pyx_L3:;
 
-  /* "clib.pyx":99
+  /* "lib.py":99
  *         return False
  * 
  *     def sendGroup(self,group="",message=""):             # <<<<<<<<<<<<<<
@@ -5187,7 +5187,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_14sendGroup(CYTHON_UNUSED PyObjec
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_AddTraceback("clib.GroupMessage.sendGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessage.sendGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_queuename);
@@ -5196,7 +5196,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_14sendGroup(CYTHON_UNUSED PyObjec
   return __pyx_r;
 }
 
-/* "clib.pyx":110
+/* "lib.py":110
  *             return False
  * 
  *     def push(self,id=None,message = ""):             # <<<<<<<<<<<<<<
@@ -5205,9 +5205,9 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_14sendGroup(CYTHON_UNUSED PyObjec
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_12GroupMessage_17push(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_12GroupMessage_17push = {"push", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_12GroupMessage_17push, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_12GroupMessage_17push(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_12GroupMessage_17push(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_12GroupMessage_17push = {"push", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_12GroupMessage_17push, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_12GroupMessage_17push(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_id = 0;
   PyObject *__pyx_v_message = 0;
@@ -5272,18 +5272,18 @@ static PyObject *__pyx_pw_4clib_12GroupMessage_17push(PyObject *__pyx_self, PyOb
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("push", 0, 1, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 110, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessage.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessage.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_12GroupMessage_16push(__pyx_self, __pyx_v_self, __pyx_v_id, __pyx_v_message);
+  __pyx_r = __pyx_pf_3lib_12GroupMessage_16push(__pyx_self, __pyx_v_self, __pyx_v_id, __pyx_v_message);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id, PyObject *__pyx_v_message) {
+static PyObject *__pyx_pf_3lib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id, PyObject *__pyx_v_message) {
   PyObject *__pyx_v_e = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -5300,7 +5300,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
   int __pyx_t_11;
   __Pyx_RefNannySetupContext("push", 0);
 
-  /* "clib.pyx":111
+  /* "lib.py":111
  * 
  *     def push(self,id=None,message = ""):
  *         if self.profix+str(id) in self.allQueue.keys():             # <<<<<<<<<<<<<<
@@ -5341,7 +5341,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
   __pyx_t_6 = (__pyx_t_5 != 0);
   if (__pyx_t_6) {
 
-    /* "clib.pyx":112
+    /* "lib.py":112
  *     def push(self,id=None,message = ""):
  *         if self.profix+str(id) in self.allQueue.keys():
  *             try:             # <<<<<<<<<<<<<<
@@ -5357,7 +5357,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
       __Pyx_XGOTREF(__pyx_t_9);
       /*try:*/ {
 
-        /* "clib.pyx":113
+        /* "lib.py":113
  *         if self.profix+str(id) in self.allQueue.keys():
  *             try:
  *                 self.allQueue[self.profix + str(id)].put(message)             # <<<<<<<<<<<<<<
@@ -5398,7 +5398,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-        /* "clib.pyx":114
+        /* "lib.py":114
  *             try:
  *                 self.allQueue[self.profix + str(id)].put(message)
  *                 return True             # <<<<<<<<<<<<<<
@@ -5410,7 +5410,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
         __pyx_r = Py_True;
         goto __pyx_L8_try_return;
 
-        /* "clib.pyx":112
+        /* "lib.py":112
  *     def push(self,id=None,message = ""):
  *         if self.profix+str(id) in self.allQueue.keys():
  *             try:             # <<<<<<<<<<<<<<
@@ -5425,7 +5425,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
       __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-      /* "clib.pyx":115
+      /* "lib.py":115
  *                 self.allQueue[self.profix + str(id)].put(message)
  *                 return True
  *             except Exception as e:             # <<<<<<<<<<<<<<
@@ -5434,7 +5434,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
  */
       __pyx_t_11 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
       if (__pyx_t_11) {
-        __Pyx_AddTraceback("clib.GroupMessage.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
+        __Pyx_AddTraceback("lib.GroupMessage.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
         if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_10, &__pyx_t_1) < 0) __PYX_ERR(0, 115, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_GOTREF(__pyx_t_10);
@@ -5442,7 +5442,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
         __Pyx_INCREF(__pyx_t_10);
         __pyx_v_e = __pyx_t_10;
 
-        /* "clib.pyx":116
+        /* "lib.py":116
  *                 return True
  *             except Exception as e:
  *                 print(e)             # <<<<<<<<<<<<<<
@@ -5451,7 +5451,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
  */
         if (__Pyx_PrintOne(0, __pyx_v_e) < 0) __PYX_ERR(0, 116, __pyx_L6_except_error)
 
-        /* "clib.pyx":117
+        /* "lib.py":117
  *             except Exception as e:
  *                 print(e)
  *                 return False             # <<<<<<<<<<<<<<
@@ -5469,7 +5469,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
       goto __pyx_L6_except_error;
       __pyx_L6_except_error:;
 
-      /* "clib.pyx":112
+      /* "lib.py":112
  *     def push(self,id=None,message = ""):
  *         if self.profix+str(id) in self.allQueue.keys():
  *             try:             # <<<<<<<<<<<<<<
@@ -5495,7 +5495,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
       goto __pyx_L0;
     }
 
-    /* "clib.pyx":111
+    /* "lib.py":111
  * 
  *     def push(self,id=None,message = ""):
  *         if self.profix+str(id) in self.allQueue.keys():             # <<<<<<<<<<<<<<
@@ -5504,7 +5504,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
  */
   }
 
-  /* "clib.pyx":119
+  /* "lib.py":119
  *                 return False
  *         else:
  *             try:             # <<<<<<<<<<<<<<
@@ -5521,7 +5521,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
       __Pyx_XGOTREF(__pyx_t_7);
       /*try:*/ {
 
-        /* "clib.pyx":120
+        /* "lib.py":120
  *         else:
  *             try:
  *                 self.allQueue[self.profix + str(id)] = Queue()             # <<<<<<<<<<<<<<
@@ -5560,7 +5560,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-        /* "clib.pyx":121
+        /* "lib.py":121
  *             try:
  *                 self.allQueue[self.profix + str(id)] = Queue()
  *                 self.allQueue[self.profix + str(id)].put(message)             # <<<<<<<<<<<<<<
@@ -5601,7 +5601,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-        /* "clib.pyx":122
+        /* "lib.py":122
  *                 self.allQueue[self.profix + str(id)] = Queue()
  *                 self.allQueue[self.profix + str(id)].put(message)
  *                 return True             # <<<<<<<<<<<<<<
@@ -5613,7 +5613,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
         __pyx_r = Py_True;
         goto __pyx_L16_try_return;
 
-        /* "clib.pyx":119
+        /* "lib.py":119
  *                 return False
  *         else:
  *             try:             # <<<<<<<<<<<<<<
@@ -5628,7 +5628,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "clib.pyx":123
+      /* "lib.py":123
  *                 self.allQueue[self.profix + str(id)].put(message)
  *                 return True
  *             except Exception as e:             # <<<<<<<<<<<<<<
@@ -5637,7 +5637,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
  */
       __pyx_t_11 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
       if (__pyx_t_11) {
-        __Pyx_AddTraceback("clib.GroupMessage.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
+        __Pyx_AddTraceback("lib.GroupMessage.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
         if (__Pyx_GetException(&__pyx_t_1, &__pyx_t_2, &__pyx_t_3) < 0) __PYX_ERR(0, 123, __pyx_L14_except_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_GOTREF(__pyx_t_2);
@@ -5645,7 +5645,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
         __Pyx_INCREF(__pyx_t_2);
         __pyx_v_e = __pyx_t_2;
 
-        /* "clib.pyx":124
+        /* "lib.py":124
  *                 return True
  *             except Exception as e:
  *                 print(e)             # <<<<<<<<<<<<<<
@@ -5654,7 +5654,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
  */
         if (__Pyx_PrintOne(0, __pyx_v_e) < 0) __PYX_ERR(0, 124, __pyx_L14_except_error)
 
-        /* "clib.pyx":125
+        /* "lib.py":125
  *             except Exception as e:
  *                 print(e)
  *                 return False             # <<<<<<<<<<<<<<
@@ -5672,7 +5672,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
       goto __pyx_L14_except_error;
       __pyx_L14_except_error:;
 
-      /* "clib.pyx":119
+      /* "lib.py":119
  *                 return False
  *         else:
  *             try:             # <<<<<<<<<<<<<<
@@ -5699,7 +5699,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
     }
   }
 
-  /* "clib.pyx":110
+  /* "lib.py":110
  *             return False
  * 
  *     def push(self,id=None,message = ""):             # <<<<<<<<<<<<<<
@@ -5714,7 +5714,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_10);
-  __Pyx_AddTraceback("clib.GroupMessage.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessage.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_e);
@@ -5723,7 +5723,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
   return __pyx_r;
 }
 
-/* "clib.pyx":128
+/* "lib.py":128
  * 
  * 
  *     def poll(self,id=None):             # <<<<<<<<<<<<<<
@@ -5732,9 +5732,9 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_16push(CYTHON_UNUSED PyObject *__
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_12GroupMessage_19poll(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_12GroupMessage_19poll = {"poll", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_12GroupMessage_19poll, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_12GroupMessage_19poll(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_12GroupMessage_19poll(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_12GroupMessage_19poll = {"poll", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_12GroupMessage_19poll, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_12GroupMessage_19poll(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_id = 0;
   PyObject *__pyx_r = 0;
@@ -5786,18 +5786,18 @@ static PyObject *__pyx_pw_4clib_12GroupMessage_19poll(PyObject *__pyx_self, PyOb
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("poll", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 128, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessage.poll", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessage.poll", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_12GroupMessage_18poll(__pyx_self, __pyx_v_self, __pyx_v_id);
+  __pyx_r = __pyx_pf_3lib_12GroupMessage_18poll(__pyx_self, __pyx_v_self, __pyx_v_id);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_12GroupMessage_18poll(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id) {
+static PyObject *__pyx_pf_3lib_12GroupMessage_18poll(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id) {
   PyObject *__pyx_v_e = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -5814,7 +5814,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_18poll(CYTHON_UNUSED PyObject *__
   int __pyx_t_11;
   __Pyx_RefNannySetupContext("poll", 0);
 
-  /* "clib.pyx":129
+  /* "lib.py":129
  * 
  *     def poll(self,id=None):
  *         if self.profix+str(id) in self.allQueue.keys():             # <<<<<<<<<<<<<<
@@ -5855,7 +5855,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_18poll(CYTHON_UNUSED PyObject *__
   __pyx_t_6 = (__pyx_t_5 != 0);
   if (__pyx_t_6) {
 
-    /* "clib.pyx":130
+    /* "lib.py":130
  *     def poll(self,id=None):
  *         if self.profix+str(id) in self.allQueue.keys():
  *             try:             # <<<<<<<<<<<<<<
@@ -5871,7 +5871,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_18poll(CYTHON_UNUSED PyObject *__
       __Pyx_XGOTREF(__pyx_t_9);
       /*try:*/ {
 
-        /* "clib.pyx":131
+        /* "lib.py":131
  *         if self.profix+str(id) in self.allQueue.keys():
  *             try:
  *                 return self.allQueue[self.profix+str(id)].get_nowait()             # <<<<<<<<<<<<<<
@@ -5915,7 +5915,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_18poll(CYTHON_UNUSED PyObject *__
         __pyx_t_2 = 0;
         goto __pyx_L8_try_return;
 
-        /* "clib.pyx":130
+        /* "lib.py":130
  *     def poll(self,id=None):
  *         if self.profix+str(id) in self.allQueue.keys():
  *             try:             # <<<<<<<<<<<<<<
@@ -5930,7 +5930,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_18poll(CYTHON_UNUSED PyObject *__
       __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-      /* "clib.pyx":132
+      /* "lib.py":132
  *             try:
  *                 return self.allQueue[self.profix+str(id)].get_nowait()
  *             except Exception as e:             # <<<<<<<<<<<<<<
@@ -5939,7 +5939,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_18poll(CYTHON_UNUSED PyObject *__
  */
       __pyx_t_11 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
       if (__pyx_t_11) {
-        __Pyx_AddTraceback("clib.GroupMessage.poll", __pyx_clineno, __pyx_lineno, __pyx_filename);
+        __Pyx_AddTraceback("lib.GroupMessage.poll", __pyx_clineno, __pyx_lineno, __pyx_filename);
         if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_10, &__pyx_t_1) < 0) __PYX_ERR(0, 132, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_GOTREF(__pyx_t_10);
@@ -5947,7 +5947,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_18poll(CYTHON_UNUSED PyObject *__
         __Pyx_INCREF(__pyx_t_10);
         __pyx_v_e = __pyx_t_10;
 
-        /* "clib.pyx":133
+        /* "lib.py":133
  *                 return self.allQueue[self.profix+str(id)].get_nowait()
  *             except Exception as e:
  *                 print(e)             # <<<<<<<<<<<<<<
@@ -5956,7 +5956,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_18poll(CYTHON_UNUSED PyObject *__
  */
         if (__Pyx_PrintOne(0, __pyx_v_e) < 0) __PYX_ERR(0, 133, __pyx_L6_except_error)
 
-        /* "clib.pyx":134
+        /* "lib.py":134
  *             except Exception as e:
  *                 print(e)
  *                 return None             # <<<<<<<<<<<<<<
@@ -5973,7 +5973,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_18poll(CYTHON_UNUSED PyObject *__
       goto __pyx_L6_except_error;
       __pyx_L6_except_error:;
 
-      /* "clib.pyx":130
+      /* "lib.py":130
  *     def poll(self,id=None):
  *         if self.profix+str(id) in self.allQueue.keys():
  *             try:             # <<<<<<<<<<<<<<
@@ -5999,7 +5999,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_18poll(CYTHON_UNUSED PyObject *__
       goto __pyx_L0;
     }
 
-    /* "clib.pyx":129
+    /* "lib.py":129
  * 
  *     def poll(self,id=None):
  *         if self.profix+str(id) in self.allQueue.keys():             # <<<<<<<<<<<<<<
@@ -6008,7 +6008,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_18poll(CYTHON_UNUSED PyObject *__
  */
   }
 
-  /* "clib.pyx":136
+  /* "lib.py":136
  *                 return None
  *         else:
  *             return None             # <<<<<<<<<<<<<<
@@ -6021,7 +6021,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_18poll(CYTHON_UNUSED PyObject *__
     goto __pyx_L0;
   }
 
-  /* "clib.pyx":128
+  /* "lib.py":128
  * 
  * 
  *     def poll(self,id=None):             # <<<<<<<<<<<<<<
@@ -6036,7 +6036,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_18poll(CYTHON_UNUSED PyObject *__
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_10);
-  __Pyx_AddTraceback("clib.GroupMessage.poll", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessage.poll", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_e);
@@ -6045,7 +6045,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_18poll(CYTHON_UNUSED PyObject *__
   return __pyx_r;
 }
 
-/* "clib.pyx":142
+/* "lib.py":142
  * """
  * class GroupMessageUnSafe():
  *     def __init__(self,profix="",idlist=[]):             # <<<<<<<<<<<<<<
@@ -6053,7 +6053,7 @@ static PyObject *__pyx_pf_4clib_12GroupMessage_18poll(CYTHON_UNUSED PyObject *__
  *         self.idlist = idlist
  */
 
-static PyObject *__pyx_pf_4clib_8__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
+static PyObject *__pyx_pf_3lib_8__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6084,7 +6084,7 @@ static PyObject *__pyx_pf_4clib_8__defaults__(CYTHON_UNUSED PyObject *__pyx_self
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("clib.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -6093,9 +6093,9 @@ static PyObject *__pyx_pf_4clib_8__defaults__(CYTHON_UNUSED PyObject *__pyx_self
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_18GroupMessageUnSafe_1__init__ = {"__init__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_18GroupMessageUnSafe_1__init__, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_18GroupMessageUnSafe_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_18GroupMessageUnSafe_1__init__ = {"__init__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_18GroupMessageUnSafe_1__init__, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_18GroupMessageUnSafe_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_profix = 0;
   PyObject *__pyx_v_idlist = 0;
@@ -6161,23 +6161,23 @@ static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_1__init__(PyObject *__pyx_s
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__init__", 0, 1, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 142, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessageUnSafe.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafe.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_18GroupMessageUnSafe___init__(__pyx_self, __pyx_v_self, __pyx_v_profix, __pyx_v_idlist);
+  __pyx_r = __pyx_pf_3lib_18GroupMessageUnSafe___init__(__pyx_self, __pyx_v_self, __pyx_v_profix, __pyx_v_idlist);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_profix, PyObject *__pyx_v_idlist) {
+static PyObject *__pyx_pf_3lib_18GroupMessageUnSafe___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_profix, PyObject *__pyx_v_idlist) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "clib.pyx":143
+  /* "lib.py":143
  * class GroupMessageUnSafe():
  *     def __init__(self,profix="",idlist=[]):
  *         self.profix = profix             # <<<<<<<<<<<<<<
@@ -6186,7 +6186,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe___init__(CYTHON_UNUSED PyOb
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_profix, __pyx_v_profix) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
 
-  /* "clib.pyx":144
+  /* "lib.py":144
  *     def __init__(self,profix="",idlist=[]):
  *         self.profix = profix
  *         self.idlist = idlist             # <<<<<<<<<<<<<<
@@ -6195,7 +6195,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe___init__(CYTHON_UNUSED PyOb
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_idlist, __pyx_v_idlist) < 0) __PYX_ERR(0, 144, __pyx_L1_error)
 
-  /* "clib.pyx":145
+  /* "lib.py":145
  *         self.profix = profix
  *         self.idlist = idlist
  *         self.init = False             # <<<<<<<<<<<<<<
@@ -6204,7 +6204,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe___init__(CYTHON_UNUSED PyOb
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_init_2, Py_False) < 0) __PYX_ERR(0, 145, __pyx_L1_error)
 
-  /* "clib.pyx":142
+  /* "lib.py":142
  * """
  * class GroupMessageUnSafe():
  *     def __init__(self,profix="",idlist=[]):             # <<<<<<<<<<<<<<
@@ -6216,7 +6216,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe___init__(CYTHON_UNUSED PyOb
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_AddTraceback("clib.GroupMessageUnSafe.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafe.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -6224,7 +6224,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe___init__(CYTHON_UNUSED PyOb
   return __pyx_r;
 }
 
-/* "clib.pyx":147
+/* "lib.py":147
  *         self.init = False
  * 
  *     def initAllGroup(self):             # <<<<<<<<<<<<<<
@@ -6233,20 +6233,20 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe___init__(CYTHON_UNUSED PyOb
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_3initAllGroup(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_18GroupMessageUnSafe_3initAllGroup = {"initAllGroup", (PyCFunction)__pyx_pw_4clib_18GroupMessageUnSafe_3initAllGroup, METH_O, 0};
-static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_3initAllGroup(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_3lib_18GroupMessageUnSafe_3initAllGroup(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_18GroupMessageUnSafe_3initAllGroup = {"initAllGroup", (PyCFunction)__pyx_pw_3lib_18GroupMessageUnSafe_3initAllGroup, METH_O, 0};
+static PyObject *__pyx_pw_3lib_18GroupMessageUnSafe_3initAllGroup(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("initAllGroup (wrapper)", 0);
-  __pyx_r = __pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_3lib_18GroupMessageUnSafe_2initAllGroup(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_3lib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_v_id = NULL;
   PyObject *__pyx_v_e = NULL;
   PyObject *__pyx_r = NULL;
@@ -6265,7 +6265,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED
   int __pyx_t_12;
   __Pyx_RefNannySetupContext("initAllGroup", 0);
 
-  /* "clib.pyx":148
+  /* "lib.py":148
  * 
  *     def initAllGroup(self):
  *         try:             # <<<<<<<<<<<<<<
@@ -6281,7 +6281,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "clib.pyx":149
+      /* "lib.py":149
  *     def initAllGroup(self):
  *         try:
  *             self.allQueue = {}             # <<<<<<<<<<<<<<
@@ -6293,7 +6293,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED
       if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_allQueue, __pyx_t_4) < 0) __PYX_ERR(0, 149, __pyx_L3_error)
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clib.pyx":150
+      /* "lib.py":150
  *         try:
  *             self.allQueue = {}
  *             self.setGroup = {}             # <<<<<<<<<<<<<<
@@ -6305,7 +6305,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED
       if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_setGroup, __pyx_t_4) < 0) __PYX_ERR(0, 150, __pyx_L3_error)
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clib.pyx":151
+      /* "lib.py":151
  *             self.allQueue = {}
  *             self.setGroup = {}
  *             for id in self.idlist:             # <<<<<<<<<<<<<<
@@ -6357,7 +6357,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED
         __Pyx_XDECREF_SET(__pyx_v_id, __pyx_t_4);
         __pyx_t_4 = 0;
 
-        /* "clib.pyx":152
+        /* "lib.py":152
  *             self.setGroup = {}
  *             for id in self.idlist:
  *                 self.allQueue[self.profix+str(id)] = deque()             # <<<<<<<<<<<<<<
@@ -6396,7 +6396,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "clib.pyx":151
+        /* "lib.py":151
  *             self.allQueue = {}
  *             self.setGroup = {}
  *             for id in self.idlist:             # <<<<<<<<<<<<<<
@@ -6406,7 +6406,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED
       }
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-      /* "clib.pyx":153
+      /* "lib.py":153
  *             for id in self.idlist:
  *                 self.allQueue[self.profix+str(id)] = deque()
  *             self.init = True             # <<<<<<<<<<<<<<
@@ -6415,7 +6415,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED
  */
       if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_init_2, Py_True) < 0) __PYX_ERR(0, 153, __pyx_L3_error)
 
-      /* "clib.pyx":154
+      /* "lib.py":154
  *                 self.allQueue[self.profix+str(id)] = deque()
  *             self.init = True
  *             return True             # <<<<<<<<<<<<<<
@@ -6427,7 +6427,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED
       __pyx_r = Py_True;
       goto __pyx_L7_try_return;
 
-      /* "clib.pyx":148
+      /* "lib.py":148
  * 
  *     def initAllGroup(self):
  *         try:             # <<<<<<<<<<<<<<
@@ -6443,7 +6443,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "clib.pyx":155
+    /* "lib.py":155
  *             self.init = True
  *             return True
  *         except Exception as e:             # <<<<<<<<<<<<<<
@@ -6452,7 +6452,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED
  */
     __pyx_t_12 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
     if (__pyx_t_12) {
-      __Pyx_AddTraceback("clib.GroupMessageUnSafe.initAllGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("lib.GroupMessageUnSafe.initAllGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
       if (__Pyx_GetException(&__pyx_t_5, &__pyx_t_4, &__pyx_t_11) < 0) __PYX_ERR(0, 155, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_GOTREF(__pyx_t_4);
@@ -6460,7 +6460,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED
       __Pyx_INCREF(__pyx_t_4);
       __pyx_v_e = __pyx_t_4;
 
-      /* "clib.pyx":156
+      /* "lib.py":156
  *             return True
  *         except Exception as e:
  *             print(e)             # <<<<<<<<<<<<<<
@@ -6469,7 +6469,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED
  */
       if (__Pyx_PrintOne(0, __pyx_v_e) < 0) __PYX_ERR(0, 156, __pyx_L5_except_error)
 
-      /* "clib.pyx":157
+      /* "lib.py":157
  *         except Exception as e:
  *             print(e)
  *             return False             # <<<<<<<<<<<<<<
@@ -6487,7 +6487,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "clib.pyx":148
+    /* "lib.py":148
  * 
  *     def initAllGroup(self):
  *         try:             # <<<<<<<<<<<<<<
@@ -6513,7 +6513,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED
     goto __pyx_L0;
   }
 
-  /* "clib.pyx":147
+  /* "lib.py":147
  *         self.init = False
  * 
  *     def initAllGroup(self):             # <<<<<<<<<<<<<<
@@ -6529,7 +6529,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED
   __Pyx_XDECREF(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_10);
   __Pyx_XDECREF(__pyx_t_11);
-  __Pyx_AddTraceback("clib.GroupMessageUnSafe.initAllGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafe.initAllGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_id);
@@ -6539,7 +6539,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED
   return __pyx_r;
 }
 
-/* "clib.pyx":159
+/* "lib.py":159
  *             return False
  * 
  *     def sendAllQueue(self,message=""):             # <<<<<<<<<<<<<<
@@ -6548,9 +6548,9 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_2initAllGroup(CYTHON_UNUSED
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_5sendAllQueue(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_18GroupMessageUnSafe_5sendAllQueue = {"sendAllQueue", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_18GroupMessageUnSafe_5sendAllQueue, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_5sendAllQueue(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_18GroupMessageUnSafe_5sendAllQueue(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_18GroupMessageUnSafe_5sendAllQueue = {"sendAllQueue", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_18GroupMessageUnSafe_5sendAllQueue, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_18GroupMessageUnSafe_5sendAllQueue(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_message = 0;
   PyObject *__pyx_r = 0;
@@ -6602,18 +6602,18 @@ static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_5sendAllQueue(PyObject *__p
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("sendAllQueue", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 159, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessageUnSafe.sendAllQueue", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafe.sendAllQueue", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_18GroupMessageUnSafe_4sendAllQueue(__pyx_self, __pyx_v_self, __pyx_v_message);
+  __pyx_r = __pyx_pf_3lib_18GroupMessageUnSafe_4sendAllQueue(__pyx_self, __pyx_v_self, __pyx_v_message);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_4sendAllQueue(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_message) {
+static PyObject *__pyx_pf_3lib_18GroupMessageUnSafe_4sendAllQueue(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_message) {
   PyObject *__pyx_v_queue = NULL;
   PyObject *__pyx_v_e = NULL;
   PyObject *__pyx_r = NULL;
@@ -6630,7 +6630,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_4sendAllQueue(CYTHON_UNUSED
   int __pyx_t_10;
   __Pyx_RefNannySetupContext("sendAllQueue", 0);
 
-  /* "clib.pyx":160
+  /* "lib.py":160
  * 
  *     def sendAllQueue(self,message=""):
  *         try:             # <<<<<<<<<<<<<<
@@ -6646,7 +6646,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_4sendAllQueue(CYTHON_UNUSED
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "clib.pyx":161
+      /* "lib.py":161
  *     def sendAllQueue(self,message=""):
  *         try:
  *             for queue in self.allQueue.keys():             # <<<<<<<<<<<<<<
@@ -6716,7 +6716,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_4sendAllQueue(CYTHON_UNUSED
         __Pyx_XDECREF_SET(__pyx_v_queue, __pyx_t_4);
         __pyx_t_4 = 0;
 
-        /* "clib.pyx":162
+        /* "lib.py":162
  *         try:
  *             for queue in self.allQueue.keys():
  *                 self.allQueue[queue].append(message)             # <<<<<<<<<<<<<<
@@ -6731,7 +6731,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_4sendAllQueue(CYTHON_UNUSED
         __pyx_t_9 = __Pyx_PyObject_Append(__pyx_t_5, __pyx_v_message); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 162, __pyx_L3_error)
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-        /* "clib.pyx":161
+        /* "lib.py":161
  *     def sendAllQueue(self,message=""):
  *         try:
  *             for queue in self.allQueue.keys():             # <<<<<<<<<<<<<<
@@ -6741,7 +6741,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_4sendAllQueue(CYTHON_UNUSED
       }
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-      /* "clib.pyx":163
+      /* "lib.py":163
  *             for queue in self.allQueue.keys():
  *                 self.allQueue[queue].append(message)
  *             return True             # <<<<<<<<<<<<<<
@@ -6753,7 +6753,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_4sendAllQueue(CYTHON_UNUSED
       __pyx_r = Py_True;
       goto __pyx_L7_try_return;
 
-      /* "clib.pyx":160
+      /* "lib.py":160
  * 
  *     def sendAllQueue(self,message=""):
  *         try:             # <<<<<<<<<<<<<<
@@ -6766,7 +6766,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_4sendAllQueue(CYTHON_UNUSED
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-    /* "clib.pyx":164
+    /* "lib.py":164
  *                 self.allQueue[queue].append(message)
  *             return True
  *         except Exception as e:             # <<<<<<<<<<<<<<
@@ -6775,7 +6775,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_4sendAllQueue(CYTHON_UNUSED
  */
     __pyx_t_10 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
     if (__pyx_t_10) {
-      __Pyx_AddTraceback("clib.GroupMessageUnSafe.sendAllQueue", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("lib.GroupMessageUnSafe.sendAllQueue", __pyx_clineno, __pyx_lineno, __pyx_filename);
       if (__Pyx_GetException(&__pyx_t_6, &__pyx_t_5, &__pyx_t_4) < 0) __PYX_ERR(0, 164, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_5);
@@ -6783,7 +6783,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_4sendAllQueue(CYTHON_UNUSED
       __Pyx_INCREF(__pyx_t_5);
       __pyx_v_e = __pyx_t_5;
 
-      /* "clib.pyx":165
+      /* "lib.py":165
  *             return True
  *         except Exception as e:
  *             print(e)             # <<<<<<<<<<<<<<
@@ -6792,7 +6792,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_4sendAllQueue(CYTHON_UNUSED
  */
       if (__Pyx_PrintOne(0, __pyx_v_e) < 0) __PYX_ERR(0, 165, __pyx_L5_except_error)
 
-      /* "clib.pyx":166
+      /* "lib.py":166
  *         except Exception as e:
  *             print(e)
  *             return False             # <<<<<<<<<<<<<<
@@ -6810,7 +6810,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_4sendAllQueue(CYTHON_UNUSED
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "clib.pyx":160
+    /* "lib.py":160
  * 
  *     def sendAllQueue(self,message=""):
  *         try:             # <<<<<<<<<<<<<<
@@ -6836,7 +6836,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_4sendAllQueue(CYTHON_UNUSED
     goto __pyx_L0;
   }
 
-  /* "clib.pyx":159
+  /* "lib.py":159
  *             return False
  * 
  *     def sendAllQueue(self,message=""):             # <<<<<<<<<<<<<<
@@ -6849,7 +6849,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_4sendAllQueue(CYTHON_UNUSED
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_AddTraceback("clib.GroupMessageUnSafe.sendAllQueue", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafe.sendAllQueue", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_queue);
@@ -6859,7 +6859,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_4sendAllQueue(CYTHON_UNUSED
   return __pyx_r;
 }
 
-/* "clib.pyx":169
+/* "lib.py":169
  * 
  * 
  *     def addAllQueue(self,id):             # <<<<<<<<<<<<<<
@@ -6868,9 +6868,9 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_4sendAllQueue(CYTHON_UNUSED
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_7addAllQueue(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_18GroupMessageUnSafe_7addAllQueue = {"addAllQueue", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_18GroupMessageUnSafe_7addAllQueue, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_7addAllQueue(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_18GroupMessageUnSafe_7addAllQueue(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_18GroupMessageUnSafe_7addAllQueue = {"addAllQueue", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_18GroupMessageUnSafe_7addAllQueue, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_18GroupMessageUnSafe_7addAllQueue(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_id = 0;
   PyObject *__pyx_r = 0;
@@ -6918,18 +6918,18 @@ static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_7addAllQueue(PyObject *__py
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("addAllQueue", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 169, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessageUnSafe.addAllQueue", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafe.addAllQueue", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_18GroupMessageUnSafe_6addAllQueue(__pyx_self, __pyx_v_self, __pyx_v_id);
+  __pyx_r = __pyx_pf_3lib_18GroupMessageUnSafe_6addAllQueue(__pyx_self, __pyx_v_self, __pyx_v_id);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_6addAllQueue(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id) {
+static PyObject *__pyx_pf_3lib_18GroupMessageUnSafe_6addAllQueue(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6940,7 +6940,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_6addAllQueue(CYTHON_UNUSED 
   int __pyx_t_6;
   __Pyx_RefNannySetupContext("addAllQueue", 0);
 
-  /* "clib.pyx":170
+  /* "lib.py":170
  * 
  *     def addAllQueue(self,id):
  *         self.allQueue[self.profix+str(id)]=deque()             # <<<<<<<<<<<<<<
@@ -6979,7 +6979,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_6addAllQueue(CYTHON_UNUSED 
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":171
+  /* "lib.py":171
  *     def addAllQueue(self,id):
  *         self.allQueue[self.profix+str(id)]=deque()
  *         self.idlist.append(id)             # <<<<<<<<<<<<<<
@@ -6991,7 +6991,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_6addAllQueue(CYTHON_UNUSED 
   __pyx_t_6 = __Pyx_PyObject_Append(__pyx_t_1, __pyx_v_id); if (unlikely(__pyx_t_6 == ((int)-1))) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":169
+  /* "lib.py":169
  * 
  * 
  *     def addAllQueue(self,id):             # <<<<<<<<<<<<<<
@@ -7008,7 +7008,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_6addAllQueue(CYTHON_UNUSED 
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("clib.GroupMessageUnSafe.addAllQueue", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafe.addAllQueue", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -7016,7 +7016,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_6addAllQueue(CYTHON_UNUSED 
   return __pyx_r;
 }
 
-/* "clib.pyx":174
+/* "lib.py":174
  * 
  * 
  *     def addGroup(self,group="",id=None):             # <<<<<<<<<<<<<<
@@ -7025,9 +7025,9 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_6addAllQueue(CYTHON_UNUSED 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_9addGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_18GroupMessageUnSafe_9addGroup = {"addGroup", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_18GroupMessageUnSafe_9addGroup, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_9addGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_18GroupMessageUnSafe_9addGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_18GroupMessageUnSafe_9addGroup = {"addGroup", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_18GroupMessageUnSafe_9addGroup, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_18GroupMessageUnSafe_9addGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_group = 0;
   PyObject *__pyx_v_id = 0;
@@ -7092,18 +7092,18 @@ static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_9addGroup(PyObject *__pyx_s
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("addGroup", 0, 1, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 174, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessageUnSafe.addGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafe.addGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(__pyx_self, __pyx_v_self, __pyx_v_group, __pyx_v_id);
+  __pyx_r = __pyx_pf_3lib_18GroupMessageUnSafe_8addGroup(__pyx_self, __pyx_v_self, __pyx_v_group, __pyx_v_id);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_id) {
+static PyObject *__pyx_pf_3lib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_id) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -7115,7 +7115,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
   PyObject *__pyx_t_7 = NULL;
   __Pyx_RefNannySetupContext("addGroup", 0);
 
-  /* "clib.pyx":175
+  /* "lib.py":175
  * 
  *     def addGroup(self,group="",id=None):
  *         if (self.profix+str(id)) in self.allQueue.keys():             # <<<<<<<<<<<<<<
@@ -7156,7 +7156,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
   __pyx_t_6 = (__pyx_t_5 != 0);
   if (__pyx_t_6) {
 
-    /* "clib.pyx":176
+    /* "lib.py":176
  *     def addGroup(self,group="",id=None):
  *         if (self.profix+str(id)) in self.allQueue.keys():
  *             if group in self.setGroup.keys():             # <<<<<<<<<<<<<<
@@ -7188,7 +7188,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
     __pyx_t_5 = (__pyx_t_6 != 0);
     if (__pyx_t_5) {
 
-      /* "clib.pyx":177
+      /* "lib.py":177
  *         if (self.profix+str(id)) in self.allQueue.keys():
  *             if group in self.setGroup.keys():
  *                 self.setGroup[group].add(self.profix+str(id))             # <<<<<<<<<<<<<<
@@ -7229,7 +7229,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-      /* "clib.pyx":178
+      /* "lib.py":178
  *             if group in self.setGroup.keys():
  *                 self.setGroup[group].add(self.profix+str(id))
  *                 return self.setGroup[group]             # <<<<<<<<<<<<<<
@@ -7246,7 +7246,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
       __pyx_t_4 = 0;
       goto __pyx_L0;
 
-      /* "clib.pyx":176
+      /* "lib.py":176
  *     def addGroup(self,group="",id=None):
  *         if (self.profix+str(id)) in self.allQueue.keys():
  *             if group in self.setGroup.keys():             # <<<<<<<<<<<<<<
@@ -7255,7 +7255,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
  */
     }
 
-    /* "clib.pyx":180
+    /* "lib.py":180
  *                 return self.setGroup[group]
  *             else:
  *                 self.setGroup[group] = set()             # <<<<<<<<<<<<<<
@@ -7271,7 +7271,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clib.pyx":181
+      /* "lib.py":181
  *             else:
  *                 self.setGroup[group] = set()
  *                 self.setGroup[group].add(self.profix+str(id))             # <<<<<<<<<<<<<<
@@ -7312,7 +7312,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clib.pyx":182
+      /* "lib.py":182
  *                 self.setGroup[group] = set()
  *                 self.setGroup[group].add(self.profix+str(id))
  *                 return self.setGroup[group]             # <<<<<<<<<<<<<<
@@ -7330,7 +7330,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
       goto __pyx_L0;
     }
 
-    /* "clib.pyx":175
+    /* "lib.py":175
  * 
  *     def addGroup(self,group="",id=None):
  *         if (self.profix+str(id)) in self.allQueue.keys():             # <<<<<<<<<<<<<<
@@ -7339,7 +7339,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
  */
   }
 
-  /* "clib.pyx":184
+  /* "lib.py":184
  *                 return self.setGroup[group]
  *         else:
  *             self.allQueue[self.profix+str(id)] = deque()             # <<<<<<<<<<<<<<
@@ -7379,7 +7379,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "clib.pyx":185
+    /* "lib.py":185
  *         else:
  *             self.allQueue[self.profix+str(id)] = deque()
  *             if group in self.setGroup.keys():             # <<<<<<<<<<<<<<
@@ -7411,7 +7411,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
     __pyx_t_6 = (__pyx_t_5 != 0);
     if (__pyx_t_6) {
 
-      /* "clib.pyx":186
+      /* "lib.py":186
  *             self.allQueue[self.profix+str(id)] = deque()
  *             if group in self.setGroup.keys():
  *                 self.setGroup[group].add(self.profix + str(id))             # <<<<<<<<<<<<<<
@@ -7452,7 +7452,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-      /* "clib.pyx":187
+      /* "lib.py":187
  *             if group in self.setGroup.keys():
  *                 self.setGroup[group].add(self.profix + str(id))
  *                 return self.setGroup[group]             # <<<<<<<<<<<<<<
@@ -7469,7 +7469,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
       __pyx_t_4 = 0;
       goto __pyx_L0;
 
-      /* "clib.pyx":185
+      /* "lib.py":185
  *         else:
  *             self.allQueue[self.profix+str(id)] = deque()
  *             if group in self.setGroup.keys():             # <<<<<<<<<<<<<<
@@ -7478,7 +7478,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
  */
     }
 
-    /* "clib.pyx":189
+    /* "lib.py":189
  *                 return self.setGroup[group]
  *             else:
  *                 self.setGroup[group] = set()             # <<<<<<<<<<<<<<
@@ -7494,7 +7494,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clib.pyx":190
+      /* "lib.py":190
  *             else:
  *                 self.setGroup[group] = set()
  *                 self.setGroup[group].add(self.profix + str(id))             # <<<<<<<<<<<<<<
@@ -7535,7 +7535,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clib.pyx":191
+      /* "lib.py":191
  *                 self.setGroup[group] = set()
  *                 self.setGroup[group].add(self.profix + str(id))
  *                 return self.setGroup[group]             # <<<<<<<<<<<<<<
@@ -7554,7 +7554,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
     }
   }
 
-  /* "clib.pyx":174
+  /* "lib.py":174
  * 
  * 
  *     def addGroup(self,group="",id=None):             # <<<<<<<<<<<<<<
@@ -7569,7 +7569,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("clib.GroupMessageUnSafe.addGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafe.addGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -7577,7 +7577,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
   return __pyx_r;
 }
 
-/* "clib.pyx":193
+/* "lib.py":193
  *                 return self.setGroup[group]
  * 
  *     def sendGroup(self,group="",message=""):             # <<<<<<<<<<<<<<
@@ -7586,9 +7586,9 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_8addGroup(CYTHON_UNUSED PyO
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_11sendGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_18GroupMessageUnSafe_11sendGroup = {"sendGroup", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_18GroupMessageUnSafe_11sendGroup, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_11sendGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_18GroupMessageUnSafe_11sendGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_18GroupMessageUnSafe_11sendGroup = {"sendGroup", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_18GroupMessageUnSafe_11sendGroup, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_18GroupMessageUnSafe_11sendGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_group = 0;
   PyObject *__pyx_v_message = 0;
@@ -7653,18 +7653,18 @@ static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_11sendGroup(PyObject *__pyx
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("sendGroup", 0, 1, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 193, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessageUnSafe.sendGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafe.sendGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_18GroupMessageUnSafe_10sendGroup(__pyx_self, __pyx_v_self, __pyx_v_group, __pyx_v_message);
+  __pyx_r = __pyx_pf_3lib_18GroupMessageUnSafe_10sendGroup(__pyx_self, __pyx_v_self, __pyx_v_group, __pyx_v_message);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_10sendGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_message) {
+static PyObject *__pyx_pf_3lib_18GroupMessageUnSafe_10sendGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_message) {
   PyObject *__pyx_v_queuename = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -7679,7 +7679,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_10sendGroup(CYTHON_UNUSED P
   int __pyx_t_9;
   __Pyx_RefNannySetupContext("sendGroup", 0);
 
-  /* "clib.pyx":194
+  /* "lib.py":194
  * 
  *     def sendGroup(self,group="",message=""):
  *         if group in self.setGroup:             # <<<<<<<<<<<<<<
@@ -7693,7 +7693,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_10sendGroup(CYTHON_UNUSED P
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
-    /* "clib.pyx":195
+    /* "lib.py":195
  *     def sendGroup(self,group="",message=""):
  *         if group in self.setGroup:
  *             for queuename in self.setGroup[group]:             # <<<<<<<<<<<<<<
@@ -7748,7 +7748,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_10sendGroup(CYTHON_UNUSED P
       __pyx_v_queuename = __pyx_t_4;
       __pyx_t_4 = 0;
 
-      /* "clib.pyx":196
+      /* "lib.py":196
  *         if group in self.setGroup:
  *             for queuename in self.setGroup[group]:
  *                 if queuename in self.allQueue.keys():             # <<<<<<<<<<<<<<
@@ -7780,7 +7780,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_10sendGroup(CYTHON_UNUSED P
       __pyx_t_2 = (__pyx_t_3 != 0);
       if (__pyx_t_2) {
 
-        /* "clib.pyx":197
+        /* "lib.py":197
  *             for queuename in self.setGroup[group]:
  *                 if queuename in self.allQueue.keys():
  *                     self.allQueue[queuename].append(message)             # <<<<<<<<<<<<<<
@@ -7795,7 +7795,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_10sendGroup(CYTHON_UNUSED P
         __pyx_t_9 = __Pyx_PyObject_Append(__pyx_t_8, __pyx_v_message); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 197, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-        /* "clib.pyx":198
+        /* "lib.py":198
  *                 if queuename in self.allQueue.keys():
  *                     self.allQueue[queuename].append(message)
  *                     return True             # <<<<<<<<<<<<<<
@@ -7808,7 +7808,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_10sendGroup(CYTHON_UNUSED P
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         goto __pyx_L0;
 
-        /* "clib.pyx":196
+        /* "lib.py":196
  *         if group in self.setGroup:
  *             for queuename in self.setGroup[group]:
  *                 if queuename in self.allQueue.keys():             # <<<<<<<<<<<<<<
@@ -7817,7 +7817,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_10sendGroup(CYTHON_UNUSED P
  */
       }
 
-      /* "clib.pyx":200
+      /* "lib.py":200
  *                     return True
  *                 else:
  *                     return False             # <<<<<<<<<<<<<<
@@ -7832,7 +7832,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_10sendGroup(CYTHON_UNUSED P
         goto __pyx_L0;
       }
 
-      /* "clib.pyx":195
+      /* "lib.py":195
  *     def sendGroup(self,group="",message=""):
  *         if group in self.setGroup:
  *             for queuename in self.setGroup[group]:             # <<<<<<<<<<<<<<
@@ -7842,7 +7842,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_10sendGroup(CYTHON_UNUSED P
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clib.pyx":194
+    /* "lib.py":194
  * 
  *     def sendGroup(self,group="",message=""):
  *         if group in self.setGroup:             # <<<<<<<<<<<<<<
@@ -7852,7 +7852,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_10sendGroup(CYTHON_UNUSED P
     goto __pyx_L3;
   }
 
-  /* "clib.pyx":202
+  /* "lib.py":202
  *                     return False
  *         else:
  *             return False             # <<<<<<<<<<<<<<
@@ -7867,7 +7867,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_10sendGroup(CYTHON_UNUSED P
   }
   __pyx_L3:;
 
-  /* "clib.pyx":193
+  /* "lib.py":193
  *                 return self.setGroup[group]
  * 
  *     def sendGroup(self,group="",message=""):             # <<<<<<<<<<<<<<
@@ -7883,7 +7883,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_10sendGroup(CYTHON_UNUSED P
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_AddTraceback("clib.GroupMessageUnSafe.sendGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafe.sendGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_queuename);
@@ -7892,7 +7892,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_10sendGroup(CYTHON_UNUSED P
   return __pyx_r;
 }
 
-/* "clib.pyx":204
+/* "lib.py":204
  *             return False
  * 
  *     def removeIdOfGroup(self,group,id):             # <<<<<<<<<<<<<<
@@ -7901,9 +7901,9 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_10sendGroup(CYTHON_UNUSED P
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_13removeIdOfGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_18GroupMessageUnSafe_13removeIdOfGroup = {"removeIdOfGroup", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_18GroupMessageUnSafe_13removeIdOfGroup, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_13removeIdOfGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_18GroupMessageUnSafe_13removeIdOfGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_18GroupMessageUnSafe_13removeIdOfGroup = {"removeIdOfGroup", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_18GroupMessageUnSafe_13removeIdOfGroup, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_18GroupMessageUnSafe_13removeIdOfGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_group = 0;
   PyObject *__pyx_v_id = 0;
@@ -7962,18 +7962,18 @@ static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_13removeIdOfGroup(PyObject 
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("removeIdOfGroup", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 204, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessageUnSafe.removeIdOfGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafe.removeIdOfGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_18GroupMessageUnSafe_12removeIdOfGroup(__pyx_self, __pyx_v_self, __pyx_v_group, __pyx_v_id);
+  __pyx_r = __pyx_pf_3lib_18GroupMessageUnSafe_12removeIdOfGroup(__pyx_self, __pyx_v_self, __pyx_v_group, __pyx_v_id);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_12removeIdOfGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_id) {
+static PyObject *__pyx_pf_3lib_18GroupMessageUnSafe_12removeIdOfGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group, PyObject *__pyx_v_id) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -7985,7 +7985,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_12removeIdOfGroup(CYTHON_UN
   PyObject *__pyx_t_7 = NULL;
   __Pyx_RefNannySetupContext("removeIdOfGroup", 0);
 
-  /* "clib.pyx":205
+  /* "lib.py":205
  * 
  *     def removeIdOfGroup(self,group,id):
  *         if group in self.setGroup.keys():             # <<<<<<<<<<<<<<
@@ -8017,7 +8017,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_12removeIdOfGroup(CYTHON_UN
   __pyx_t_5 = (__pyx_t_4 != 0);
   if (__pyx_t_5) {
 
-    /* "clib.pyx":206
+    /* "lib.py":206
  *     def removeIdOfGroup(self,group,id):
  *         if group in self.setGroup.keys():
  *             if (self.profix+str(id)) in self.setGroup[group]:             # <<<<<<<<<<<<<<
@@ -8043,7 +8043,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_12removeIdOfGroup(CYTHON_UN
     __pyx_t_4 = (__pyx_t_5 != 0);
     if (__pyx_t_4) {
 
-      /* "clib.pyx":207
+      /* "lib.py":207
  *         if group in self.setGroup.keys():
  *             if (self.profix+str(id)) in self.setGroup[group]:
  *                 self.setGroup[group].remove((self.profix+str(id)))             # <<<<<<<<<<<<<<
@@ -8084,7 +8084,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_12removeIdOfGroup(CYTHON_UN
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "clib.pyx":208
+      /* "lib.py":208
  *             if (self.profix+str(id)) in self.setGroup[group]:
  *                 self.setGroup[group].remove((self.profix+str(id)))
  *                 return True             # <<<<<<<<<<<<<<
@@ -8096,7 +8096,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_12removeIdOfGroup(CYTHON_UN
       __pyx_r = Py_True;
       goto __pyx_L0;
 
-      /* "clib.pyx":206
+      /* "lib.py":206
  *     def removeIdOfGroup(self,group,id):
  *         if group in self.setGroup.keys():
  *             if (self.profix+str(id)) in self.setGroup[group]:             # <<<<<<<<<<<<<<
@@ -8105,7 +8105,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_12removeIdOfGroup(CYTHON_UN
  */
     }
 
-    /* "clib.pyx":209
+    /* "lib.py":209
  *                 self.setGroup[group].remove((self.profix+str(id)))
  *                 return True
  *             return False             # <<<<<<<<<<<<<<
@@ -8117,7 +8117,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_12removeIdOfGroup(CYTHON_UN
     __pyx_r = Py_False;
     goto __pyx_L0;
 
-    /* "clib.pyx":205
+    /* "lib.py":205
  * 
  *     def removeIdOfGroup(self,group,id):
  *         if group in self.setGroup.keys():             # <<<<<<<<<<<<<<
@@ -8126,7 +8126,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_12removeIdOfGroup(CYTHON_UN
  */
   }
 
-  /* "clib.pyx":210
+  /* "lib.py":210
  *                 return True
  *             return False
  *         return False             # <<<<<<<<<<<<<<
@@ -8138,7 +8138,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_12removeIdOfGroup(CYTHON_UN
   __pyx_r = Py_False;
   goto __pyx_L0;
 
-  /* "clib.pyx":204
+  /* "lib.py":204
  *             return False
  * 
  *     def removeIdOfGroup(self,group,id):             # <<<<<<<<<<<<<<
@@ -8153,7 +8153,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_12removeIdOfGroup(CYTHON_UN
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("clib.GroupMessageUnSafe.removeIdOfGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafe.removeIdOfGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -8161,7 +8161,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_12removeIdOfGroup(CYTHON_UN
   return __pyx_r;
 }
 
-/* "clib.pyx":212
+/* "lib.py":212
  *         return False
  * 
  *     def removeGroup(self,group):             # <<<<<<<<<<<<<<
@@ -8170,9 +8170,9 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_12removeIdOfGroup(CYTHON_UN
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_15removeGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_18GroupMessageUnSafe_15removeGroup = {"removeGroup", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_18GroupMessageUnSafe_15removeGroup, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_15removeGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_18GroupMessageUnSafe_15removeGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_18GroupMessageUnSafe_15removeGroup = {"removeGroup", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_18GroupMessageUnSafe_15removeGroup, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_18GroupMessageUnSafe_15removeGroup(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_group = 0;
   PyObject *__pyx_r = 0;
@@ -8220,18 +8220,18 @@ static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_15removeGroup(PyObject *__p
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("removeGroup", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 212, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessageUnSafe.removeGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafe.removeGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_18GroupMessageUnSafe_14removeGroup(__pyx_self, __pyx_v_self, __pyx_v_group);
+  __pyx_r = __pyx_pf_3lib_18GroupMessageUnSafe_14removeGroup(__pyx_self, __pyx_v_self, __pyx_v_group);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_14removeGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group) {
+static PyObject *__pyx_pf_3lib_18GroupMessageUnSafe_14removeGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_group) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -8241,7 +8241,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_14removeGroup(CYTHON_UNUSED
   int __pyx_t_5;
   __Pyx_RefNannySetupContext("removeGroup", 0);
 
-  /* "clib.pyx":213
+  /* "lib.py":213
  * 
  *     def removeGroup(self,group):
  *         if group in self.setGroup.keys():             # <<<<<<<<<<<<<<
@@ -8273,7 +8273,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_14removeGroup(CYTHON_UNUSED
   __pyx_t_5 = (__pyx_t_4 != 0);
   if (__pyx_t_5) {
 
-    /* "clib.pyx":214
+    /* "lib.py":214
  *     def removeGroup(self,group):
  *         if group in self.setGroup.keys():
  *             del self.setGroup[group]             # <<<<<<<<<<<<<<
@@ -8285,7 +8285,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_14removeGroup(CYTHON_UNUSED
     if (unlikely(PyObject_DelItem(__pyx_t_1, __pyx_v_group) < 0)) __PYX_ERR(0, 214, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "clib.pyx":215
+    /* "lib.py":215
  *         if group in self.setGroup.keys():
  *             del self.setGroup[group]
  *             return True             # <<<<<<<<<<<<<<
@@ -8297,7 +8297,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_14removeGroup(CYTHON_UNUSED
     __pyx_r = Py_True;
     goto __pyx_L0;
 
-    /* "clib.pyx":213
+    /* "lib.py":213
  * 
  *     def removeGroup(self,group):
  *         if group in self.setGroup.keys():             # <<<<<<<<<<<<<<
@@ -8306,7 +8306,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_14removeGroup(CYTHON_UNUSED
  */
   }
 
-  /* "clib.pyx":216
+  /* "lib.py":216
  *             del self.setGroup[group]
  *             return True
  *         return False             # <<<<<<<<<<<<<<
@@ -8318,7 +8318,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_14removeGroup(CYTHON_UNUSED
   __pyx_r = Py_False;
   goto __pyx_L0;
 
-  /* "clib.pyx":212
+  /* "lib.py":212
  *         return False
  * 
  *     def removeGroup(self,group):             # <<<<<<<<<<<<<<
@@ -8331,7 +8331,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_14removeGroup(CYTHON_UNUSED
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("clib.GroupMessageUnSafe.removeGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafe.removeGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -8339,7 +8339,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_14removeGroup(CYTHON_UNUSED
   return __pyx_r;
 }
 
-/* "clib.pyx":218
+/* "lib.py":218
  *         return False
  * 
  *     def push(self,id=None,message = ""):             # <<<<<<<<<<<<<<
@@ -8348,9 +8348,9 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_14removeGroup(CYTHON_UNUSED
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_17push(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_18GroupMessageUnSafe_17push = {"push", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_18GroupMessageUnSafe_17push, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_17push(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_18GroupMessageUnSafe_17push(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_18GroupMessageUnSafe_17push = {"push", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_18GroupMessageUnSafe_17push, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_18GroupMessageUnSafe_17push(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_id = 0;
   PyObject *__pyx_v_message = 0;
@@ -8415,18 +8415,18 @@ static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_17push(PyObject *__pyx_self
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("push", 0, 1, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 218, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessageUnSafe.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafe.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_18GroupMessageUnSafe_16push(__pyx_self, __pyx_v_self, __pyx_v_id, __pyx_v_message);
+  __pyx_r = __pyx_pf_3lib_18GroupMessageUnSafe_16push(__pyx_self, __pyx_v_self, __pyx_v_id, __pyx_v_message);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id, PyObject *__pyx_v_message) {
+static PyObject *__pyx_pf_3lib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id, PyObject *__pyx_v_message) {
   PyObject *__pyx_v_e = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -8444,7 +8444,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
   PyObject *__pyx_t_12 = NULL;
   __Pyx_RefNannySetupContext("push", 0);
 
-  /* "clib.pyx":219
+  /* "lib.py":219
  * 
  *     def push(self,id=None,message = ""):
  *         if self.profix+str(id) in self.allQueue.keys():             # <<<<<<<<<<<<<<
@@ -8485,7 +8485,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
   __pyx_t_6 = (__pyx_t_5 != 0);
   if (__pyx_t_6) {
 
-    /* "clib.pyx":220
+    /* "lib.py":220
  *     def push(self,id=None,message = ""):
  *         if self.profix+str(id) in self.allQueue.keys():
  *             try:             # <<<<<<<<<<<<<<
@@ -8501,7 +8501,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
       __Pyx_XGOTREF(__pyx_t_9);
       /*try:*/ {
 
-        /* "clib.pyx":221
+        /* "lib.py":221
  *         if self.profix+str(id) in self.allQueue.keys():
  *             try:
  *                 self.allQueue[self.profix + str(id)].append(message)             # <<<<<<<<<<<<<<
@@ -8525,7 +8525,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
         __pyx_t_10 = __Pyx_PyObject_Append(__pyx_t_4, __pyx_v_message); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 221, __pyx_L4_error)
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "clib.pyx":222
+        /* "lib.py":222
  *             try:
  *                 self.allQueue[self.profix + str(id)].append(message)
  *                 return True             # <<<<<<<<<<<<<<
@@ -8537,7 +8537,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
         __pyx_r = Py_True;
         goto __pyx_L8_try_return;
 
-        /* "clib.pyx":220
+        /* "lib.py":220
  *     def push(self,id=None,message = ""):
  *         if self.profix+str(id) in self.allQueue.keys():
  *             try:             # <<<<<<<<<<<<<<
@@ -8551,7 +8551,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
       __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clib.pyx":223
+      /* "lib.py":223
  *                 self.allQueue[self.profix + str(id)].append(message)
  *                 return True
  *             except Exception as e:             # <<<<<<<<<<<<<<
@@ -8560,7 +8560,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
  */
       __pyx_t_11 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
       if (__pyx_t_11) {
-        __Pyx_AddTraceback("clib.GroupMessageUnSafe.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
+        __Pyx_AddTraceback("lib.GroupMessageUnSafe.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
         if (__Pyx_GetException(&__pyx_t_4, &__pyx_t_1, &__pyx_t_2) < 0) __PYX_ERR(0, 223, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_GOTREF(__pyx_t_1);
@@ -8568,7 +8568,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
         __Pyx_INCREF(__pyx_t_1);
         __pyx_v_e = __pyx_t_1;
 
-        /* "clib.pyx":224
+        /* "lib.py":224
  *                 return True
  *             except Exception as e:
  *                 print(e)             # <<<<<<<<<<<<<<
@@ -8577,7 +8577,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
  */
         if (__Pyx_PrintOne(0, __pyx_v_e) < 0) __PYX_ERR(0, 224, __pyx_L6_except_error)
 
-        /* "clib.pyx":225
+        /* "lib.py":225
  *             except Exception as e:
  *                 print(e)
  *                 return False             # <<<<<<<<<<<<<<
@@ -8595,7 +8595,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
       goto __pyx_L6_except_error;
       __pyx_L6_except_error:;
 
-      /* "clib.pyx":220
+      /* "lib.py":220
  *     def push(self,id=None,message = ""):
  *         if self.profix+str(id) in self.allQueue.keys():
  *             try:             # <<<<<<<<<<<<<<
@@ -8621,7 +8621,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
       goto __pyx_L0;
     }
 
-    /* "clib.pyx":219
+    /* "lib.py":219
  * 
  *     def push(self,id=None,message = ""):
  *         if self.profix+str(id) in self.allQueue.keys():             # <<<<<<<<<<<<<<
@@ -8630,7 +8630,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
  */
   }
 
-  /* "clib.pyx":227
+  /* "lib.py":227
  *                 return False
  *         else:
  *             try:             # <<<<<<<<<<<<<<
@@ -8647,7 +8647,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
       __Pyx_XGOTREF(__pyx_t_7);
       /*try:*/ {
 
-        /* "clib.pyx":228
+        /* "lib.py":228
  *         else:
  *             try:
  *                 self.allQueue[self.profix + str(id)] = deque()             # <<<<<<<<<<<<<<
@@ -8686,7 +8686,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
         __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-        /* "clib.pyx":229
+        /* "lib.py":229
  *             try:
  *                 self.allQueue[self.profix + str(id)] = deque()
  *                 self.allQueue[self.profix + str(id)].append(message)             # <<<<<<<<<<<<<<
@@ -8710,7 +8710,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
         __pyx_t_10 = __Pyx_PyObject_Append(__pyx_t_1, __pyx_v_message); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 229, __pyx_L12_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-        /* "clib.pyx":230
+        /* "lib.py":230
  *                 self.allQueue[self.profix + str(id)] = deque()
  *                 self.allQueue[self.profix + str(id)].append(message)
  *                 return True             # <<<<<<<<<<<<<<
@@ -8722,7 +8722,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
         __pyx_r = Py_True;
         goto __pyx_L16_try_return;
 
-        /* "clib.pyx":227
+        /* "lib.py":227
  *                 return False
  *         else:
  *             try:             # <<<<<<<<<<<<<<
@@ -8737,7 +8737,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "clib.pyx":231
+      /* "lib.py":231
  *                 self.allQueue[self.profix + str(id)].append(message)
  *                 return True
  *             except Exception as e:             # <<<<<<<<<<<<<<
@@ -8746,7 +8746,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
  */
       __pyx_t_11 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
       if (__pyx_t_11) {
-        __Pyx_AddTraceback("clib.GroupMessageUnSafe.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
+        __Pyx_AddTraceback("lib.GroupMessageUnSafe.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
         if (__Pyx_GetException(&__pyx_t_1, &__pyx_t_3, &__pyx_t_2) < 0) __PYX_ERR(0, 231, __pyx_L14_except_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_GOTREF(__pyx_t_3);
@@ -8754,7 +8754,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
         __Pyx_INCREF(__pyx_t_3);
         __pyx_v_e = __pyx_t_3;
 
-        /* "clib.pyx":232
+        /* "lib.py":232
  *                 return True
  *             except Exception as e:
  *                 print(e)             # <<<<<<<<<<<<<<
@@ -8763,7 +8763,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
  */
         if (__Pyx_PrintOne(0, __pyx_v_e) < 0) __PYX_ERR(0, 232, __pyx_L14_except_error)
 
-        /* "clib.pyx":233
+        /* "lib.py":233
  *             except Exception as e:
  *                 print(e)
  *                 return False             # <<<<<<<<<<<<<<
@@ -8781,7 +8781,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
       goto __pyx_L14_except_error;
       __pyx_L14_except_error:;
 
-      /* "clib.pyx":227
+      /* "lib.py":227
  *                 return False
  *         else:
  *             try:             # <<<<<<<<<<<<<<
@@ -8808,7 +8808,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
     }
   }
 
-  /* "clib.pyx":218
+  /* "lib.py":218
  *         return False
  * 
  *     def push(self,id=None,message = ""):             # <<<<<<<<<<<<<<
@@ -8823,7 +8823,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_12);
-  __Pyx_AddTraceback("clib.GroupMessageUnSafe.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafe.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_e);
@@ -8832,7 +8832,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
   return __pyx_r;
 }
 
-/* "clib.pyx":235
+/* "lib.py":235
  *                 return False
  * 
  *     def poll(self,id=None):             # <<<<<<<<<<<<<<
@@ -8841,9 +8841,9 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_16push(CYTHON_UNUSED PyObje
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_19poll(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_18GroupMessageUnSafe_19poll = {"poll", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_18GroupMessageUnSafe_19poll, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_19poll(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_18GroupMessageUnSafe_19poll(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_18GroupMessageUnSafe_19poll = {"poll", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_18GroupMessageUnSafe_19poll, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_18GroupMessageUnSafe_19poll(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_id = 0;
   PyObject *__pyx_r = 0;
@@ -8895,18 +8895,18 @@ static PyObject *__pyx_pw_4clib_18GroupMessageUnSafe_19poll(PyObject *__pyx_self
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("poll", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 235, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessageUnSafe.poll", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafe.poll", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_18GroupMessageUnSafe_18poll(__pyx_self, __pyx_v_self, __pyx_v_id);
+  __pyx_r = __pyx_pf_3lib_18GroupMessageUnSafe_18poll(__pyx_self, __pyx_v_self, __pyx_v_id);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_18poll(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id) {
+static PyObject *__pyx_pf_3lib_18GroupMessageUnSafe_18poll(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id) {
   PyObject *__pyx_v_e = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -8923,7 +8923,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_18poll(CYTHON_UNUSED PyObje
   int __pyx_t_11;
   __Pyx_RefNannySetupContext("poll", 0);
 
-  /* "clib.pyx":236
+  /* "lib.py":236
  * 
  *     def poll(self,id=None):
  *         if self.profix+str(id) in self.allQueue.keys():             # <<<<<<<<<<<<<<
@@ -8964,7 +8964,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_18poll(CYTHON_UNUSED PyObje
   __pyx_t_6 = (__pyx_t_5 != 0);
   if (__pyx_t_6) {
 
-    /* "clib.pyx":237
+    /* "lib.py":237
  *     def poll(self,id=None):
  *         if self.profix+str(id) in self.allQueue.keys():
  *             try:             # <<<<<<<<<<<<<<
@@ -8980,7 +8980,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_18poll(CYTHON_UNUSED PyObje
       __Pyx_XGOTREF(__pyx_t_9);
       /*try:*/ {
 
-        /* "clib.pyx":238
+        /* "lib.py":238
  *         if self.profix+str(id) in self.allQueue.keys():
  *             try:
  *                 return self.allQueue[self.profix+str(id)].popleft()             # <<<<<<<<<<<<<<
@@ -9024,7 +9024,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_18poll(CYTHON_UNUSED PyObje
         __pyx_t_2 = 0;
         goto __pyx_L8_try_return;
 
-        /* "clib.pyx":237
+        /* "lib.py":237
  *     def poll(self,id=None):
  *         if self.profix+str(id) in self.allQueue.keys():
  *             try:             # <<<<<<<<<<<<<<
@@ -9039,7 +9039,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_18poll(CYTHON_UNUSED PyObje
       __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-      /* "clib.pyx":239
+      /* "lib.py":239
  *             try:
  *                 return self.allQueue[self.profix+str(id)].popleft()
  *             except Exception as e:             # <<<<<<<<<<<<<<
@@ -9048,7 +9048,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_18poll(CYTHON_UNUSED PyObje
  */
       __pyx_t_11 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
       if (__pyx_t_11) {
-        __Pyx_AddTraceback("clib.GroupMessageUnSafe.poll", __pyx_clineno, __pyx_lineno, __pyx_filename);
+        __Pyx_AddTraceback("lib.GroupMessageUnSafe.poll", __pyx_clineno, __pyx_lineno, __pyx_filename);
         if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_10, &__pyx_t_1) < 0) __PYX_ERR(0, 239, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_GOTREF(__pyx_t_10);
@@ -9056,7 +9056,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_18poll(CYTHON_UNUSED PyObje
         __Pyx_INCREF(__pyx_t_10);
         __pyx_v_e = __pyx_t_10;
 
-        /* "clib.pyx":240
+        /* "lib.py":240
  *                 return self.allQueue[self.profix+str(id)].popleft()
  *             except Exception as e:
  *                 print(e)             # <<<<<<<<<<<<<<
@@ -9065,7 +9065,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_18poll(CYTHON_UNUSED PyObje
  */
         if (__Pyx_PrintOne(0, __pyx_v_e) < 0) __PYX_ERR(0, 240, __pyx_L6_except_error)
 
-        /* "clib.pyx":241
+        /* "lib.py":241
  *             except Exception as e:
  *                 print(e)
  *                 return None             # <<<<<<<<<<<<<<
@@ -9082,7 +9082,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_18poll(CYTHON_UNUSED PyObje
       goto __pyx_L6_except_error;
       __pyx_L6_except_error:;
 
-      /* "clib.pyx":237
+      /* "lib.py":237
  *     def poll(self,id=None):
  *         if self.profix+str(id) in self.allQueue.keys():
  *             try:             # <<<<<<<<<<<<<<
@@ -9108,7 +9108,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_18poll(CYTHON_UNUSED PyObje
       goto __pyx_L0;
     }
 
-    /* "clib.pyx":236
+    /* "lib.py":236
  * 
  *     def poll(self,id=None):
  *         if self.profix+str(id) in self.allQueue.keys():             # <<<<<<<<<<<<<<
@@ -9117,7 +9117,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_18poll(CYTHON_UNUSED PyObje
  */
   }
 
-  /* "clib.pyx":243
+  /* "lib.py":243
  *                 return None
  *         else:
  *             return None             # <<<<<<<<<<<<<<
@@ -9130,7 +9130,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_18poll(CYTHON_UNUSED PyObje
     goto __pyx_L0;
   }
 
-  /* "clib.pyx":235
+  /* "lib.py":235
  *                 return False
  * 
  *     def poll(self,id=None):             # <<<<<<<<<<<<<<
@@ -9145,7 +9145,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_18poll(CYTHON_UNUSED PyObje
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_10);
-  __Pyx_AddTraceback("clib.GroupMessageUnSafe.poll", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafe.poll", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_e);
@@ -9154,7 +9154,7 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_18poll(CYTHON_UNUSED PyObje
   return __pyx_r;
 }
 
-/* "clib.pyx":250
+/* "lib.py":250
  * class GroupMessageUnSafeSaveDisk(GroupMessageUnSafe):
  * 
  *     def autoSave(self,time=10):             # <<<<<<<<<<<<<<
@@ -9163,9 +9163,9 @@ static PyObject *__pyx_pf_4clib_18GroupMessageUnSafe_18poll(CYTHON_UNUSED PyObje
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_26GroupMessageUnSafeSaveDisk_1autoSave(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_26GroupMessageUnSafeSaveDisk_1autoSave = {"autoSave", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_26GroupMessageUnSafeSaveDisk_1autoSave, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_26GroupMessageUnSafeSaveDisk_1autoSave(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_26GroupMessageUnSafeSaveDisk_1autoSave(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_26GroupMessageUnSafeSaveDisk_1autoSave = {"autoSave", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_26GroupMessageUnSafeSaveDisk_1autoSave, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_26GroupMessageUnSafeSaveDisk_1autoSave(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_time = 0;
   PyObject *__pyx_r = 0;
@@ -9217,18 +9217,18 @@ static PyObject *__pyx_pw_4clib_26GroupMessageUnSafeSaveDisk_1autoSave(PyObject 
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("autoSave", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 250, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessageUnSafeSaveDisk.autoSave", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafeSaveDisk.autoSave", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_autoSave(__pyx_self, __pyx_v_self, __pyx_v_time);
+  __pyx_r = __pyx_pf_3lib_26GroupMessageUnSafeSaveDisk_autoSave(__pyx_self, __pyx_v_self, __pyx_v_time);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_autoSave(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_time) {
+static PyObject *__pyx_pf_3lib_26GroupMessageUnSafeSaveDisk_autoSave(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_time) {
   PyObject *__pyx_v_e = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -9244,7 +9244,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_autoSave(CYTHON_UNU
   PyObject *__pyx_t_10 = NULL;
   __Pyx_RefNannySetupContext("autoSave", 0);
 
-  /* "clib.pyx":251
+  /* "lib.py":251
  * 
  *     def autoSave(self,time=10):
  *         try:             # <<<<<<<<<<<<<<
@@ -9260,7 +9260,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_autoSave(CYTHON_UNU
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "clib.pyx":252
+      /* "lib.py":252
  *     def autoSave(self,time=10):
  *         try:
  *             LoopTimer(time,self.save).start()             # <<<<<<<<<<<<<<
@@ -9338,7 +9338,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_autoSave(CYTHON_UNU
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clib.pyx":251
+      /* "lib.py":251
  * 
  *     def autoSave(self,time=10):
  *         try:             # <<<<<<<<<<<<<<
@@ -9358,7 +9358,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_autoSave(CYTHON_UNU
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "clib.pyx":253
+    /* "lib.py":253
  *         try:
  *             LoopTimer(time,self.save).start()
  *         except Exception as e:             # <<<<<<<<<<<<<<
@@ -9367,7 +9367,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_autoSave(CYTHON_UNU
  */
     __pyx_t_9 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
     if (__pyx_t_9) {
-      __Pyx_AddTraceback("clib.GroupMessageUnSafeSaveDisk.autoSave", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("lib.GroupMessageUnSafeSaveDisk.autoSave", __pyx_clineno, __pyx_lineno, __pyx_filename);
       if (__Pyx_GetException(&__pyx_t_4, &__pyx_t_6, &__pyx_t_5) < 0) __PYX_ERR(0, 253, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_GOTREF(__pyx_t_6);
@@ -9375,7 +9375,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_autoSave(CYTHON_UNU
       __Pyx_INCREF(__pyx_t_6);
       __pyx_v_e = __pyx_t_6;
 
-      /* "clib.pyx":254
+      /* "lib.py":254
  *             LoopTimer(time,self.save).start()
  *         except Exception as e:
  *             print(e)             # <<<<<<<<<<<<<<
@@ -9391,7 +9391,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_autoSave(CYTHON_UNU
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "clib.pyx":251
+    /* "lib.py":251
  * 
  *     def autoSave(self,time=10):
  *         try:             # <<<<<<<<<<<<<<
@@ -9411,7 +9411,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_autoSave(CYTHON_UNU
     __pyx_L8_try_end:;
   }
 
-  /* "clib.pyx":250
+  /* "lib.py":250
  * class GroupMessageUnSafeSaveDisk(GroupMessageUnSafe):
  * 
  *     def autoSave(self,time=10):             # <<<<<<<<<<<<<<
@@ -9429,7 +9429,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_autoSave(CYTHON_UNU
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_8);
   __Pyx_XDECREF(__pyx_t_10);
-  __Pyx_AddTraceback("clib.GroupMessageUnSafeSaveDisk.autoSave", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafeSaveDisk.autoSave", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_e);
@@ -9438,7 +9438,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_autoSave(CYTHON_UNU
   return __pyx_r;
 }
 
-/* "clib.pyx":256
+/* "lib.py":256
  *             print(e)
  * 
  *     def initAllGroup(self):             # <<<<<<<<<<<<<<
@@ -9447,20 +9447,20 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_autoSave(CYTHON_UNU
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_26GroupMessageUnSafeSaveDisk_3initAllGroup(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_26GroupMessageUnSafeSaveDisk_3initAllGroup = {"initAllGroup", (PyCFunction)__pyx_pw_4clib_26GroupMessageUnSafeSaveDisk_3initAllGroup, METH_O, 0};
-static PyObject *__pyx_pw_4clib_26GroupMessageUnSafeSaveDisk_3initAllGroup(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_3lib_26GroupMessageUnSafeSaveDisk_3initAllGroup(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_26GroupMessageUnSafeSaveDisk_3initAllGroup = {"initAllGroup", (PyCFunction)__pyx_pw_3lib_26GroupMessageUnSafeSaveDisk_3initAllGroup, METH_O, 0};
+static PyObject *__pyx_pw_3lib_26GroupMessageUnSafeSaveDisk_3initAllGroup(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("initAllGroup (wrapper)", 0);
-  __pyx_r = __pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_3lib_26GroupMessageUnSafeSaveDisk_2initAllGroup(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_3lib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_v_status = NULL;
   PyObject *__pyx_v_id = NULL;
   PyObject *__pyx_v_e = NULL;
@@ -9481,7 +9481,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
   int __pyx_t_13;
   __Pyx_RefNannySetupContext("initAllGroup", 0);
 
-  /* "clib.pyx":257
+  /* "lib.py":257
  * 
  *     def initAllGroup(self):
  *         try:             # <<<<<<<<<<<<<<
@@ -9497,7 +9497,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "clib.pyx":258
+      /* "lib.py":258
  *     def initAllGroup(self):
  *         try:
  *             status = self.load()             # <<<<<<<<<<<<<<
@@ -9524,7 +9524,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
       __pyx_v_status = __pyx_t_4;
       __pyx_t_4 = 0;
 
-      /* "clib.pyx":259
+      /* "lib.py":259
  *         try:
  *             status = self.load()
  *             if status:             # <<<<<<<<<<<<<<
@@ -9534,7 +9534,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
       __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_v_status); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 259, __pyx_L3_error)
       if (__pyx_t_7) {
 
-        /* "clib.pyx":260
+        /* "lib.py":260
  *             status = self.load()
  *             if status:
  *                 return status             # <<<<<<<<<<<<<<
@@ -9546,7 +9546,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
         __pyx_r = __pyx_v_status;
         goto __pyx_L7_try_return;
 
-        /* "clib.pyx":259
+        /* "lib.py":259
  *         try:
  *             status = self.load()
  *             if status:             # <<<<<<<<<<<<<<
@@ -9555,7 +9555,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
  */
       }
 
-      /* "clib.pyx":262
+      /* "lib.py":262
  *                 return status
  *             else:
  *                 self.allQueue = {}             # <<<<<<<<<<<<<<
@@ -9568,7 +9568,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
         if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_allQueue, __pyx_t_4) < 0) __PYX_ERR(0, 262, __pyx_L3_error)
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "clib.pyx":263
+        /* "lib.py":263
  *             else:
  *                 self.allQueue = {}
  *                 self.setGroup = {}             # <<<<<<<<<<<<<<
@@ -9580,7 +9580,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
         if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_setGroup, __pyx_t_4) < 0) __PYX_ERR(0, 263, __pyx_L3_error)
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "clib.pyx":264
+        /* "lib.py":264
  *                 self.allQueue = {}
  *                 self.setGroup = {}
  *                 for id in self.idlist:             # <<<<<<<<<<<<<<
@@ -9632,7 +9632,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
           __Pyx_XDECREF_SET(__pyx_v_id, __pyx_t_4);
           __pyx_t_4 = 0;
 
-          /* "clib.pyx":265
+          /* "lib.py":265
  *                 self.setGroup = {}
  *                 for id in self.idlist:
  *                     self.allQueue[self.profix+str(id)] = deque()             # <<<<<<<<<<<<<<
@@ -9671,7 +9671,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
           __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-          /* "clib.pyx":264
+          /* "lib.py":264
  *                 self.allQueue = {}
  *                 self.setGroup = {}
  *                 for id in self.idlist:             # <<<<<<<<<<<<<<
@@ -9681,7 +9681,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
         }
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-        /* "clib.pyx":266
+        /* "lib.py":266
  *                 for id in self.idlist:
  *                     self.allQueue[self.profix+str(id)] = deque()
  *                 self.init = True             # <<<<<<<<<<<<<<
@@ -9691,7 +9691,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
         if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_init_2, Py_True) < 0) __PYX_ERR(0, 266, __pyx_L3_error)
       }
 
-      /* "clib.pyx":267
+      /* "lib.py":267
  *                     self.allQueue[self.profix+str(id)] = deque()
  *                 self.init = True
  *             return True             # <<<<<<<<<<<<<<
@@ -9703,7 +9703,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
       __pyx_r = Py_True;
       goto __pyx_L7_try_return;
 
-      /* "clib.pyx":257
+      /* "lib.py":257
  * 
  *     def initAllGroup(self):
  *         try:             # <<<<<<<<<<<<<<
@@ -9719,7 +9719,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "clib.pyx":268
+    /* "lib.py":268
  *                 self.init = True
  *             return True
  *         except Exception as e:             # <<<<<<<<<<<<<<
@@ -9728,7 +9728,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
  */
     __pyx_t_13 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
     if (__pyx_t_13) {
-      __Pyx_AddTraceback("clib.GroupMessageUnSafeSaveDisk.initAllGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("lib.GroupMessageUnSafeSaveDisk.initAllGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
       if (__Pyx_GetException(&__pyx_t_5, &__pyx_t_4, &__pyx_t_12) < 0) __PYX_ERR(0, 268, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_GOTREF(__pyx_t_4);
@@ -9736,7 +9736,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
       __Pyx_INCREF(__pyx_t_4);
       __pyx_v_e = __pyx_t_4;
 
-      /* "clib.pyx":269
+      /* "lib.py":269
  *             return True
  *         except Exception as e:
  *             print(e)             # <<<<<<<<<<<<<<
@@ -9745,7 +9745,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
  */
       if (__Pyx_PrintOne(0, __pyx_v_e) < 0) __PYX_ERR(0, 269, __pyx_L5_except_error)
 
-      /* "clib.pyx":270
+      /* "lib.py":270
  *         except Exception as e:
  *             print(e)
  *             return False             # <<<<<<<<<<<<<<
@@ -9763,7 +9763,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "clib.pyx":257
+    /* "lib.py":257
  * 
  *     def initAllGroup(self):
  *         try:             # <<<<<<<<<<<<<<
@@ -9789,7 +9789,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
     goto __pyx_L0;
   }
 
-  /* "clib.pyx":256
+  /* "lib.py":256
  *             print(e)
  * 
  *     def initAllGroup(self):             # <<<<<<<<<<<<<<
@@ -9805,7 +9805,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
   __Pyx_XDECREF(__pyx_t_10);
   __Pyx_XDECREF(__pyx_t_11);
   __Pyx_XDECREF(__pyx_t_12);
-  __Pyx_AddTraceback("clib.GroupMessageUnSafeSaveDisk.initAllGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafeSaveDisk.initAllGroup", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_status);
@@ -9816,7 +9816,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
   return __pyx_r;
 }
 
-/* "clib.pyx":273
+/* "lib.py":273
  * 
  * 
  *     def save(self,file="group_message.db"):             # <<<<<<<<<<<<<<
@@ -9825,9 +9825,9 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_2initAllGroup(CYTHO
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_26GroupMessageUnSafeSaveDisk_5save(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_26GroupMessageUnSafeSaveDisk_5save = {"save", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_26GroupMessageUnSafeSaveDisk_5save, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_26GroupMessageUnSafeSaveDisk_5save(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_26GroupMessageUnSafeSaveDisk_5save(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_26GroupMessageUnSafeSaveDisk_5save = {"save", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_26GroupMessageUnSafeSaveDisk_5save, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_26GroupMessageUnSafeSaveDisk_5save(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_file = 0;
   PyObject *__pyx_r = 0;
@@ -9879,18 +9879,18 @@ static PyObject *__pyx_pw_4clib_26GroupMessageUnSafeSaveDisk_5save(PyObject *__p
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("save", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 273, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessageUnSafeSaveDisk.save", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafeSaveDisk.save", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(__pyx_self, __pyx_v_self, __pyx_v_file);
+  __pyx_r = __pyx_pf_3lib_26GroupMessageUnSafeSaveDisk_4save(__pyx_self, __pyx_v_self, __pyx_v_file);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_file) {
+static PyObject *__pyx_pf_3lib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_file) {
   CYTHON_UNUSED PyObject *__pyx_v_e = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -9909,7 +9909,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED
   PyObject *__pyx_t_13 = NULL;
   __Pyx_RefNannySetupContext("save", 0);
 
-  /* "clib.pyx":274
+  /* "lib.py":274
  * 
  *     def save(self,file="group_message.db"):
  *         try:             # <<<<<<<<<<<<<<
@@ -9926,7 +9926,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED
       __Pyx_XGOTREF(__pyx_t_3);
       /*try:*/ {
 
-        /* "clib.pyx":275
+        /* "lib.py":275
  *     def save(self,file="group_message.db"):
  *         try:
  *             self.db = gnu.open(file, "c")             # <<<<<<<<<<<<<<
@@ -9986,7 +9986,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED
         if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_db, __pyx_t_4) < 0) __PYX_ERR(0, 275, __pyx_L6_error)
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "clib.pyx":276
+        /* "lib.py":276
  *         try:
  *             self.db = gnu.open(file, "c")
  *             self.db["setGroup"] = dumps(self.setGroup)             # <<<<<<<<<<<<<<
@@ -10019,7 +10019,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "clib.pyx":277
+        /* "lib.py":277
  *             self.db = gnu.open(file, "c")
  *             self.db["setGroup"] = dumps(self.setGroup)
  *             self.db["allQueue"] = dumps(self.allQueue)             # <<<<<<<<<<<<<<
@@ -10052,7 +10052,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "clib.pyx":278
+        /* "lib.py":278
  *             self.db["setGroup"] = dumps(self.setGroup)
  *             self.db["allQueue"] = dumps(self.allQueue)
  *             self.db["profix"] = dumps(self.profix)             # <<<<<<<<<<<<<<
@@ -10085,7 +10085,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "clib.pyx":279
+        /* "lib.py":279
  *             self.db["allQueue"] = dumps(self.allQueue)
  *             self.db["profix"] = dumps(self.profix)
  *             self.db.sync()             # <<<<<<<<<<<<<<
@@ -10114,7 +10114,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "clib.pyx":280
+        /* "lib.py":280
  *             self.db["profix"] = dumps(self.profix)
  *             self.db.sync()
  *             print("")             # <<<<<<<<<<<<<<
@@ -10123,7 +10123,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED
  */
         if (__Pyx_PrintOne(0, __pyx_kp_s__6) < 0) __PYX_ERR(0, 280, __pyx_L6_error)
 
-        /* "clib.pyx":281
+        /* "lib.py":281
  *             self.db.sync()
  *             print("")
  *             return True             # <<<<<<<<<<<<<<
@@ -10135,7 +10135,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED
         __pyx_r = Py_True;
         goto __pyx_L10_try_return;
 
-        /* "clib.pyx":274
+        /* "lib.py":274
  * 
  *     def save(self,file="group_message.db"):
  *         try:             # <<<<<<<<<<<<<<
@@ -10149,7 +10149,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED
       __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clib.pyx":282
+      /* "lib.py":282
  *             print("")
  *             return True
  *         except Exception as e:             # <<<<<<<<<<<<<<
@@ -10158,7 +10158,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED
  */
       __pyx_t_7 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
       if (__pyx_t_7) {
-        __Pyx_AddTraceback("clib.GroupMessageUnSafeSaveDisk.save", __pyx_clineno, __pyx_lineno, __pyx_filename);
+        __Pyx_AddTraceback("lib.GroupMessageUnSafeSaveDisk.save", __pyx_clineno, __pyx_lineno, __pyx_filename);
         if (__Pyx_GetException(&__pyx_t_4, &__pyx_t_8, &__pyx_t_6) < 0) __PYX_ERR(0, 282, __pyx_L8_except_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_GOTREF(__pyx_t_8);
@@ -10166,7 +10166,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED
         __Pyx_INCREF(__pyx_t_8);
         __pyx_v_e = __pyx_t_8;
 
-        /* "clib.pyx":283
+        /* "lib.py":283
  *             return True
  *         except Exception as e:
  *             return False             # <<<<<<<<<<<<<<
@@ -10184,7 +10184,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED
       goto __pyx_L8_except_error;
       __pyx_L8_except_error:;
 
-      /* "clib.pyx":274
+      /* "lib.py":274
  * 
  *     def save(self,file="group_message.db"):
  *         try:             # <<<<<<<<<<<<<<
@@ -10211,7 +10211,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED
     }
   }
 
-  /* "clib.pyx":285
+  /* "lib.py":285
  *             return False
  *         finally:
  *             self.db.close()             # <<<<<<<<<<<<<<
@@ -10316,7 +10316,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED
     }
   }
 
-  /* "clib.pyx":273
+  /* "lib.py":273
  * 
  * 
  *     def save(self,file="group_message.db"):             # <<<<<<<<<<<<<<
@@ -10330,7 +10330,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_AddTraceback("clib.GroupMessageUnSafeSaveDisk.save", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafeSaveDisk.save", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_e);
@@ -10339,7 +10339,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED
   return __pyx_r;
 }
 
-/* "clib.pyx":287
+/* "lib.py":287
  *             self.db.close()
  * 
  *     def load(self,file="group_message.db"):             # <<<<<<<<<<<<<<
@@ -10348,9 +10348,9 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_4save(CYTHON_UNUSED
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_26GroupMessageUnSafeSaveDisk_7load(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_26GroupMessageUnSafeSaveDisk_7load = {"load", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_26GroupMessageUnSafeSaveDisk_7load, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_26GroupMessageUnSafeSaveDisk_7load(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_26GroupMessageUnSafeSaveDisk_7load(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_26GroupMessageUnSafeSaveDisk_7load = {"load", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_26GroupMessageUnSafeSaveDisk_7load, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_26GroupMessageUnSafeSaveDisk_7load(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_file = 0;
   PyObject *__pyx_r = 0;
@@ -10402,18 +10402,18 @@ static PyObject *__pyx_pw_4clib_26GroupMessageUnSafeSaveDisk_7load(PyObject *__p
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("load", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 287, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GroupMessageUnSafeSaveDisk.load", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafeSaveDisk.load", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(__pyx_self, __pyx_v_self, __pyx_v_file);
+  __pyx_r = __pyx_pf_3lib_26GroupMessageUnSafeSaveDisk_6load(__pyx_self, __pyx_v_self, __pyx_v_file);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_file) {
+static PyObject *__pyx_pf_3lib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_file) {
   PyObject *__pyx_v_e = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -10432,7 +10432,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED
   PyObject *__pyx_t_13 = NULL;
   __Pyx_RefNannySetupContext("load", 0);
 
-  /* "clib.pyx":288
+  /* "lib.py":288
  * 
  *     def load(self,file="group_message.db"):
  *         try:             # <<<<<<<<<<<<<<
@@ -10449,7 +10449,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED
       __Pyx_XGOTREF(__pyx_t_3);
       /*try:*/ {
 
-        /* "clib.pyx":289
+        /* "lib.py":289
  *     def load(self,file="group_message.db"):
  *         try:
  *             self.db = gnu.open(file, "c")             # <<<<<<<<<<<<<<
@@ -10509,7 +10509,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED
         if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_db, __pyx_t_4) < 0) __PYX_ERR(0, 289, __pyx_L6_error)
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "clib.pyx":290
+        /* "lib.py":290
  *         try:
  *             self.db = gnu.open(file, "c")
  *             self.setGroup = loads(self.db["setGroup"])             # <<<<<<<<<<<<<<
@@ -10542,7 +10542,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED
         if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_setGroup, __pyx_t_4) < 0) __PYX_ERR(0, 290, __pyx_L6_error)
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "clib.pyx":291
+        /* "lib.py":291
  *             self.db = gnu.open(file, "c")
  *             self.setGroup = loads(self.db["setGroup"])
  *             self.allQueue = loads(self.db["allQueue"])             # <<<<<<<<<<<<<<
@@ -10575,7 +10575,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED
         if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_allQueue, __pyx_t_4) < 0) __PYX_ERR(0, 291, __pyx_L6_error)
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "clib.pyx":292
+        /* "lib.py":292
  *             self.setGroup = loads(self.db["setGroup"])
  *             self.allQueue = loads(self.db["allQueue"])
  *             self.profix = loads(self.db["profix"])             # <<<<<<<<<<<<<<
@@ -10608,7 +10608,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED
         if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_profix, __pyx_t_4) < 0) __PYX_ERR(0, 292, __pyx_L6_error)
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "clib.pyx":293
+        /* "lib.py":293
  *             self.allQueue = loads(self.db["allQueue"])
  *             self.profix = loads(self.db["profix"])
  *             print("")             # <<<<<<<<<<<<<<
@@ -10617,7 +10617,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED
  */
         if (__Pyx_PrintOne(0, __pyx_kp_s__7) < 0) __PYX_ERR(0, 293, __pyx_L6_error)
 
-        /* "clib.pyx":294
+        /* "lib.py":294
  *             self.profix = loads(self.db["profix"])
  *             print("")
  *             return True             # <<<<<<<<<<<<<<
@@ -10629,7 +10629,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED
         __pyx_r = Py_True;
         goto __pyx_L10_try_return;
 
-        /* "clib.pyx":288
+        /* "lib.py":288
  * 
  *     def load(self,file="group_message.db"):
  *         try:             # <<<<<<<<<<<<<<
@@ -10643,7 +10643,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clib.pyx":295
+      /* "lib.py":295
  *             print("")
  *             return True
  *         except Exception as e:             # <<<<<<<<<<<<<<
@@ -10652,7 +10652,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED
  */
       __pyx_t_7 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
       if (__pyx_t_7) {
-        __Pyx_AddTraceback("clib.GroupMessageUnSafeSaveDisk.load", __pyx_clineno, __pyx_lineno, __pyx_filename);
+        __Pyx_AddTraceback("lib.GroupMessageUnSafeSaveDisk.load", __pyx_clineno, __pyx_lineno, __pyx_filename);
         if (__Pyx_GetException(&__pyx_t_4, &__pyx_t_6, &__pyx_t_5) < 0) __PYX_ERR(0, 295, __pyx_L8_except_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_GOTREF(__pyx_t_6);
@@ -10660,7 +10660,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED
         __Pyx_INCREF(__pyx_t_6);
         __pyx_v_e = __pyx_t_6;
 
-        /* "clib.pyx":296
+        /* "lib.py":296
  *             return True
  *         except Exception as e:
  *             print("load error:",e)             # <<<<<<<<<<<<<<
@@ -10678,7 +10678,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED
         if (__Pyx_PrintOne(0, __pyx_t_8) < 0) __PYX_ERR(0, 296, __pyx_L8_except_error)
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-        /* "clib.pyx":297
+        /* "lib.py":297
  *         except Exception as e:
  *             print("load error:",e)
  *             return False             # <<<<<<<<<<<<<<
@@ -10696,7 +10696,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED
       goto __pyx_L8_except_error;
       __pyx_L8_except_error:;
 
-      /* "clib.pyx":288
+      /* "lib.py":288
  * 
  *     def load(self,file="group_message.db"):
  *         try:             # <<<<<<<<<<<<<<
@@ -10723,7 +10723,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED
     }
   }
 
-  /* "clib.pyx":299
+  /* "lib.py":299
  *             return False
  *         finally:
  *             self.db.close()             # <<<<<<<<<<<<<<
@@ -10828,7 +10828,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED
     }
   }
 
-  /* "clib.pyx":287
+  /* "lib.py":287
  *             self.db.close()
  * 
  *     def load(self,file="group_message.db"):             # <<<<<<<<<<<<<<
@@ -10842,7 +10842,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_AddTraceback("clib.GroupMessageUnSafeSaveDisk.load", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GroupMessageUnSafeSaveDisk.load", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_e);
@@ -10851,7 +10851,7 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED
   return __pyx_r;
 }
 
-/* "clib.pyx":305
+/* "lib.py":305
  * """
  * class GnuQueue():
  *     def __init__(self,index="index.db",queue="gunQueue"):             # <<<<<<<<<<<<<<
@@ -10860,9 +10860,9 @@ static PyObject *__pyx_pf_4clib_26GroupMessageUnSafeSaveDisk_6load(CYTHON_UNUSED
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_8GnuQueue_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_8GnuQueue_1__init__ = {"__init__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_8GnuQueue_1__init__, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_8GnuQueue_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_8GnuQueue_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_8GnuQueue_1__init__ = {"__init__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_8GnuQueue_1__init__, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_8GnuQueue_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_index = 0;
   PyObject *__pyx_v_queue = 0;
@@ -10927,18 +10927,18 @@ static PyObject *__pyx_pw_4clib_8GnuQueue_1__init__(PyObject *__pyx_self, PyObje
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__init__", 0, 1, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 305, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GnuQueue.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GnuQueue.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_8GnuQueue___init__(__pyx_self, __pyx_v_self, __pyx_v_index, __pyx_v_queue);
+  __pyx_r = __pyx_pf_3lib_8GnuQueue___init__(__pyx_self, __pyx_v_self, __pyx_v_index, __pyx_v_queue);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_8GnuQueue___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_index, PyObject *__pyx_v_queue) {
+static PyObject *__pyx_pf_3lib_8GnuQueue___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_index, PyObject *__pyx_v_queue) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -10950,7 +10950,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue___init__(CYTHON_UNUSED PyObject *__pyx
   PyObject *__pyx_t_7 = NULL;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "clib.pyx":306
+  /* "lib.py":306
  * class GnuQueue():
  *     def __init__(self,index="index.db",queue="gunQueue"):
  *         self.name = queue             # <<<<<<<<<<<<<<
@@ -10959,7 +10959,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue___init__(CYTHON_UNUSED PyObject *__pyx
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_name, __pyx_v_queue) < 0) __PYX_ERR(0, 306, __pyx_L1_error)
 
-  /* "clib.pyx":307
+  /* "lib.py":307
  *     def __init__(self,index="index.db",queue="gunQueue"):
  *         self.name = queue
  *         self.name_write = queue + "__write"             # <<<<<<<<<<<<<<
@@ -10971,7 +10971,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue___init__(CYTHON_UNUSED PyObject *__pyx
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_name_write, __pyx_t_1) < 0) __PYX_ERR(0, 307, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":308
+  /* "lib.py":308
  *         self.name = queue
  *         self.name_write = queue + "__write"
  *         self.name_read = queue + "__read"             # <<<<<<<<<<<<<<
@@ -10983,7 +10983,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue___init__(CYTHON_UNUSED PyObject *__pyx
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_name_read, __pyx_t_1) < 0) __PYX_ERR(0, 308, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":309
+  /* "lib.py":309
  *         self.name_write = queue + "__write"
  *         self.name_read = queue + "__read"
  *         self.namefile = self.name+".db"             # <<<<<<<<<<<<<<
@@ -10998,7 +10998,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue___init__(CYTHON_UNUSED PyObject *__pyx
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_namefile, __pyx_t_2) < 0) __PYX_ERR(0, 309, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clib.pyx":310
+  /* "lib.py":310
  *         self.name_read = queue + "__read"
  *         self.namefile = self.name+".db"
  *         self.index = gnu.open(index,"c")             # <<<<<<<<<<<<<<
@@ -11058,7 +11058,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue___init__(CYTHON_UNUSED PyObject *__pyx
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_index, __pyx_t_2) < 0) __PYX_ERR(0, 310, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clib.pyx":311
+  /* "lib.py":311
  *         self.namefile = self.name+".db"
  *         self.index = gnu.open(index,"c")
  *         self.queue = gnu.open(self.namefile,"c")             # <<<<<<<<<<<<<<
@@ -11122,7 +11122,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue___init__(CYTHON_UNUSED PyObject *__pyx
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_queue, __pyx_t_2) < 0) __PYX_ERR(0, 311, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clib.pyx":312
+  /* "lib.py":312
  *         self.index = gnu.open(index,"c")
  *         self.queue = gnu.open(self.namefile,"c")
  *         self.write_id = self.index.get(self.name_write,b"1").decode()             # <<<<<<<<<<<<<<
@@ -11204,7 +11204,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue___init__(CYTHON_UNUSED PyObject *__pyx
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_write_id, __pyx_t_2) < 0) __PYX_ERR(0, 312, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clib.pyx":313
+  /* "lib.py":313
  *         self.queue = gnu.open(self.namefile,"c")
  *         self.write_id = self.index.get(self.name_write,b"1").decode()
  *         self.read_id = self.index.get(self.name_read,b"1").decode()             # <<<<<<<<<<<<<<
@@ -11286,7 +11286,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue___init__(CYTHON_UNUSED PyObject *__pyx
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_read_id, __pyx_t_2) < 0) __PYX_ERR(0, 313, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clib.pyx":305
+  /* "lib.py":305
  * """
  * class GnuQueue():
  *     def __init__(self,index="index.db",queue="gunQueue"):             # <<<<<<<<<<<<<<
@@ -11304,7 +11304,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue___init__(CYTHON_UNUSED PyObject *__pyx
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("clib.GnuQueue.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GnuQueue.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -11312,7 +11312,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue___init__(CYTHON_UNUSED PyObject *__pyx
   return __pyx_r;
 }
 
-/* "clib.pyx":315
+/* "lib.py":315
  *         self.read_id = self.index.get(self.name_read,b"1").decode()
  * 
  *     def push(self,message = ""):             # <<<<<<<<<<<<<<
@@ -11321,9 +11321,9 @@ static PyObject *__pyx_pf_4clib_8GnuQueue___init__(CYTHON_UNUSED PyObject *__pyx
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_8GnuQueue_3push(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_8GnuQueue_3push = {"push", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_4clib_8GnuQueue_3push, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_4clib_8GnuQueue_3push(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_3lib_8GnuQueue_3push(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_8GnuQueue_3push = {"push", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3lib_8GnuQueue_3push, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_3lib_8GnuQueue_3push(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_message = 0;
   PyObject *__pyx_r = 0;
@@ -11375,18 +11375,18 @@ static PyObject *__pyx_pw_4clib_8GnuQueue_3push(PyObject *__pyx_self, PyObject *
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("push", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 315, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("clib.GnuQueue.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GnuQueue.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4clib_8GnuQueue_2push(__pyx_self, __pyx_v_self, __pyx_v_message);
+  __pyx_r = __pyx_pf_3lib_8GnuQueue_2push(__pyx_self, __pyx_v_self, __pyx_v_message);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_message) {
+static PyObject *__pyx_pf_3lib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_message) {
   PyObject *__pyx_v_e = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -11405,7 +11405,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
   PyObject *__pyx_t_13 = NULL;
   __Pyx_RefNannySetupContext("push", 0);
 
-  /* "clib.pyx":316
+  /* "lib.py":316
  * 
  *     def push(self,message = ""):
  *         try:             # <<<<<<<<<<<<<<
@@ -11422,7 +11422,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
       __Pyx_XGOTREF(__pyx_t_3);
       /*try:*/ {
 
-        /* "clib.pyx":317
+        /* "lib.py":317
  *     def push(self,message = ""):
  *         try:
  *             self.queue["key_" + self.write_id] = str(message)             # <<<<<<<<<<<<<<
@@ -11443,7 +11443,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "clib.pyx":318
+        /* "lib.py":318
  *         try:
  *             self.queue["key_" + self.write_id] = str(message)
  *             return True             # <<<<<<<<<<<<<<
@@ -11455,7 +11455,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
         __pyx_r = Py_True;
         goto __pyx_L10_try_return;
 
-        /* "clib.pyx":316
+        /* "lib.py":316
  * 
  *     def push(self,message = ""):
  *         try:             # <<<<<<<<<<<<<<
@@ -11469,7 +11469,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clib.pyx":319
+      /* "lib.py":319
  *             self.queue["key_" + self.write_id] = str(message)
  *             return True
  *         except Exception as e:             # <<<<<<<<<<<<<<
@@ -11478,7 +11478,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
  */
       __pyx_t_8 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
       if (__pyx_t_8) {
-        __Pyx_AddTraceback("clib.GnuQueue.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
+        __Pyx_AddTraceback("lib.GnuQueue.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
         if (__Pyx_GetException(&__pyx_t_4, &__pyx_t_7, &__pyx_t_5) < 0) __PYX_ERR(0, 319, __pyx_L8_except_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_GOTREF(__pyx_t_7);
@@ -11486,7 +11486,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
         __Pyx_INCREF(__pyx_t_7);
         __pyx_v_e = __pyx_t_7;
 
-        /* "clib.pyx":320
+        /* "lib.py":320
  *             return True
  *         except Exception as e:
  *             print("push:",e)             # <<<<<<<<<<<<<<
@@ -11504,7 +11504,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
         if (__Pyx_PrintOne(0, __pyx_t_6) < 0) __PYX_ERR(0, 320, __pyx_L8_except_error)
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-        /* "clib.pyx":321
+        /* "lib.py":321
  *         except Exception as e:
  *             print("push:",e)
  *             return False             # <<<<<<<<<<<<<<
@@ -11522,7 +11522,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
       goto __pyx_L8_except_error;
       __pyx_L8_except_error:;
 
-      /* "clib.pyx":316
+      /* "lib.py":316
  * 
  *     def push(self,message = ""):
  *         try:             # <<<<<<<<<<<<<<
@@ -11549,7 +11549,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
     }
   }
 
-  /* "clib.pyx":323
+  /* "lib.py":323
  *             return False
  *         finally:
  *             self.write_id = str(int(self.write_id) + 1)             # <<<<<<<<<<<<<<
@@ -11590,7 +11590,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
         if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_write_id, __pyx_t_7) < 0) __PYX_ERR(0, 323, __pyx_L15_error)
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-        /* "clib.pyx":324
+        /* "lib.py":324
  *         finally:
  *             self.write_id = str(int(self.write_id) + 1)
  *             self.index[self.name_write] = str(self.write_id)             # <<<<<<<<<<<<<<
@@ -11611,7 +11611,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-        /* "clib.pyx":325
+        /* "lib.py":325
  *             self.write_id = str(int(self.write_id) + 1)
  *             self.index[self.name_write] = str(self.write_id)
  *             self.index.sync()             # <<<<<<<<<<<<<<
@@ -11640,7 +11640,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-        /* "clib.pyx":326
+        /* "lib.py":326
  *             self.index[self.name_write] = str(self.write_id)
  *             self.index.sync()
  *             self.queue.sync()             # <<<<<<<<<<<<<<
@@ -11699,7 +11699,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
       __pyx_t_13 = __pyx_r;
       __pyx_r = 0;
 
-      /* "clib.pyx":323
+      /* "lib.py":323
  *             return False
  *         finally:
  *             self.write_id = str(int(self.write_id) + 1)             # <<<<<<<<<<<<<<
@@ -11720,7 +11720,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
       if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_write_id, __pyx_t_4) < 0) __PYX_ERR(0, 323, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clib.pyx":324
+      /* "lib.py":324
  *         finally:
  *             self.write_id = str(int(self.write_id) + 1)
  *             self.index[self.name_write] = str(self.write_id)             # <<<<<<<<<<<<<<
@@ -11741,7 +11741,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-      /* "clib.pyx":325
+      /* "lib.py":325
  *             self.write_id = str(int(self.write_id) + 1)
  *             self.index[self.name_write] = str(self.write_id)
  *             self.index.sync()             # <<<<<<<<<<<<<<
@@ -11770,7 +11770,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-      /* "clib.pyx":326
+      /* "lib.py":326
  *             self.index[self.name_write] = str(self.write_id)
  *             self.index.sync()
  *             self.queue.sync()             # <<<<<<<<<<<<<<
@@ -11804,7 +11804,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
     }
   }
 
-  /* "clib.pyx":315
+  /* "lib.py":315
  *         self.read_id = self.index.get(self.name_read,b"1").decode()
  * 
  *     def push(self,message = ""):             # <<<<<<<<<<<<<<
@@ -11818,7 +11818,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("clib.GnuQueue.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GnuQueue.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_e);
@@ -11827,7 +11827,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
   return __pyx_r;
 }
 
-/* "clib.pyx":328
+/* "lib.py":328
  *             self.queue.sync()
  * 
  *     def pull(self):             # <<<<<<<<<<<<<<
@@ -11836,20 +11836,20 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_2push(CYTHON_UNUSED PyObject *__pyx_se
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_8GnuQueue_5pull(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_8GnuQueue_5pull = {"pull", (PyCFunction)__pyx_pw_4clib_8GnuQueue_5pull, METH_O, 0};
-static PyObject *__pyx_pw_4clib_8GnuQueue_5pull(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_3lib_8GnuQueue_5pull(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_8GnuQueue_5pull = {"pull", (PyCFunction)__pyx_pw_3lib_8GnuQueue_5pull, METH_O, 0};
+static PyObject *__pyx_pw_3lib_8GnuQueue_5pull(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("pull (wrapper)", 0);
-  __pyx_r = __pyx_pf_4clib_8GnuQueue_4pull(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_3lib_8GnuQueue_4pull(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_3lib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_v_val = NULL;
   PyObject *__pyx_v_e = NULL;
   PyObject *__pyx_r = NULL;
@@ -11872,7 +11872,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
   PyObject *__pyx_t_16 = NULL;
   __Pyx_RefNannySetupContext("pull", 0);
 
-  /* "clib.pyx":329
+  /* "lib.py":329
  * 
  *     def pull(self):
  *         try:             # <<<<<<<<<<<<<<
@@ -11889,7 +11889,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
       __Pyx_XGOTREF(__pyx_t_3);
       /*try:*/ {
 
-        /* "clib.pyx":330
+        /* "lib.py":330
  *     def pull(self):
  *         try:
  *             val =  self.queue.get("key_"+self.read_id,None)             # <<<<<<<<<<<<<<
@@ -11956,7 +11956,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
         __pyx_v_val = __pyx_t_4;
         __pyx_t_4 = 0;
 
-        /* "clib.pyx":331
+        /* "lib.py":331
  *         try:
  *             val =  self.queue.get("key_"+self.read_id,None)
  *             if not val == None:             # <<<<<<<<<<<<<<
@@ -11969,7 +11969,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
         __pyx_t_11 = ((!__pyx_t_10) != 0);
         if (__pyx_t_11) {
 
-          /* "clib.pyx":332
+          /* "lib.py":332
  *             val =  self.queue.get("key_"+self.read_id,None)
  *             if not val == None:
  *                 self.read_id = str(int(self.read_id) + 1)             # <<<<<<<<<<<<<<
@@ -11990,7 +11990,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
           if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_read_id, __pyx_t_6) < 0) __PYX_ERR(0, 332, __pyx_L6_error)
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-          /* "clib.pyx":333
+          /* "lib.py":333
  *             if not val == None:
  *                 self.read_id = str(int(self.read_id) + 1)
  *                 self.index[str(self.name_read)] = str(self.read_id)             # <<<<<<<<<<<<<<
@@ -12014,7 +12014,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
           __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-          /* "clib.pyx":331
+          /* "lib.py":331
  *         try:
  *             val =  self.queue.get("key_"+self.read_id,None)
  *             if not val == None:             # <<<<<<<<<<<<<<
@@ -12023,7 +12023,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
  */
         }
 
-        /* "clib.pyx":334
+        /* "lib.py":334
  *                 self.read_id = str(int(self.read_id) + 1)
  *                 self.index[str(self.name_read)] = str(self.read_id)
  *             return val             # <<<<<<<<<<<<<<
@@ -12035,7 +12035,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
         __pyx_r = __pyx_v_val;
         goto __pyx_L10_try_return;
 
-        /* "clib.pyx":329
+        /* "lib.py":329
  * 
  *     def pull(self):
  *         try:             # <<<<<<<<<<<<<<
@@ -12050,7 +12050,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "clib.pyx":335
+      /* "lib.py":335
  *                 self.index[str(self.name_read)] = str(self.read_id)
  *             return val
  *         except Exception as e:             # <<<<<<<<<<<<<<
@@ -12059,7 +12059,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
  */
       __pyx_t_8 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
       if (__pyx_t_8) {
-        __Pyx_AddTraceback("clib.GnuQueue.pull", __pyx_clineno, __pyx_lineno, __pyx_filename);
+        __Pyx_AddTraceback("lib.GnuQueue.pull", __pyx_clineno, __pyx_lineno, __pyx_filename);
         if (__Pyx_GetException(&__pyx_t_4, &__pyx_t_7, &__pyx_t_6) < 0) __PYX_ERR(0, 335, __pyx_L8_except_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_GOTREF(__pyx_t_7);
@@ -12067,7 +12067,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
         __Pyx_INCREF(__pyx_t_7);
         __pyx_v_e = __pyx_t_7;
 
-        /* "clib.pyx":336
+        /* "lib.py":336
  *             return val
  *         except Exception as e:
  *             print("pull:",e)             # <<<<<<<<<<<<<<
@@ -12085,7 +12085,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
         if (__Pyx_PrintOne(0, __pyx_t_9) < 0) __PYX_ERR(0, 336, __pyx_L8_except_error)
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-        /* "clib.pyx":337
+        /* "lib.py":337
  *         except Exception as e:
  *             print("pull:",e)
  *             return None             # <<<<<<<<<<<<<<
@@ -12102,7 +12102,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
       goto __pyx_L8_except_error;
       __pyx_L8_except_error:;
 
-      /* "clib.pyx":329
+      /* "lib.py":329
  * 
  *     def pull(self):
  *         try:             # <<<<<<<<<<<<<<
@@ -12129,7 +12129,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
     }
   }
 
-  /* "clib.pyx":339
+  /* "lib.py":339
  *             return None
  *         finally:
  *             self.index.sync()             # <<<<<<<<<<<<<<
@@ -12179,7 +12179,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-        /* "clib.pyx":340
+        /* "lib.py":340
  *         finally:
  *             self.index.sync()
  *             self.queue.sync()             # <<<<<<<<<<<<<<
@@ -12238,7 +12238,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
       __pyx_t_16 = __pyx_r;
       __pyx_r = 0;
 
-      /* "clib.pyx":339
+      /* "lib.py":339
  *             return None
  *         finally:
  *             self.index.sync()             # <<<<<<<<<<<<<<
@@ -12267,7 +12267,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-      /* "clib.pyx":340
+      /* "lib.py":340
  *         finally:
  *             self.index.sync()
  *             self.queue.sync()             # <<<<<<<<<<<<<<
@@ -12301,7 +12301,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
     }
   }
 
-  /* "clib.pyx":328
+  /* "lib.py":328
  *             self.queue.sync()
  * 
  *     def pull(self):             # <<<<<<<<<<<<<<
@@ -12316,7 +12316,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_9);
-  __Pyx_AddTraceback("clib.GnuQueue.pull", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GnuQueue.pull", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_val);
@@ -12326,7 +12326,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
   return __pyx_r;
 }
 
-/* "clib.pyx":342
+/* "lib.py":342
  *             self.queue.sync()
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -12335,20 +12335,20 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_4pull(CYTHON_UNUSED PyObject *__pyx_se
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4clib_8GnuQueue_7close(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_4clib_8GnuQueue_7close = {"close", (PyCFunction)__pyx_pw_4clib_8GnuQueue_7close, METH_O, 0};
-static PyObject *__pyx_pw_4clib_8GnuQueue_7close(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_3lib_8GnuQueue_7close(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_3lib_8GnuQueue_7close = {"close", (PyCFunction)__pyx_pw_3lib_8GnuQueue_7close, METH_O, 0};
+static PyObject *__pyx_pw_3lib_8GnuQueue_7close(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("close (wrapper)", 0);
-  __pyx_r = __pyx_pf_4clib_8GnuQueue_6close(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_3lib_8GnuQueue_6close(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4clib_8GnuQueue_6close(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_3lib_8GnuQueue_6close(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -12356,7 +12356,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_6close(CYTHON_UNUSED PyObject *__pyx_s
   PyObject *__pyx_t_3 = NULL;
   __Pyx_RefNannySetupContext("close", 0);
 
-  /* "clib.pyx":343
+  /* "lib.py":343
  * 
  *     def close(self):
  *         self.queue.close()             # <<<<<<<<<<<<<<
@@ -12384,7 +12384,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_6close(CYTHON_UNUSED PyObject *__pyx_s
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":344
+  /* "lib.py":344
  *     def close(self):
  *         self.queue.close()
  *         self.index.close()             # <<<<<<<<<<<<<<
@@ -12411,7 +12411,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_6close(CYTHON_UNUSED PyObject *__pyx_s
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":342
+  /* "lib.py":342
  *             self.queue.sync()
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -12426,7 +12426,7 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_6close(CYTHON_UNUSED PyObject *__pyx_s
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("clib.GnuQueue.close", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lib.GnuQueue.close", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -12434,14 +12434,14 @@ static PyObject *__pyx_pf_4clib_8GnuQueue_6close(CYTHON_UNUSED PyObject *__pyx_s
   return __pyx_r;
 }
 
-static struct __pyx_obj_4clib___pyx_scope_struct__delayed *__pyx_freelist_4clib___pyx_scope_struct__delayed[8];
-static int __pyx_freecount_4clib___pyx_scope_struct__delayed = 0;
+static struct __pyx_obj_3lib___pyx_scope_struct__delayed *__pyx_freelist_3lib___pyx_scope_struct__delayed[8];
+static int __pyx_freecount_3lib___pyx_scope_struct__delayed = 0;
 
-static PyObject *__pyx_tp_new_4clib___pyx_scope_struct__delayed(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_3lib___pyx_scope_struct__delayed(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_4clib___pyx_scope_struct__delayed > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_4clib___pyx_scope_struct__delayed)))) {
-    o = (PyObject*)__pyx_freelist_4clib___pyx_scope_struct__delayed[--__pyx_freecount_4clib___pyx_scope_struct__delayed];
-    memset(o, 0, sizeof(struct __pyx_obj_4clib___pyx_scope_struct__delayed));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_3lib___pyx_scope_struct__delayed > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_3lib___pyx_scope_struct__delayed)))) {
+    o = (PyObject*)__pyx_freelist_3lib___pyx_scope_struct__delayed[--__pyx_freecount_3lib___pyx_scope_struct__delayed];
+    memset(o, 0, sizeof(struct __pyx_obj_3lib___pyx_scope_struct__delayed));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -12451,41 +12451,41 @@ static PyObject *__pyx_tp_new_4clib___pyx_scope_struct__delayed(PyTypeObject *t,
   return o;
 }
 
-static void __pyx_tp_dealloc_4clib___pyx_scope_struct__delayed(PyObject *o) {
-  struct __pyx_obj_4clib___pyx_scope_struct__delayed *p = (struct __pyx_obj_4clib___pyx_scope_struct__delayed *)o;
+static void __pyx_tp_dealloc_3lib___pyx_scope_struct__delayed(PyObject *o) {
+  struct __pyx_obj_3lib___pyx_scope_struct__delayed *p = (struct __pyx_obj_3lib___pyx_scope_struct__delayed *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_v_seconds);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_4clib___pyx_scope_struct__delayed < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_4clib___pyx_scope_struct__delayed)))) {
-    __pyx_freelist_4clib___pyx_scope_struct__delayed[__pyx_freecount_4clib___pyx_scope_struct__delayed++] = ((struct __pyx_obj_4clib___pyx_scope_struct__delayed *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_3lib___pyx_scope_struct__delayed < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_3lib___pyx_scope_struct__delayed)))) {
+    __pyx_freelist_3lib___pyx_scope_struct__delayed[__pyx_freecount_3lib___pyx_scope_struct__delayed++] = ((struct __pyx_obj_3lib___pyx_scope_struct__delayed *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_4clib___pyx_scope_struct__delayed(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_3lib___pyx_scope_struct__delayed(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_4clib___pyx_scope_struct__delayed *p = (struct __pyx_obj_4clib___pyx_scope_struct__delayed *)o;
+  struct __pyx_obj_3lib___pyx_scope_struct__delayed *p = (struct __pyx_obj_3lib___pyx_scope_struct__delayed *)o;
   if (p->__pyx_v_seconds) {
     e = (*v)(p->__pyx_v_seconds, a); if (e) return e;
   }
   return 0;
 }
 
-static int __pyx_tp_clear_4clib___pyx_scope_struct__delayed(PyObject *o) {
+static int __pyx_tp_clear_3lib___pyx_scope_struct__delayed(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_4clib___pyx_scope_struct__delayed *p = (struct __pyx_obj_4clib___pyx_scope_struct__delayed *)o;
+  struct __pyx_obj_3lib___pyx_scope_struct__delayed *p = (struct __pyx_obj_3lib___pyx_scope_struct__delayed *)o;
   tmp = ((PyObject*)p->__pyx_v_seconds);
   p->__pyx_v_seconds = Py_None; Py_INCREF(Py_None);
   Py_XDECREF(tmp);
   return 0;
 }
 
-static PyTypeObject __pyx_type_4clib___pyx_scope_struct__delayed = {
+static PyTypeObject __pyx_type_3lib___pyx_scope_struct__delayed = {
   PyVarObject_HEAD_INIT(0, 0)
-  "clib.__pyx_scope_struct__delayed", /*tp_name*/
-  sizeof(struct __pyx_obj_4clib___pyx_scope_struct__delayed), /*tp_basicsize*/
+  "lib.__pyx_scope_struct__delayed", /*tp_name*/
+  sizeof(struct __pyx_obj_3lib___pyx_scope_struct__delayed), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_4clib___pyx_scope_struct__delayed, /*tp_dealloc*/
+  __pyx_tp_dealloc_3lib___pyx_scope_struct__delayed, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -12507,8 +12507,8 @@ static PyTypeObject __pyx_type_4clib___pyx_scope_struct__delayed = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_4clib___pyx_scope_struct__delayed, /*tp_traverse*/
-  __pyx_tp_clear_4clib___pyx_scope_struct__delayed, /*tp_clear*/
+  __pyx_tp_traverse_3lib___pyx_scope_struct__delayed, /*tp_traverse*/
+  __pyx_tp_clear_3lib___pyx_scope_struct__delayed, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
@@ -12523,7 +12523,7 @@ static PyTypeObject __pyx_type_4clib___pyx_scope_struct__delayed = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_4clib___pyx_scope_struct__delayed, /*tp_new*/
+  __pyx_tp_new_3lib___pyx_scope_struct__delayed, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -12538,14 +12538,14 @@ static PyTypeObject __pyx_type_4clib___pyx_scope_struct__delayed = {
   #endif
 };
 
-static struct __pyx_obj_4clib___pyx_scope_struct_1_decorator *__pyx_freelist_4clib___pyx_scope_struct_1_decorator[8];
-static int __pyx_freecount_4clib___pyx_scope_struct_1_decorator = 0;
+static struct __pyx_obj_3lib___pyx_scope_struct_1_decorator *__pyx_freelist_3lib___pyx_scope_struct_1_decorator[8];
+static int __pyx_freecount_3lib___pyx_scope_struct_1_decorator = 0;
 
-static PyObject *__pyx_tp_new_4clib___pyx_scope_struct_1_decorator(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_3lib___pyx_scope_struct_1_decorator(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_4clib___pyx_scope_struct_1_decorator > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_4clib___pyx_scope_struct_1_decorator)))) {
-    o = (PyObject*)__pyx_freelist_4clib___pyx_scope_struct_1_decorator[--__pyx_freecount_4clib___pyx_scope_struct_1_decorator];
-    memset(o, 0, sizeof(struct __pyx_obj_4clib___pyx_scope_struct_1_decorator));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_3lib___pyx_scope_struct_1_decorator > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_3lib___pyx_scope_struct_1_decorator)))) {
+    o = (PyObject*)__pyx_freelist_3lib___pyx_scope_struct_1_decorator[--__pyx_freecount_3lib___pyx_scope_struct_1_decorator];
+    memset(o, 0, sizeof(struct __pyx_obj_3lib___pyx_scope_struct_1_decorator));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -12555,21 +12555,21 @@ static PyObject *__pyx_tp_new_4clib___pyx_scope_struct_1_decorator(PyTypeObject 
   return o;
 }
 
-static void __pyx_tp_dealloc_4clib___pyx_scope_struct_1_decorator(PyObject *o) {
-  struct __pyx_obj_4clib___pyx_scope_struct_1_decorator *p = (struct __pyx_obj_4clib___pyx_scope_struct_1_decorator *)o;
+static void __pyx_tp_dealloc_3lib___pyx_scope_struct_1_decorator(PyObject *o) {
+  struct __pyx_obj_3lib___pyx_scope_struct_1_decorator *p = (struct __pyx_obj_3lib___pyx_scope_struct_1_decorator *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_outer_scope);
   Py_CLEAR(p->__pyx_v_f);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_4clib___pyx_scope_struct_1_decorator < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_4clib___pyx_scope_struct_1_decorator)))) {
-    __pyx_freelist_4clib___pyx_scope_struct_1_decorator[__pyx_freecount_4clib___pyx_scope_struct_1_decorator++] = ((struct __pyx_obj_4clib___pyx_scope_struct_1_decorator *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_3lib___pyx_scope_struct_1_decorator < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_3lib___pyx_scope_struct_1_decorator)))) {
+    __pyx_freelist_3lib___pyx_scope_struct_1_decorator[__pyx_freecount_3lib___pyx_scope_struct_1_decorator++] = ((struct __pyx_obj_3lib___pyx_scope_struct_1_decorator *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_4clib___pyx_scope_struct_1_decorator(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_3lib___pyx_scope_struct_1_decorator(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_4clib___pyx_scope_struct_1_decorator *p = (struct __pyx_obj_4clib___pyx_scope_struct_1_decorator *)o;
+  struct __pyx_obj_3lib___pyx_scope_struct_1_decorator *p = (struct __pyx_obj_3lib___pyx_scope_struct_1_decorator *)o;
   if (p->__pyx_outer_scope) {
     e = (*v)(((PyObject *)p->__pyx_outer_scope), a); if (e) return e;
   }
@@ -12579,11 +12579,11 @@ static int __pyx_tp_traverse_4clib___pyx_scope_struct_1_decorator(PyObject *o, v
   return 0;
 }
 
-static int __pyx_tp_clear_4clib___pyx_scope_struct_1_decorator(PyObject *o) {
+static int __pyx_tp_clear_3lib___pyx_scope_struct_1_decorator(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_4clib___pyx_scope_struct_1_decorator *p = (struct __pyx_obj_4clib___pyx_scope_struct_1_decorator *)o;
+  struct __pyx_obj_3lib___pyx_scope_struct_1_decorator *p = (struct __pyx_obj_3lib___pyx_scope_struct_1_decorator *)o;
   tmp = ((PyObject*)p->__pyx_outer_scope);
-  p->__pyx_outer_scope = ((struct __pyx_obj_4clib___pyx_scope_struct__delayed *)Py_None); Py_INCREF(Py_None);
+  p->__pyx_outer_scope = ((struct __pyx_obj_3lib___pyx_scope_struct__delayed *)Py_None); Py_INCREF(Py_None);
   Py_XDECREF(tmp);
   tmp = ((PyObject*)p->__pyx_v_f);
   p->__pyx_v_f = Py_None; Py_INCREF(Py_None);
@@ -12591,12 +12591,12 @@ static int __pyx_tp_clear_4clib___pyx_scope_struct_1_decorator(PyObject *o) {
   return 0;
 }
 
-static PyTypeObject __pyx_type_4clib___pyx_scope_struct_1_decorator = {
+static PyTypeObject __pyx_type_3lib___pyx_scope_struct_1_decorator = {
   PyVarObject_HEAD_INIT(0, 0)
-  "clib.__pyx_scope_struct_1_decorator", /*tp_name*/
-  sizeof(struct __pyx_obj_4clib___pyx_scope_struct_1_decorator), /*tp_basicsize*/
+  "lib.__pyx_scope_struct_1_decorator", /*tp_name*/
+  sizeof(struct __pyx_obj_3lib___pyx_scope_struct_1_decorator), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_4clib___pyx_scope_struct_1_decorator, /*tp_dealloc*/
+  __pyx_tp_dealloc_3lib___pyx_scope_struct_1_decorator, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -12618,8 +12618,8 @@ static PyTypeObject __pyx_type_4clib___pyx_scope_struct_1_decorator = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_4clib___pyx_scope_struct_1_decorator, /*tp_traverse*/
-  __pyx_tp_clear_4clib___pyx_scope_struct_1_decorator, /*tp_clear*/
+  __pyx_tp_traverse_3lib___pyx_scope_struct_1_decorator, /*tp_traverse*/
+  __pyx_tp_clear_3lib___pyx_scope_struct_1_decorator, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
@@ -12634,7 +12634,7 @@ static PyTypeObject __pyx_type_4clib___pyx_scope_struct_1_decorator = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_4clib___pyx_scope_struct_1_decorator, /*tp_new*/
+  __pyx_tp_new_3lib___pyx_scope_struct_1_decorator, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -12656,17 +12656,17 @@ static PyMethodDef __pyx_methods[] = {
 #if PY_MAJOR_VERSION >= 3
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec_clib(PyObject* module); /*proto*/
+static int __pyx_pymod_exec_lib(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec_clib},
+  {Py_mod_exec, (void*)__pyx_pymod_exec_lib},
   {0, NULL}
 };
 #endif
 
 static struct PyModuleDef __pyx_moduledef = {
     PyModuleDef_HEAD_INIT,
-    "clib",
+    "lib",
     0, /* m_doc */
   #if CYTHON_PEP489_MULTI_PHASE_INIT
     0, /* m_size */
@@ -12746,8 +12746,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_args, __pyx_k_args, sizeof(__pyx_k_args), 0, 0, 1, 1},
   {&__pyx_n_s_autoSave, __pyx_k_autoSave, sizeof(__pyx_k_autoSave), 0, 0, 1, 1},
   {&__pyx_n_s_c, __pyx_k_c, sizeof(__pyx_k_c), 0, 0, 1, 1},
-  {&__pyx_n_s_clib, __pyx_k_clib, sizeof(__pyx_k_clib), 0, 0, 1, 1},
-  {&__pyx_kp_s_clib_pyx, __pyx_k_clib_pyx, sizeof(__pyx_k_clib_pyx), 0, 0, 1, 0},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
   {&__pyx_n_s_close, __pyx_k_close, sizeof(__pyx_k_close), 0, 0, 1, 1},
   {&__pyx_n_s_collections, __pyx_k_collections, sizeof(__pyx_k_collections), 0, 0, 1, 1},
@@ -12788,6 +12786,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_key, __pyx_k_key, sizeof(__pyx_k_key), 0, 0, 1, 1},
   {&__pyx_n_s_keys, __pyx_k_keys, sizeof(__pyx_k_keys), 0, 0, 1, 1},
   {&__pyx_n_s_kwargs, __pyx_k_kwargs, sizeof(__pyx_k_kwargs), 0, 0, 1, 1},
+  {&__pyx_n_s_lib, __pyx_k_lib, sizeof(__pyx_k_lib), 0, 0, 1, 1},
+  {&__pyx_kp_s_lib_py, __pyx_k_lib_py, sizeof(__pyx_k_lib_py), 0, 0, 1, 0},
   {&__pyx_n_s_load, __pyx_k_load, sizeof(__pyx_k_load), 0, 0, 1, 1},
   {&__pyx_kp_s_load_error, __pyx_k_load_error, sizeof(__pyx_k_load_error), 0, 0, 1, 0},
   {&__pyx_n_s_loads, __pyx_k_loads, sizeof(__pyx_k_loads), 0, 0, 1, 1},
@@ -12850,7 +12850,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "clib.pyx":21
+  /* "lib.py":21
  * def delayed(seconds):
  *     def decorator(f):
  *         def wrapper(*args, **kargs):             # <<<<<<<<<<<<<<
@@ -12860,9 +12860,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple_ = PyTuple_Pack(3, __pyx_n_s_args, __pyx_n_s_kargs, __pyx_n_s_t); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
-  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS|CO_VARKEYWORDS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_wrapper, 21, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 21, __pyx_L1_error)
+  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS|CO_VARKEYWORDS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_wrapper, 21, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 21, __pyx_L1_error)
 
-  /* "clib.pyx":20
+  /* "lib.py":20
  * #
  * def delayed(seconds):
  *     def decorator(f):             # <<<<<<<<<<<<<<
@@ -12872,9 +12872,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__3 = PyTuple_Pack(3, __pyx_n_s_f, __pyx_n_s_wrapper, __pyx_n_s_wrapper); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
-  __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_decorator, 20, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 20, __pyx_L1_error)
+  __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_decorator, 20, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 20, __pyx_L1_error)
 
-  /* "clib.pyx":9
+  /* "lib.py":9
  * ##loop
  * class LoopTimer(Timer):
  *     def __init__(self, interval, function, args=[], kwargs={}):             # <<<<<<<<<<<<<<
@@ -12884,9 +12884,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__8 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_interval, __pyx_n_s_function, __pyx_n_s_args, __pyx_n_s_kwargs); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
-  __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(5, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_init, 9, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 9, __pyx_L1_error)
+  __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(5, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_init, 9, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 9, __pyx_L1_error)
 
-  /* "clib.pyx":11
+  /* "lib.py":11
  *     def __init__(self, interval, function, args=[], kwargs={}):
  *         Timer.__init__(self, interval, function, args, kwargs)
  *     def run(self):             # <<<<<<<<<<<<<<
@@ -12896,9 +12896,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__10 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
-  __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_run, 11, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_run, 11, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 11, __pyx_L1_error)
 
-  /* "clib.pyx":19
+  /* "lib.py":19
  *             self.function(*self.args, **self.kwargs)
  * #
  * def delayed(seconds):             # <<<<<<<<<<<<<<
@@ -12908,9 +12908,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__12 = PyTuple_Pack(3, __pyx_n_s_seconds, __pyx_n_s_decorator, __pyx_n_s_decorator); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
   __Pyx_GIVEREF(__pyx_tuple__12);
-  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_delayed, 19, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 19, __pyx_L1_error)
+  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_delayed, 19, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 19, __pyx_L1_error)
 
-  /* "clib.pyx":28
+  /* "lib.py":28
  * #
  * class OneTimer(Timer):
  *     def __init__(self, interval, function, args=[], kwargs={}):             # <<<<<<<<<<<<<<
@@ -12920,9 +12920,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__14 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_interval, __pyx_n_s_function, __pyx_n_s_args, __pyx_n_s_kwargs); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
   __Pyx_GIVEREF(__pyx_tuple__14);
-  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(5, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_init, 28, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(5, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_init, 28, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 28, __pyx_L1_error)
 
-  /* "clib.pyx":35
+  /* "lib.py":35
  * """
  * class GroupMessage():
  *     def __init__(self, profix="", idlist=[]):             # <<<<<<<<<<<<<<
@@ -12932,9 +12932,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__16 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_profix, __pyx_n_s_idlist); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
-  __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_init, 35, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_init, 35, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 35, __pyx_L1_error)
 
-  /* "clib.pyx":40
+  /* "lib.py":40
  *         self.init = False
  * 
  *     def initAllGroup(self):             # <<<<<<<<<<<<<<
@@ -12944,9 +12944,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__18 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_id, __pyx_n_s_e); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__18);
   __Pyx_GIVEREF(__pyx_tuple__18);
-  __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_initAllGroup, 40, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_initAllGroup, 40, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 40, __pyx_L1_error)
 
-  /* "clib.pyx":52
+  /* "lib.py":52
  *             return False
  * 
  *     def sendAllQueue(self,message=""):             # <<<<<<<<<<<<<<
@@ -12956,12 +12956,12 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__20 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_message, __pyx_n_s_queue, __pyx_n_s_e); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__20);
   __Pyx_GIVEREF(__pyx_tuple__20);
-  __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_sendAllQueue, 52, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_sendAllQueue, 52, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 52, __pyx_L1_error)
   __pyx_tuple__22 = PyTuple_Pack(1, ((PyObject*)__pyx_kp_s__5)); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__22);
   __Pyx_GIVEREF(__pyx_tuple__22);
 
-  /* "clib.pyx":61
+  /* "lib.py":61
  *             return False
  * 
  *     def addAllQueue(self,id):             # <<<<<<<<<<<<<<
@@ -12971,9 +12971,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__23 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_id); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__23);
   __Pyx_GIVEREF(__pyx_tuple__23);
-  __pyx_codeobj__24 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__23, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_addAllQueue, 61, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__24)) __PYX_ERR(0, 61, __pyx_L1_error)
+  __pyx_codeobj__24 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__23, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_addAllQueue, 61, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__24)) __PYX_ERR(0, 61, __pyx_L1_error)
 
-  /* "clib.pyx":66
+  /* "lib.py":66
  * 
  * 
  *     def addGroup(self,group="",id=None):             # <<<<<<<<<<<<<<
@@ -12983,12 +12983,12 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__25 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_group, __pyx_n_s_id); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__25);
   __Pyx_GIVEREF(__pyx_tuple__25);
-  __pyx_codeobj__26 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__25, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_addGroup, 66, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__26)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_codeobj__26 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__25, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_addGroup, 66, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__26)) __PYX_ERR(0, 66, __pyx_L1_error)
   __pyx_tuple__27 = PyTuple_Pack(2, ((PyObject*)__pyx_kp_s__5), ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__27);
   __Pyx_GIVEREF(__pyx_tuple__27);
 
-  /* "clib.pyx":85
+  /* "lib.py":85
  *                 return self.setGroup[group]
  * 
  *     def removeIdOfGroup(self,group,id):             # <<<<<<<<<<<<<<
@@ -12998,9 +12998,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__28 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_group, __pyx_n_s_id); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__28);
   __Pyx_GIVEREF(__pyx_tuple__28);
-  __pyx_codeobj__29 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__28, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_removeIdOfGroup, 85, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__29)) __PYX_ERR(0, 85, __pyx_L1_error)
+  __pyx_codeobj__29 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__28, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_removeIdOfGroup, 85, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__29)) __PYX_ERR(0, 85, __pyx_L1_error)
 
-  /* "clib.pyx":93
+  /* "lib.py":93
  *         return False
  * 
  *     def removeGroup(self,group):             # <<<<<<<<<<<<<<
@@ -13010,9 +13010,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__30 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_group); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__30);
   __Pyx_GIVEREF(__pyx_tuple__30);
-  __pyx_codeobj__31 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__30, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_removeGroup, 93, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__31)) __PYX_ERR(0, 93, __pyx_L1_error)
+  __pyx_codeobj__31 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__30, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_removeGroup, 93, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__31)) __PYX_ERR(0, 93, __pyx_L1_error)
 
-  /* "clib.pyx":99
+  /* "lib.py":99
  *         return False
  * 
  *     def sendGroup(self,group="",message=""):             # <<<<<<<<<<<<<<
@@ -13022,12 +13022,12 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__32 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_group, __pyx_n_s_message, __pyx_n_s_queuename); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 99, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__32);
   __Pyx_GIVEREF(__pyx_tuple__32);
-  __pyx_codeobj__33 = (PyObject*)__Pyx_PyCode_New(3, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_sendGroup, 99, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__33)) __PYX_ERR(0, 99, __pyx_L1_error)
+  __pyx_codeobj__33 = (PyObject*)__Pyx_PyCode_New(3, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_sendGroup, 99, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__33)) __PYX_ERR(0, 99, __pyx_L1_error)
   __pyx_tuple__34 = PyTuple_Pack(2, ((PyObject*)__pyx_kp_s__5), ((PyObject*)__pyx_kp_s__5)); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 99, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__34);
   __Pyx_GIVEREF(__pyx_tuple__34);
 
-  /* "clib.pyx":110
+  /* "lib.py":110
  *             return False
  * 
  *     def push(self,id=None,message = ""):             # <<<<<<<<<<<<<<
@@ -13037,12 +13037,12 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__35 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_id, __pyx_n_s_message, __pyx_n_s_e); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__35);
   __Pyx_GIVEREF(__pyx_tuple__35);
-  __pyx_codeobj__36 = (PyObject*)__Pyx_PyCode_New(3, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__35, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_push_2, 110, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__36)) __PYX_ERR(0, 110, __pyx_L1_error)
+  __pyx_codeobj__36 = (PyObject*)__Pyx_PyCode_New(3, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__35, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_push_2, 110, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__36)) __PYX_ERR(0, 110, __pyx_L1_error)
   __pyx_tuple__37 = PyTuple_Pack(2, ((PyObject *)Py_None), ((PyObject*)__pyx_kp_s__5)); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__37);
   __Pyx_GIVEREF(__pyx_tuple__37);
 
-  /* "clib.pyx":128
+  /* "lib.py":128
  * 
  * 
  *     def poll(self,id=None):             # <<<<<<<<<<<<<<
@@ -13052,12 +13052,12 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__38 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_id, __pyx_n_s_e); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__38);
   __Pyx_GIVEREF(__pyx_tuple__38);
-  __pyx_codeobj__39 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__38, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_poll, 128, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__39)) __PYX_ERR(0, 128, __pyx_L1_error)
+  __pyx_codeobj__39 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__38, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_poll, 128, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__39)) __PYX_ERR(0, 128, __pyx_L1_error)
   __pyx_tuple__40 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__40)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__40);
   __Pyx_GIVEREF(__pyx_tuple__40);
 
-  /* "clib.pyx":142
+  /* "lib.py":142
  * """
  * class GroupMessageUnSafe():
  *     def __init__(self,profix="",idlist=[]):             # <<<<<<<<<<<<<<
@@ -13067,9 +13067,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__41 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_profix, __pyx_n_s_idlist); if (unlikely(!__pyx_tuple__41)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__41);
   __Pyx_GIVEREF(__pyx_tuple__41);
-  __pyx_codeobj__42 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__41, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_init, 142, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__42)) __PYX_ERR(0, 142, __pyx_L1_error)
+  __pyx_codeobj__42 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__41, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_init, 142, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__42)) __PYX_ERR(0, 142, __pyx_L1_error)
 
-  /* "clib.pyx":147
+  /* "lib.py":147
  *         self.init = False
  * 
  *     def initAllGroup(self):             # <<<<<<<<<<<<<<
@@ -13079,9 +13079,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__43 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_id, __pyx_n_s_e); if (unlikely(!__pyx_tuple__43)) __PYX_ERR(0, 147, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__43);
   __Pyx_GIVEREF(__pyx_tuple__43);
-  __pyx_codeobj__44 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__43, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_initAllGroup, 147, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__44)) __PYX_ERR(0, 147, __pyx_L1_error)
+  __pyx_codeobj__44 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__43, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_initAllGroup, 147, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__44)) __PYX_ERR(0, 147, __pyx_L1_error)
 
-  /* "clib.pyx":159
+  /* "lib.py":159
  *             return False
  * 
  *     def sendAllQueue(self,message=""):             # <<<<<<<<<<<<<<
@@ -13091,12 +13091,12 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__45 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_message, __pyx_n_s_queue, __pyx_n_s_e); if (unlikely(!__pyx_tuple__45)) __PYX_ERR(0, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__45);
   __Pyx_GIVEREF(__pyx_tuple__45);
-  __pyx_codeobj__46 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__45, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_sendAllQueue, 159, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__46)) __PYX_ERR(0, 159, __pyx_L1_error)
+  __pyx_codeobj__46 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__45, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_sendAllQueue, 159, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__46)) __PYX_ERR(0, 159, __pyx_L1_error)
   __pyx_tuple__47 = PyTuple_Pack(1, ((PyObject*)__pyx_kp_s__5)); if (unlikely(!__pyx_tuple__47)) __PYX_ERR(0, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__47);
   __Pyx_GIVEREF(__pyx_tuple__47);
 
-  /* "clib.pyx":169
+  /* "lib.py":169
  * 
  * 
  *     def addAllQueue(self,id):             # <<<<<<<<<<<<<<
@@ -13106,9 +13106,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__48 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_id); if (unlikely(!__pyx_tuple__48)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__48);
   __Pyx_GIVEREF(__pyx_tuple__48);
-  __pyx_codeobj__49 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__48, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_addAllQueue, 169, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__49)) __PYX_ERR(0, 169, __pyx_L1_error)
+  __pyx_codeobj__49 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__48, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_addAllQueue, 169, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__49)) __PYX_ERR(0, 169, __pyx_L1_error)
 
-  /* "clib.pyx":174
+  /* "lib.py":174
  * 
  * 
  *     def addGroup(self,group="",id=None):             # <<<<<<<<<<<<<<
@@ -13118,12 +13118,12 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__50 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_group, __pyx_n_s_id); if (unlikely(!__pyx_tuple__50)) __PYX_ERR(0, 174, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__50);
   __Pyx_GIVEREF(__pyx_tuple__50);
-  __pyx_codeobj__51 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__50, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_addGroup, 174, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__51)) __PYX_ERR(0, 174, __pyx_L1_error)
+  __pyx_codeobj__51 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__50, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_addGroup, 174, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__51)) __PYX_ERR(0, 174, __pyx_L1_error)
   __pyx_tuple__52 = PyTuple_Pack(2, ((PyObject*)__pyx_kp_s__5), ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__52)) __PYX_ERR(0, 174, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__52);
   __Pyx_GIVEREF(__pyx_tuple__52);
 
-  /* "clib.pyx":193
+  /* "lib.py":193
  *                 return self.setGroup[group]
  * 
  *     def sendGroup(self,group="",message=""):             # <<<<<<<<<<<<<<
@@ -13133,12 +13133,12 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__53 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_group, __pyx_n_s_message, __pyx_n_s_queuename); if (unlikely(!__pyx_tuple__53)) __PYX_ERR(0, 193, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__53);
   __Pyx_GIVEREF(__pyx_tuple__53);
-  __pyx_codeobj__54 = (PyObject*)__Pyx_PyCode_New(3, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__53, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_sendGroup, 193, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__54)) __PYX_ERR(0, 193, __pyx_L1_error)
+  __pyx_codeobj__54 = (PyObject*)__Pyx_PyCode_New(3, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__53, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_sendGroup, 193, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__54)) __PYX_ERR(0, 193, __pyx_L1_error)
   __pyx_tuple__55 = PyTuple_Pack(2, ((PyObject*)__pyx_kp_s__5), ((PyObject*)__pyx_kp_s__5)); if (unlikely(!__pyx_tuple__55)) __PYX_ERR(0, 193, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__55);
   __Pyx_GIVEREF(__pyx_tuple__55);
 
-  /* "clib.pyx":204
+  /* "lib.py":204
  *             return False
  * 
  *     def removeIdOfGroup(self,group,id):             # <<<<<<<<<<<<<<
@@ -13148,9 +13148,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__56 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_group, __pyx_n_s_id); if (unlikely(!__pyx_tuple__56)) __PYX_ERR(0, 204, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__56);
   __Pyx_GIVEREF(__pyx_tuple__56);
-  __pyx_codeobj__57 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__56, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_removeIdOfGroup, 204, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__57)) __PYX_ERR(0, 204, __pyx_L1_error)
+  __pyx_codeobj__57 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__56, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_removeIdOfGroup, 204, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__57)) __PYX_ERR(0, 204, __pyx_L1_error)
 
-  /* "clib.pyx":212
+  /* "lib.py":212
  *         return False
  * 
  *     def removeGroup(self,group):             # <<<<<<<<<<<<<<
@@ -13160,9 +13160,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__58 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_group); if (unlikely(!__pyx_tuple__58)) __PYX_ERR(0, 212, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__58);
   __Pyx_GIVEREF(__pyx_tuple__58);
-  __pyx_codeobj__59 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__58, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_removeGroup, 212, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__59)) __PYX_ERR(0, 212, __pyx_L1_error)
+  __pyx_codeobj__59 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__58, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_removeGroup, 212, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__59)) __PYX_ERR(0, 212, __pyx_L1_error)
 
-  /* "clib.pyx":218
+  /* "lib.py":218
  *         return False
  * 
  *     def push(self,id=None,message = ""):             # <<<<<<<<<<<<<<
@@ -13172,12 +13172,12 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__60 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_id, __pyx_n_s_message, __pyx_n_s_e); if (unlikely(!__pyx_tuple__60)) __PYX_ERR(0, 218, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__60);
   __Pyx_GIVEREF(__pyx_tuple__60);
-  __pyx_codeobj__61 = (PyObject*)__Pyx_PyCode_New(3, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__60, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_push_2, 218, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__61)) __PYX_ERR(0, 218, __pyx_L1_error)
+  __pyx_codeobj__61 = (PyObject*)__Pyx_PyCode_New(3, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__60, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_push_2, 218, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__61)) __PYX_ERR(0, 218, __pyx_L1_error)
   __pyx_tuple__62 = PyTuple_Pack(2, ((PyObject *)Py_None), ((PyObject*)__pyx_kp_s__5)); if (unlikely(!__pyx_tuple__62)) __PYX_ERR(0, 218, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__62);
   __Pyx_GIVEREF(__pyx_tuple__62);
 
-  /* "clib.pyx":235
+  /* "lib.py":235
  *                 return False
  * 
  *     def poll(self,id=None):             # <<<<<<<<<<<<<<
@@ -13187,12 +13187,12 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__63 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_id, __pyx_n_s_e); if (unlikely(!__pyx_tuple__63)) __PYX_ERR(0, 235, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__63);
   __Pyx_GIVEREF(__pyx_tuple__63);
-  __pyx_codeobj__64 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__63, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_poll, 235, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__64)) __PYX_ERR(0, 235, __pyx_L1_error)
+  __pyx_codeobj__64 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__63, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_poll, 235, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__64)) __PYX_ERR(0, 235, __pyx_L1_error)
   __pyx_tuple__65 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__65)) __PYX_ERR(0, 235, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__65);
   __Pyx_GIVEREF(__pyx_tuple__65);
 
-  /* "clib.pyx":250
+  /* "lib.py":250
  * class GroupMessageUnSafeSaveDisk(GroupMessageUnSafe):
  * 
  *     def autoSave(self,time=10):             # <<<<<<<<<<<<<<
@@ -13202,12 +13202,12 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__66 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_time, __pyx_n_s_e); if (unlikely(!__pyx_tuple__66)) __PYX_ERR(0, 250, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__66);
   __Pyx_GIVEREF(__pyx_tuple__66);
-  __pyx_codeobj__67 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__66, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_autoSave, 250, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__67)) __PYX_ERR(0, 250, __pyx_L1_error)
+  __pyx_codeobj__67 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__66, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_autoSave, 250, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__67)) __PYX_ERR(0, 250, __pyx_L1_error)
   __pyx_tuple__68 = PyTuple_Pack(1, ((PyObject *)__pyx_int_10)); if (unlikely(!__pyx_tuple__68)) __PYX_ERR(0, 250, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__68);
   __Pyx_GIVEREF(__pyx_tuple__68);
 
-  /* "clib.pyx":256
+  /* "lib.py":256
  *             print(e)
  * 
  *     def initAllGroup(self):             # <<<<<<<<<<<<<<
@@ -13217,9 +13217,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__69 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_status, __pyx_n_s_id, __pyx_n_s_e); if (unlikely(!__pyx_tuple__69)) __PYX_ERR(0, 256, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__69);
   __Pyx_GIVEREF(__pyx_tuple__69);
-  __pyx_codeobj__70 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__69, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_initAllGroup, 256, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__70)) __PYX_ERR(0, 256, __pyx_L1_error)
+  __pyx_codeobj__70 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__69, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_initAllGroup, 256, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__70)) __PYX_ERR(0, 256, __pyx_L1_error)
 
-  /* "clib.pyx":273
+  /* "lib.py":273
  * 
  * 
  *     def save(self,file="group_message.db"):             # <<<<<<<<<<<<<<
@@ -13229,12 +13229,12 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__71 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_file, __pyx_n_s_e); if (unlikely(!__pyx_tuple__71)) __PYX_ERR(0, 273, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__71);
   __Pyx_GIVEREF(__pyx_tuple__71);
-  __pyx_codeobj__72 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__71, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_save, 273, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__72)) __PYX_ERR(0, 273, __pyx_L1_error)
+  __pyx_codeobj__72 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__71, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_save, 273, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__72)) __PYX_ERR(0, 273, __pyx_L1_error)
   __pyx_tuple__73 = PyTuple_Pack(1, ((PyObject*)__pyx_kp_s_group_message_db)); if (unlikely(!__pyx_tuple__73)) __PYX_ERR(0, 273, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__73);
   __Pyx_GIVEREF(__pyx_tuple__73);
 
-  /* "clib.pyx":287
+  /* "lib.py":287
  *             self.db.close()
  * 
  *     def load(self,file="group_message.db"):             # <<<<<<<<<<<<<<
@@ -13244,12 +13244,12 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__74 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_file, __pyx_n_s_e); if (unlikely(!__pyx_tuple__74)) __PYX_ERR(0, 287, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__74);
   __Pyx_GIVEREF(__pyx_tuple__74);
-  __pyx_codeobj__75 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__74, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_load, 287, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__75)) __PYX_ERR(0, 287, __pyx_L1_error)
+  __pyx_codeobj__75 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__74, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_load, 287, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__75)) __PYX_ERR(0, 287, __pyx_L1_error)
   __pyx_tuple__76 = PyTuple_Pack(1, ((PyObject*)__pyx_kp_s_group_message_db)); if (unlikely(!__pyx_tuple__76)) __PYX_ERR(0, 287, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__76);
   __Pyx_GIVEREF(__pyx_tuple__76);
 
-  /* "clib.pyx":305
+  /* "lib.py":305
  * """
  * class GnuQueue():
  *     def __init__(self,index="index.db",queue="gunQueue"):             # <<<<<<<<<<<<<<
@@ -13259,12 +13259,12 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__77 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_index, __pyx_n_s_queue); if (unlikely(!__pyx_tuple__77)) __PYX_ERR(0, 305, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__77);
   __Pyx_GIVEREF(__pyx_tuple__77);
-  __pyx_codeobj__78 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__77, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_init, 305, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__78)) __PYX_ERR(0, 305, __pyx_L1_error)
+  __pyx_codeobj__78 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__77, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_init, 305, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__78)) __PYX_ERR(0, 305, __pyx_L1_error)
   __pyx_tuple__79 = PyTuple_Pack(2, ((PyObject*)__pyx_kp_s_index_db), ((PyObject*)__pyx_n_s_gunQueue)); if (unlikely(!__pyx_tuple__79)) __PYX_ERR(0, 305, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__79);
   __Pyx_GIVEREF(__pyx_tuple__79);
 
-  /* "clib.pyx":315
+  /* "lib.py":315
  *         self.read_id = self.index.get(self.name_read,b"1").decode()
  * 
  *     def push(self,message = ""):             # <<<<<<<<<<<<<<
@@ -13274,12 +13274,12 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__80 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_message, __pyx_n_s_e); if (unlikely(!__pyx_tuple__80)) __PYX_ERR(0, 315, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__80);
   __Pyx_GIVEREF(__pyx_tuple__80);
-  __pyx_codeobj__81 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__80, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_push_2, 315, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__81)) __PYX_ERR(0, 315, __pyx_L1_error)
+  __pyx_codeobj__81 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__80, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_push_2, 315, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__81)) __PYX_ERR(0, 315, __pyx_L1_error)
   __pyx_tuple__82 = PyTuple_Pack(1, ((PyObject*)__pyx_kp_s__5)); if (unlikely(!__pyx_tuple__82)) __PYX_ERR(0, 315, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__82);
   __Pyx_GIVEREF(__pyx_tuple__82);
 
-  /* "clib.pyx":328
+  /* "lib.py":328
  *             self.queue.sync()
  * 
  *     def pull(self):             # <<<<<<<<<<<<<<
@@ -13289,9 +13289,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__83 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_e); if (unlikely(!__pyx_tuple__83)) __PYX_ERR(0, 328, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__83);
   __Pyx_GIVEREF(__pyx_tuple__83);
-  __pyx_codeobj__84 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__83, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_pull_2, 328, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__84)) __PYX_ERR(0, 328, __pyx_L1_error)
+  __pyx_codeobj__84 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__83, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_pull_2, 328, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__84)) __PYX_ERR(0, 328, __pyx_L1_error)
 
-  /* "clib.pyx":342
+  /* "lib.py":342
  *             self.queue.sync()
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
@@ -13301,7 +13301,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__85 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__85)) __PYX_ERR(0, 342, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__85);
   __Pyx_GIVEREF(__pyx_tuple__85);
-  __pyx_codeobj__86 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__85, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_clib_pyx, __pyx_n_s_close, 342, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__86)) __PYX_ERR(0, 342, __pyx_L1_error)
+  __pyx_codeobj__86 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__85, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lib_py, __pyx_n_s_close, 342, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__86)) __PYX_ERR(0, 342, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -13354,18 +13354,18 @@ static int __Pyx_modinit_type_init_code(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  if (PyType_Ready(&__pyx_type_4clib___pyx_scope_struct__delayed) < 0) __PYX_ERR(0, 19, __pyx_L1_error)
-  __pyx_type_4clib___pyx_scope_struct__delayed.tp_print = 0;
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_4clib___pyx_scope_struct__delayed.tp_dictoffset && __pyx_type_4clib___pyx_scope_struct__delayed.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_4clib___pyx_scope_struct__delayed.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
+  if (PyType_Ready(&__pyx_type_3lib___pyx_scope_struct__delayed) < 0) __PYX_ERR(0, 19, __pyx_L1_error)
+  __pyx_type_3lib___pyx_scope_struct__delayed.tp_print = 0;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_3lib___pyx_scope_struct__delayed.tp_dictoffset && __pyx_type_3lib___pyx_scope_struct__delayed.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_3lib___pyx_scope_struct__delayed.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  __pyx_ptype_4clib___pyx_scope_struct__delayed = &__pyx_type_4clib___pyx_scope_struct__delayed;
-  if (PyType_Ready(&__pyx_type_4clib___pyx_scope_struct_1_decorator) < 0) __PYX_ERR(0, 20, __pyx_L1_error)
-  __pyx_type_4clib___pyx_scope_struct_1_decorator.tp_print = 0;
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_4clib___pyx_scope_struct_1_decorator.tp_dictoffset && __pyx_type_4clib___pyx_scope_struct_1_decorator.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_4clib___pyx_scope_struct_1_decorator.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
+  __pyx_ptype_3lib___pyx_scope_struct__delayed = &__pyx_type_3lib___pyx_scope_struct__delayed;
+  if (PyType_Ready(&__pyx_type_3lib___pyx_scope_struct_1_decorator) < 0) __PYX_ERR(0, 20, __pyx_L1_error)
+  __pyx_type_3lib___pyx_scope_struct_1_decorator.tp_print = 0;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_3lib___pyx_scope_struct_1_decorator.tp_dictoffset && __pyx_type_3lib___pyx_scope_struct_1_decorator.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_3lib___pyx_scope_struct_1_decorator.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  __pyx_ptype_4clib___pyx_scope_struct_1_decorator = &__pyx_type_4clib___pyx_scope_struct_1_decorator;
+  __pyx_ptype_3lib___pyx_scope_struct_1_decorator = &__pyx_type_3lib___pyx_scope_struct_1_decorator;
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -13414,11 +13414,11 @@ static int __Pyx_modinit_function_import_code(void) {
 
 
 #if PY_MAJOR_VERSION < 3
-__Pyx_PyMODINIT_FUNC initclib(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC initclib(void)
+__Pyx_PyMODINIT_FUNC initlib(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC initlib(void)
 #else
-__Pyx_PyMODINIT_FUNC PyInit_clib(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC PyInit_clib(void)
+__Pyx_PyMODINIT_FUNC PyInit_lib(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC PyInit_lib(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -13485,7 +13485,7 @@ bad:
 }
 
 
-static CYTHON_SMALL_CODE int __pyx_pymod_exec_clib(PyObject *__pyx_pyinit_module)
+static CYTHON_SMALL_CODE int __pyx_pymod_exec_lib(PyObject *__pyx_pyinit_module)
 #endif
 #endif
 {
@@ -13498,7 +13498,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_clib(PyObject *__pyx_pyinit_module
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   if (__pyx_m) {
     if (__pyx_m == __pyx_pyinit_module) return 0;
-    PyErr_SetString(PyExc_RuntimeError, "Module 'clib' has already been imported. Re-initialisation is not supported.");
+    PyErr_SetString(PyExc_RuntimeError, "Module 'lib' has already been imported. Re-initialisation is not supported.");
     return -1;
   }
   #elif PY_MAJOR_VERSION >= 3
@@ -13513,7 +13513,7 @@ if (!__Pyx_RefNanny) {
       Py_FatalError("failed to import 'refnanny' module");
 }
 #endif
-  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_clib(void)", 0);
+  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_lib(void)", 0);
   if (__Pyx_check_binary_version() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #ifdef __Pxy_PyFrame_Initialize_Offsets
   __Pxy_PyFrame_Initialize_Offsets();
@@ -13552,7 +13552,7 @@ if (!__Pyx_RefNanny) {
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("clib", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("lib", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
@@ -13571,14 +13571,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_clib) {
+  if (__pyx_module_is_main_lib) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name_2, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "clib")) {
-      if (unlikely(PyDict_SetItemString(modules, "clib", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "lib")) {
+      if (unlikely(PyDict_SetItemString(modules, "lib", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -13599,7 +13599,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "clib.pyx":1
+  /* "lib.py":1
  * from queue import Queue             # <<<<<<<<<<<<<<
  * from collections import deque
  * from dbm import gnu
@@ -13618,7 +13618,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clib.pyx":2
+  /* "lib.py":2
  * from queue import Queue
  * from collections import deque             # <<<<<<<<<<<<<<
  * from dbm import gnu
@@ -13638,7 +13638,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":3
+  /* "lib.py":3
  * from queue import Queue
  * from collections import deque
  * from dbm import gnu             # <<<<<<<<<<<<<<
@@ -13659,7 +13659,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clib.pyx":4
+  /* "lib.py":4
  * from collections import deque
  * from dbm import gnu
  * from pickle import dumps,loads             # <<<<<<<<<<<<<<
@@ -13687,7 +13687,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":5
+  /* "lib.py":5
  * from dbm import gnu
  * from pickle import dumps,loads
  * from threading import Timer             # <<<<<<<<<<<<<<
@@ -13708,7 +13708,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clib.pyx":8
+  /* "lib.py":8
  * 
  * ##loop
  * class LoopTimer(Timer):             # <<<<<<<<<<<<<<
@@ -13724,17 +13724,17 @@ if (!__Pyx_RefNanny) {
   __pyx_t_2 = 0;
   __pyx_t_2 = __Pyx_CalculateMetaclass(NULL, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_Py3MetaclassPrepare(__pyx_t_2, __pyx_t_1, __pyx_n_s_LoopTimer, __pyx_n_s_LoopTimer, (PyObject *) NULL, __pyx_n_s_clib, (PyObject *) NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 8, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_Py3MetaclassPrepare(__pyx_t_2, __pyx_t_1, __pyx_n_s_LoopTimer, __pyx_n_s_LoopTimer, (PyObject *) NULL, __pyx_n_s_lib, (PyObject *) NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
 
-  /* "clib.pyx":9
+  /* "lib.py":9
  * ##loop
  * class LoopTimer(Timer):
  *     def __init__(self, interval, function, args=[], kwargs={}):             # <<<<<<<<<<<<<<
  *         Timer.__init__(self, interval, function, args, kwargs)
  *     def run(self):
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_9LoopTimer_1__init__, 0, __pyx_n_s_LoopTimer___init, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__9)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 9, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_9LoopTimer_1__init__, 0, __pyx_n_s_LoopTimer___init, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__9)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (!__Pyx_CyFunction_InitDefaults(__pyx_t_4, sizeof(__pyx_defaults), 2)) __PYX_ERR(0, 9, __pyx_L1_error)
   __pyx_t_5 = PyList_New(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 9, __pyx_L1_error)
@@ -13747,23 +13747,23 @@ if (!__Pyx_RefNanny) {
   __Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_t_4)->__pyx_arg_kwargs = __pyx_t_5;
   __Pyx_GIVEREF(__pyx_t_5);
   __pyx_t_5 = 0;
-  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_4, __pyx_pf_4clib_2__defaults__);
+  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_4, __pyx_pf_3lib_2__defaults__);
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_init, __pyx_t_4) < 0) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "clib.pyx":11
+  /* "lib.py":11
  *     def __init__(self, interval, function, args=[], kwargs={}):
  *         Timer.__init__(self, interval, function, args, kwargs)
  *     def run(self):             # <<<<<<<<<<<<<<
  *         while True:
  *             self.finished.wait(self.interval)
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_9LoopTimer_3run, 0, __pyx_n_s_LoopTimer_run, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__11)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_9LoopTimer_3run, 0, __pyx_n_s_LoopTimer_run, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__11)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_run, __pyx_t_4) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "clib.pyx":8
+  /* "lib.py":8
  * 
  * ##loop
  * class LoopTimer(Timer):             # <<<<<<<<<<<<<<
@@ -13778,19 +13778,19 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":19
+  /* "lib.py":19
  *             self.function(*self.args, **self.kwargs)
  * #
  * def delayed(seconds):             # <<<<<<<<<<<<<<
  *     def decorator(f):
  *         def wrapper(*args, **kargs):
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_4clib_1delayed, NULL, __pyx_n_s_clib); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_1delayed, 0, __pyx_n_s_delayed, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__13)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_delayed, __pyx_t_1) < 0) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":27
+  /* "lib.py":27
  *     return decorator
  * #
  * class OneTimer(Timer):             # <<<<<<<<<<<<<<
@@ -13806,17 +13806,17 @@ if (!__Pyx_RefNanny) {
   __pyx_t_1 = 0;
   __pyx_t_1 = __Pyx_CalculateMetaclass(NULL, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_Py3MetaclassPrepare(__pyx_t_1, __pyx_t_2, __pyx_n_s_OneTimer, __pyx_n_s_OneTimer, (PyObject *) NULL, __pyx_n_s_clib, (PyObject *) NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 27, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_Py3MetaclassPrepare(__pyx_t_1, __pyx_t_2, __pyx_n_s_OneTimer, __pyx_n_s_OneTimer, (PyObject *) NULL, __pyx_n_s_lib, (PyObject *) NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
 
-  /* "clib.pyx":28
+  /* "lib.py":28
  * #
  * class OneTimer(Timer):
  *     def __init__(self, interval, function, args=[], kwargs={}):             # <<<<<<<<<<<<<<
  *         Timer.__init__(self, interval, function, args, kwargs)
  * 
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_8OneTimer_1__init__, 0, __pyx_n_s_OneTimer___init, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__15)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_8OneTimer_1__init__, 0, __pyx_n_s_OneTimer___init, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__15)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (!__Pyx_CyFunction_InitDefaults(__pyx_t_4, sizeof(__pyx_defaults1), 2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __pyx_t_5 = PyList_New(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 28, __pyx_L1_error)
@@ -13829,11 +13829,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_CyFunction_Defaults(__pyx_defaults1, __pyx_t_4)->__pyx_arg_kwargs = __pyx_t_5;
   __Pyx_GIVEREF(__pyx_t_5);
   __pyx_t_5 = 0;
-  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_4, __pyx_pf_4clib_4__defaults__);
+  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_4, __pyx_pf_3lib_4__defaults__);
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_init, __pyx_t_4) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "clib.pyx":27
+  /* "lib.py":27
  *     return decorator
  * #
  * class OneTimer(Timer):             # <<<<<<<<<<<<<<
@@ -13848,24 +13848,24 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clib.pyx":34
+  /* "lib.py":34
  * 
  * """
  * class GroupMessage():             # <<<<<<<<<<<<<<
  *     def __init__(self, profix="", idlist=[]):
  *         self.profix = profix
  */
-  __pyx_t_2 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_GroupMessage, __pyx_n_s_GroupMessage, (PyObject *) NULL, __pyx_n_s_clib, (PyObject *) NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_GroupMessage, __pyx_n_s_GroupMessage, (PyObject *) NULL, __pyx_n_s_lib, (PyObject *) NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "clib.pyx":35
+  /* "lib.py":35
  * """
  * class GroupMessage():
  *     def __init__(self, profix="", idlist=[]):             # <<<<<<<<<<<<<<
  *         self.profix = profix
  *         self.idlist = idlist
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_12GroupMessage_1__init__, 0, __pyx_n_s_GroupMessage___init, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__17)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_12GroupMessage_1__init__, 0, __pyx_n_s_GroupMessage___init, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__17)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (!__Pyx_CyFunction_InitDefaults(__pyx_t_1, sizeof(__pyx_defaults2), 1)) __PYX_ERR(0, 35, __pyx_L1_error)
   __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 35, __pyx_L1_error)
@@ -13873,124 +13873,124 @@ if (!__Pyx_RefNanny) {
   __Pyx_CyFunction_Defaults(__pyx_defaults2, __pyx_t_1)->__pyx_arg_idlist = __pyx_t_3;
   __Pyx_GIVEREF(__pyx_t_3);
   __pyx_t_3 = 0;
-  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_1, __pyx_pf_4clib_6__defaults__);
+  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_1, __pyx_pf_3lib_6__defaults__);
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_init, __pyx_t_1) < 0) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":40
+  /* "lib.py":40
  *         self.init = False
  * 
  *     def initAllGroup(self):             # <<<<<<<<<<<<<<
  *         try:
  *             self.allQueue = {}
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_12GroupMessage_3initAllGroup, 0, __pyx_n_s_GroupMessage_initAllGroup, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__19)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_12GroupMessage_3initAllGroup, 0, __pyx_n_s_GroupMessage_initAllGroup, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__19)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_initAllGroup, __pyx_t_1) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":52
+  /* "lib.py":52
  *             return False
  * 
  *     def sendAllQueue(self,message=""):             # <<<<<<<<<<<<<<
  *         try:
  *             for queue in self.allQueue.keys():
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_12GroupMessage_5sendAllQueue, 0, __pyx_n_s_GroupMessage_sendAllQueue, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__21)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_12GroupMessage_5sendAllQueue, 0, __pyx_n_s_GroupMessage_sendAllQueue, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__21)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__22);
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_sendAllQueue, __pyx_t_1) < 0) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":61
+  /* "lib.py":61
  *             return False
  * 
  *     def addAllQueue(self,id):             # <<<<<<<<<<<<<<
  *         self.allQueue[self.profix+str(id)]=Queue()
  *         self.idlist.append(id)
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_12GroupMessage_7addAllQueue, 0, __pyx_n_s_GroupMessage_addAllQueue, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__24)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_12GroupMessage_7addAllQueue, 0, __pyx_n_s_GroupMessage_addAllQueue, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__24)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_addAllQueue, __pyx_t_1) < 0) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":66
+  /* "lib.py":66
  * 
  * 
  *     def addGroup(self,group="",id=None):             # <<<<<<<<<<<<<<
  *         if (self.profix+str(id)) in self.allQueue.keys():
  *             if group in self.setGroup.keys():
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_12GroupMessage_9addGroup, 0, __pyx_n_s_GroupMessage_addGroup, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__26)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_12GroupMessage_9addGroup, 0, __pyx_n_s_GroupMessage_addGroup, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__26)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__27);
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_addGroup, __pyx_t_1) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":85
+  /* "lib.py":85
  *                 return self.setGroup[group]
  * 
  *     def removeIdOfGroup(self,group,id):             # <<<<<<<<<<<<<<
  *         if group in self.setGroup.keys():
  *             if (self.profix+str(id)) in self.setGroup[group]:
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_12GroupMessage_11removeIdOfGroup, 0, __pyx_n_s_GroupMessage_removeIdOfGroup, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__29)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_12GroupMessage_11removeIdOfGroup, 0, __pyx_n_s_GroupMessage_removeIdOfGroup, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__29)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_removeIdOfGroup, __pyx_t_1) < 0) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":93
+  /* "lib.py":93
  *         return False
  * 
  *     def removeGroup(self,group):             # <<<<<<<<<<<<<<
  *         if group in self.setGroup.keys():
  *             del self.setGroup[group]
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_12GroupMessage_13removeGroup, 0, __pyx_n_s_GroupMessage_removeGroup, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_12GroupMessage_13removeGroup, 0, __pyx_n_s_GroupMessage_removeGroup, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_removeGroup, __pyx_t_1) < 0) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":99
+  /* "lib.py":99
  *         return False
  * 
  *     def sendGroup(self,group="",message=""):             # <<<<<<<<<<<<<<
  *         if group in self.setGroup:
  *             for queuename in self.setGroup[group]:
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_12GroupMessage_15sendGroup, 0, __pyx_n_s_GroupMessage_sendGroup, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__33)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 99, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_12GroupMessage_15sendGroup, 0, __pyx_n_s_GroupMessage_sendGroup, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__33)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 99, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__34);
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_sendGroup, __pyx_t_1) < 0) __PYX_ERR(0, 99, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":110
+  /* "lib.py":110
  *             return False
  * 
  *     def push(self,id=None,message = ""):             # <<<<<<<<<<<<<<
  *         if self.profix+str(id) in self.allQueue.keys():
  *             try:
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_12GroupMessage_17push, 0, __pyx_n_s_GroupMessage_push, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 110, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_12GroupMessage_17push, 0, __pyx_n_s_GroupMessage_push, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__37);
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_push_2, __pyx_t_1) < 0) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":128
+  /* "lib.py":128
  * 
  * 
  *     def poll(self,id=None):             # <<<<<<<<<<<<<<
  *         if self.profix+str(id) in self.allQueue.keys():
  *             try:
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_12GroupMessage_19poll, 0, __pyx_n_s_GroupMessage_poll, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__39)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 128, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_12GroupMessage_19poll, 0, __pyx_n_s_GroupMessage_poll, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__39)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__40);
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_poll, __pyx_t_1) < 0) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":34
+  /* "lib.py":34
  * 
  * """
  * class GroupMessage():             # <<<<<<<<<<<<<<
@@ -14003,24 +14003,24 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clib.pyx":141
+  /* "lib.py":141
  * 
  * """
  * class GroupMessageUnSafe():             # <<<<<<<<<<<<<<
  *     def __init__(self,profix="",idlist=[]):
  *         self.profix = profix
  */
-  __pyx_t_2 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_GroupMessageUnSafe, __pyx_n_s_GroupMessageUnSafe, (PyObject *) NULL, __pyx_n_s_clib, (PyObject *) NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 141, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_GroupMessageUnSafe, __pyx_n_s_GroupMessageUnSafe, (PyObject *) NULL, __pyx_n_s_lib, (PyObject *) NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 141, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "clib.pyx":142
+  /* "lib.py":142
  * """
  * class GroupMessageUnSafe():
  *     def __init__(self,profix="",idlist=[]):             # <<<<<<<<<<<<<<
  *         self.profix = profix
  *         self.idlist = idlist
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_18GroupMessageUnSafe_1__init__, 0, __pyx_n_s_GroupMessageUnSafe___init, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__42)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_18GroupMessageUnSafe_1__init__, 0, __pyx_n_s_GroupMessageUnSafe___init, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__42)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (!__Pyx_CyFunction_InitDefaults(__pyx_t_1, sizeof(__pyx_defaults3), 1)) __PYX_ERR(0, 142, __pyx_L1_error)
   __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 142, __pyx_L1_error)
@@ -14028,124 +14028,124 @@ if (!__Pyx_RefNanny) {
   __Pyx_CyFunction_Defaults(__pyx_defaults3, __pyx_t_1)->__pyx_arg_idlist = __pyx_t_3;
   __Pyx_GIVEREF(__pyx_t_3);
   __pyx_t_3 = 0;
-  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_1, __pyx_pf_4clib_8__defaults__);
+  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_1, __pyx_pf_3lib_8__defaults__);
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_init, __pyx_t_1) < 0) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":147
+  /* "lib.py":147
  *         self.init = False
  * 
  *     def initAllGroup(self):             # <<<<<<<<<<<<<<
  *         try:
  *             self.allQueue = {}
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_18GroupMessageUnSafe_3initAllGroup, 0, __pyx_n_s_GroupMessageUnSafe_initAllGroup, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__44)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 147, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_18GroupMessageUnSafe_3initAllGroup, 0, __pyx_n_s_GroupMessageUnSafe_initAllGroup, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__44)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 147, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_initAllGroup, __pyx_t_1) < 0) __PYX_ERR(0, 147, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":159
+  /* "lib.py":159
  *             return False
  * 
  *     def sendAllQueue(self,message=""):             # <<<<<<<<<<<<<<
  *         try:
  *             for queue in self.allQueue.keys():
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_18GroupMessageUnSafe_5sendAllQueue, 0, __pyx_n_s_GroupMessageUnSafe_sendAllQueue, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__46)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 159, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_18GroupMessageUnSafe_5sendAllQueue, 0, __pyx_n_s_GroupMessageUnSafe_sendAllQueue, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__46)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__47);
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_sendAllQueue, __pyx_t_1) < 0) __PYX_ERR(0, 159, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":169
+  /* "lib.py":169
  * 
  * 
  *     def addAllQueue(self,id):             # <<<<<<<<<<<<<<
  *         self.allQueue[self.profix+str(id)]=deque()
  *         self.idlist.append(id)
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_18GroupMessageUnSafe_7addAllQueue, 0, __pyx_n_s_GroupMessageUnSafe_addAllQueue, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__49)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 169, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_18GroupMessageUnSafe_7addAllQueue, 0, __pyx_n_s_GroupMessageUnSafe_addAllQueue, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__49)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_addAllQueue, __pyx_t_1) < 0) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":174
+  /* "lib.py":174
  * 
  * 
  *     def addGroup(self,group="",id=None):             # <<<<<<<<<<<<<<
  *         if (self.profix+str(id)) in self.allQueue.keys():
  *             if group in self.setGroup.keys():
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_18GroupMessageUnSafe_9addGroup, 0, __pyx_n_s_GroupMessageUnSafe_addGroup, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__51)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 174, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_18GroupMessageUnSafe_9addGroup, 0, __pyx_n_s_GroupMessageUnSafe_addGroup, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__51)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 174, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__52);
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_addGroup, __pyx_t_1) < 0) __PYX_ERR(0, 174, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":193
+  /* "lib.py":193
  *                 return self.setGroup[group]
  * 
  *     def sendGroup(self,group="",message=""):             # <<<<<<<<<<<<<<
  *         if group in self.setGroup:
  *             for queuename in self.setGroup[group]:
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_18GroupMessageUnSafe_11sendGroup, 0, __pyx_n_s_GroupMessageUnSafe_sendGroup, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__54)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 193, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_18GroupMessageUnSafe_11sendGroup, 0, __pyx_n_s_GroupMessageUnSafe_sendGroup, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__54)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 193, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__55);
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_sendGroup, __pyx_t_1) < 0) __PYX_ERR(0, 193, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":204
+  /* "lib.py":204
  *             return False
  * 
  *     def removeIdOfGroup(self,group,id):             # <<<<<<<<<<<<<<
  *         if group in self.setGroup.keys():
  *             if (self.profix+str(id)) in self.setGroup[group]:
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_18GroupMessageUnSafe_13removeIdOfGroup, 0, __pyx_n_s_GroupMessageUnSafe_removeIdOfGro, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__57)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 204, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_18GroupMessageUnSafe_13removeIdOfGroup, 0, __pyx_n_s_GroupMessageUnSafe_removeIdOfGro, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__57)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 204, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_removeIdOfGroup, __pyx_t_1) < 0) __PYX_ERR(0, 204, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":212
+  /* "lib.py":212
  *         return False
  * 
  *     def removeGroup(self,group):             # <<<<<<<<<<<<<<
  *         if group in self.setGroup.keys():
  *             del self.setGroup[group]
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_18GroupMessageUnSafe_15removeGroup, 0, __pyx_n_s_GroupMessageUnSafe_removeGroup, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__59)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 212, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_18GroupMessageUnSafe_15removeGroup, 0, __pyx_n_s_GroupMessageUnSafe_removeGroup, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__59)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 212, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_removeGroup, __pyx_t_1) < 0) __PYX_ERR(0, 212, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":218
+  /* "lib.py":218
  *         return False
  * 
  *     def push(self,id=None,message = ""):             # <<<<<<<<<<<<<<
  *         if self.profix+str(id) in self.allQueue.keys():
  *             try:
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_18GroupMessageUnSafe_17push, 0, __pyx_n_s_GroupMessageUnSafe_push, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__61)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 218, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_18GroupMessageUnSafe_17push, 0, __pyx_n_s_GroupMessageUnSafe_push, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__61)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 218, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__62);
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_push_2, __pyx_t_1) < 0) __PYX_ERR(0, 218, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":235
+  /* "lib.py":235
  *                 return False
  * 
  *     def poll(self,id=None):             # <<<<<<<<<<<<<<
  *         if self.profix+str(id) in self.allQueue.keys():
  *             try:
  */
-  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_18GroupMessageUnSafe_19poll, 0, __pyx_n_s_GroupMessageUnSafe_poll, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__64)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 235, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_18GroupMessageUnSafe_19poll, 0, __pyx_n_s_GroupMessageUnSafe_poll, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__64)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 235, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__65);
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_poll, __pyx_t_1) < 0) __PYX_ERR(0, 235, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":141
+  /* "lib.py":141
  * 
  * """
  * class GroupMessageUnSafe():             # <<<<<<<<<<<<<<
@@ -14158,7 +14158,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clib.pyx":248
+  /* "lib.py":248
  * 
  * """
  * class GroupMessageUnSafeSaveDisk(GroupMessageUnSafe):             # <<<<<<<<<<<<<<
@@ -14174,61 +14174,61 @@ if (!__Pyx_RefNanny) {
   __pyx_t_2 = 0;
   __pyx_t_2 = __Pyx_CalculateMetaclass(NULL, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_Py3MetaclassPrepare(__pyx_t_2, __pyx_t_1, __pyx_n_s_GroupMessageUnSafeSaveDisk, __pyx_n_s_GroupMessageUnSafeSaveDisk, (PyObject *) NULL, __pyx_n_s_clib, (PyObject *) NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 248, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_Py3MetaclassPrepare(__pyx_t_2, __pyx_t_1, __pyx_n_s_GroupMessageUnSafeSaveDisk, __pyx_n_s_GroupMessageUnSafeSaveDisk, (PyObject *) NULL, __pyx_n_s_lib, (PyObject *) NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 248, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
 
-  /* "clib.pyx":250
+  /* "lib.py":250
  * class GroupMessageUnSafeSaveDisk(GroupMessageUnSafe):
  * 
  *     def autoSave(self,time=10):             # <<<<<<<<<<<<<<
  *         try:
  *             LoopTimer(time,self.save).start()
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_26GroupMessageUnSafeSaveDisk_1autoSave, 0, __pyx_n_s_GroupMessageUnSafeSaveDisk_autoS, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__67)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 250, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_26GroupMessageUnSafeSaveDisk_1autoSave, 0, __pyx_n_s_GroupMessageUnSafeSaveDisk_autoS, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__67)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 250, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_4, __pyx_tuple__68);
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_autoSave, __pyx_t_4) < 0) __PYX_ERR(0, 250, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "clib.pyx":256
+  /* "lib.py":256
  *             print(e)
  * 
  *     def initAllGroup(self):             # <<<<<<<<<<<<<<
  *         try:
  *             status = self.load()
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_26GroupMessageUnSafeSaveDisk_3initAllGroup, 0, __pyx_n_s_GroupMessageUnSafeSaveDisk_initA, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__70)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 256, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_26GroupMessageUnSafeSaveDisk_3initAllGroup, 0, __pyx_n_s_GroupMessageUnSafeSaveDisk_initA, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__70)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 256, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_initAllGroup, __pyx_t_4) < 0) __PYX_ERR(0, 256, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "clib.pyx":273
+  /* "lib.py":273
  * 
  * 
  *     def save(self,file="group_message.db"):             # <<<<<<<<<<<<<<
  *         try:
  *             self.db = gnu.open(file, "c")
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_26GroupMessageUnSafeSaveDisk_5save, 0, __pyx_n_s_GroupMessageUnSafeSaveDisk_save, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__72)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 273, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_26GroupMessageUnSafeSaveDisk_5save, 0, __pyx_n_s_GroupMessageUnSafeSaveDisk_save, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__72)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 273, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_4, __pyx_tuple__73);
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_save, __pyx_t_4) < 0) __PYX_ERR(0, 273, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "clib.pyx":287
+  /* "lib.py":287
  *             self.db.close()
  * 
  *     def load(self,file="group_message.db"):             # <<<<<<<<<<<<<<
  *         try:
  *             self.db = gnu.open(file, "c")
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_26GroupMessageUnSafeSaveDisk_7load, 0, __pyx_n_s_GroupMessageUnSafeSaveDisk_load, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__75)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 287, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_26GroupMessageUnSafeSaveDisk_7load, 0, __pyx_n_s_GroupMessageUnSafeSaveDisk_load, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__75)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 287, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_4, __pyx_tuple__76);
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_load, __pyx_t_4) < 0) __PYX_ERR(0, 287, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "clib.pyx":248
+  /* "lib.py":248
  * 
  * """
  * class GroupMessageUnSafeSaveDisk(GroupMessageUnSafe):             # <<<<<<<<<<<<<<
@@ -14243,67 +14243,67 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":304
+  /* "lib.py":304
  * gnu
  * """
  * class GnuQueue():             # <<<<<<<<<<<<<<
  *     def __init__(self,index="index.db",queue="gunQueue"):
  *         self.name = queue
  */
-  __pyx_t_1 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_GnuQueue, __pyx_n_s_GnuQueue, (PyObject *) NULL, __pyx_n_s_clib, (PyObject *) NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 304, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_GnuQueue, __pyx_n_s_GnuQueue, (PyObject *) NULL, __pyx_n_s_lib, (PyObject *) NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
 
-  /* "clib.pyx":305
+  /* "lib.py":305
  * """
  * class GnuQueue():
  *     def __init__(self,index="index.db",queue="gunQueue"):             # <<<<<<<<<<<<<<
  *         self.name = queue
  *         self.name_write = queue + "__write"
  */
-  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_8GnuQueue_1__init__, 0, __pyx_n_s_GnuQueue___init, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__78)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 305, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_8GnuQueue_1__init__, 0, __pyx_n_s_GnuQueue___init, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__78)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 305, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__79);
   if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_init, __pyx_t_2) < 0) __PYX_ERR(0, 305, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clib.pyx":315
+  /* "lib.py":315
  *         self.read_id = self.index.get(self.name_read,b"1").decode()
  * 
  *     def push(self,message = ""):             # <<<<<<<<<<<<<<
  *         try:
  *             self.queue["key_" + self.write_id] = str(message)
  */
-  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_8GnuQueue_3push, 0, __pyx_n_s_GnuQueue_push, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__81)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 315, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_8GnuQueue_3push, 0, __pyx_n_s_GnuQueue_push, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__81)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 315, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__82);
   if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_push_2, __pyx_t_2) < 0) __PYX_ERR(0, 315, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clib.pyx":328
+  /* "lib.py":328
  *             self.queue.sync()
  * 
  *     def pull(self):             # <<<<<<<<<<<<<<
  *         try:
  *             val =  self.queue.get("key_"+self.read_id,None)
  */
-  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_8GnuQueue_5pull, 0, __pyx_n_s_GnuQueue_pull, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__84)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 328, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_8GnuQueue_5pull, 0, __pyx_n_s_GnuQueue_pull, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__84)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 328, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_pull_2, __pyx_t_2) < 0) __PYX_ERR(0, 328, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clib.pyx":342
+  /* "lib.py":342
  *             self.queue.sync()
  * 
  *     def close(self):             # <<<<<<<<<<<<<<
  *         self.queue.close()
  *         self.index.close()
  */
-  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4clib_8GnuQueue_7close, 0, __pyx_n_s_GnuQueue_close, NULL, __pyx_n_s_clib, __pyx_d, ((PyObject *)__pyx_codeobj__86)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 342, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_3lib_8GnuQueue_7close, 0, __pyx_n_s_GnuQueue_close, NULL, __pyx_n_s_lib, __pyx_d, ((PyObject *)__pyx_codeobj__86)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 342, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_close, __pyx_t_2) < 0) __PYX_ERR(0, 342, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "clib.pyx":304
+  /* "lib.py":304
  * gnu
  * """
  * class GnuQueue():             # <<<<<<<<<<<<<<
@@ -14316,7 +14316,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "clib.pyx":1
+  /* "lib.py":1
  * from queue import Queue             # <<<<<<<<<<<<<<
  * from collections import deque
  * from dbm import gnu
@@ -14337,11 +14337,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_5);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init clib", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init lib", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init clib");
+    PyErr_SetString(PyExc_ImportError, "init lib");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

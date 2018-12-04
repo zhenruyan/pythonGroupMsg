@@ -1,7 +1,4 @@
 from distutils.core import setup
 from Cython.Build import cythonize
-setup(
-    name='lib',
-    ext_modules=cythonize('clib.pyx')
-)
 
+setup(ext_modules = cythonize("lib.py"))
