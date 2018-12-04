@@ -4,9 +4,9 @@ try:
     from dbm import gnu
 except Exception as e:
     try:
-        import dbm
+        import dbm as gnu
     except Exception as e:
-        from dbm import dumb
+        from dbm import dumb as gnu
 from pickle import dumps,loads
 from threading import Timer
 import logging
