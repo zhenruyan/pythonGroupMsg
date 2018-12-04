@@ -1,6 +1,12 @@
 from queue import Queue
 from collections import deque
-from dbm import gnu
+try:
+    from dbm import gnu
+except Exception as e:
+    try:
+        import dbm
+    except Exception as e:
+        from dbm import dumb
 from pickle import dumps,loads
 from threading import Timer
 import logging
@@ -82,7 +88,7 @@ class GroupMessage():
                 self.setGroup[group].add(self.profix+str(id))
                 return self.setGroup[group]
         else:
-            self.allQueue[self.profix+str(id)] = deque()
+            self.allQueue[self.profix+str(id)] = Queue()
             if group in self.setGroup.keys():
                 self.setGroup[group].add(self.profix + str(id))
                 return self.setGroup[group]
