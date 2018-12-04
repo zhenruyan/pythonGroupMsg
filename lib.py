@@ -49,6 +49,12 @@ class GroupMessage():
             print(e)
             return False
 
+    def removeQueue(self,id):
+        if self.profix+str(id) in self.allQueue.keys():
+            del self.allQueue[self.profix + str(id)]
+            return True
+        return False
+
     def sendAllQueue(self,message=""):
         try:
             for queue in self.allQueue.keys():
@@ -97,7 +103,7 @@ class GroupMessage():
         return False
 
     def sendGroup(self,group="",message=""):
-        if group in self.setGroup:
+        if group in self.setGroup.keys():
             for queuename in self.setGroup[group]:
                 if queuename in self.allQueue.keys():
                     self.allQueue[queuename].put(message)
@@ -156,6 +162,12 @@ class GroupMessageUnSafe():
             print(e)
             return False
 
+    def removeQueue(self,id):
+        if self.profix+str(id) in self.allQueue.keys():
+            del self.allQueue[self.profix + str(id)]
+            return True
+        return False
+
     def sendAllQueue(self,message=""):
         try:
             for queue in self.allQueue.keys():
@@ -191,7 +203,7 @@ class GroupMessageUnSafe():
                 return self.setGroup[group]
 
     def sendGroup(self,group="",message=""):
-        if group in self.setGroup:
+        if group in self.setGroup.keys():
             for queuename in self.setGroup[group]:
                 if queuename in self.allQueue.keys():
                     self.allQueue[queuename].append(message)
@@ -290,6 +302,9 @@ class GroupMessageUnSafeSaveDisk(GroupMessageUnSafe):
             self.setGroup = loads(self.db["setGroup"])
             self.allQueue = loads(self.db["allQueue"])
             self.profix = loads(self.db["profix"])
+            self.idlist = []
+            for id in self.allQueue.keys():
+                self.idlist.append(id)
             print("载入成功")
             return True
         except Exception as e:
