@@ -1,16 +1,30 @@
-#  pythonGroupMsg python队列组播广播
 
-##   cython 向多个队列发送广播
+#   pythonGroupMsg Queue multicast broadcast
 
->  最近要做一个类似聊天软件的东西，经过大量测试搞了这么一玩意儿
 
->  cython 快的很
+##  cython  Broadcasting to multiple queues
 
-```shell
-pip install pythonGroupMsg
+
+> Recently, I'm going to do something like chat software. After a lot of testing, I've done this thing.
+>>  Performance is 13 times faster than py direct circular transmission
+
+
+install 
+
+
+```bash
+    pip install pythonGroupMsg
+
+
 ```
 
 
+
+
+###  push msg
+
+
+python 
 ```python
 import pythonGroupMsg
 import datetime
@@ -54,5 +68,15 @@ if __name__ == '__main__':
 
 
 
-
 ```
+
+
+
+
+
+
+
+
+
+
+
