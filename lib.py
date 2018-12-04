@@ -38,7 +38,7 @@ class GroupMessage():
         self.idlist = idlist
         self.init = False
         self.log = logging
-        self.log.basicConfig(level=loglevel)
+        self.log.basicConfig(level=loglevel,format= self.__class__.__name__+" %(asctime)s - %(levelname)s - - %(message)s",datefmt="%Y-%m/%d %H:%M:%S %p")
 
     def initAllGroup(self):
         try:
@@ -105,14 +105,15 @@ class GroupMessage():
             return True
         return False
 
-    def sendGroup(self,group="",message=""):
+    def sendGroup(self, group="", message=""):
         if group in self.setGroup.keys():
+            self.log.debug(self.setGroup[group])
             for queuename in self.setGroup[group]:
+                self.log.debug(queuename)
                 if queuename in self.allQueue.keys():
                     self.allQueue[queuename].put(message)
-                    return True
-                else:
-                    return False
+                    self.log.debug(self.allQueue)
+            return True
         else:
             return False
 
@@ -153,7 +154,7 @@ class GroupMessageUnSafe():
         self.idlist = idlist
         self.init = False
         self.log = logging
-        self.log.basicConfig(level=loglevel)
+        self.log.basicConfig(level=loglevel,format= self.__class__.__name__+" %(asctime)s - %(levelname)s - - %(message)s",datefmt="%Y-%m/%d %H:%M:%S %p")
 
 
     def initAllGroup(self):
@@ -210,12 +211,13 @@ class GroupMessageUnSafe():
 
     def sendGroup(self,group="",message=""):
         if group in self.setGroup.keys():
+            self.log.debug(self.setGroup[group])
             for queuename in self.setGroup[group]:
+                self.log.debug(queuename)
                 if queuename in self.allQueue.keys():
                     self.allQueue[queuename].append(message)
-                    return True
-                else:
-                    return False
+                    self.log.debug(self.allQueue)
+            return True
         else:
             return False
 
@@ -334,7 +336,7 @@ class GnuQueue():
         self.write_id = self.index.get(self.name_write,b"1").decode()
         self.read_id = self.index.get(self.name_read,b"1").decode()
         self.log = logging
-        self.log.basicConfig(level=loglevel)
+        self.log.basicConfig(level=loglevel,format= self.__class__.__name__+" %(asctime)s - %(levelname)s - - %(message)s",datefmt="%Y-%m/%d %H:%M:%S %p")
 
     def push(self,message = ""):
         try:
