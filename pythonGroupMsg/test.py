@@ -4,15 +4,17 @@ import logging
 e = []
 if __name__ == '__main__':
     aatime = datetime.datetime.now()
-    for c in range(0,100000):
+    size = 100
+    for c in range(0,size):
         e.append(c)
     a = lib.GroupMessage(profix="id:", idlist=e,loglevel=logging.INFO)
     a.initAllGroup()
-    print("100000 queue init",(datetime.datetime.now() -aatime).microseconds/1000000,"s")
+    print(str(size)+" queue init",(datetime.datetime.now() -aatime).microseconds/1000000,"s")
     bbtime = datetime.datetime.now()
-    for d in range(1,10):
+    ssize= 10
+    for d in range(1,ssize):
         a.sendAllQueue("hello world"+str(d))
-    print("100 message send on queue",(datetime.datetime.now() - bbtime).microseconds/1000000,"s")
+    print(str(ssize)+" message send on queue",(datetime.datetime.now() - bbtime).microseconds/1000000,"s")
     a.addGroup("chat",660)
     a.addGroup("chat",661)
     a.addGroup("chat",662)
