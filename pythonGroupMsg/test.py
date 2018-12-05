@@ -4,7 +4,7 @@ import logging
 e = []
 if __name__ == '__main__':
     aatime = datetime.datetime.now()
-    for c in range(1,3):
+    for c in range(0,100000):
         e.append(c)
     a = lib.GroupMessage(profix="id:", idlist=e,loglevel=logging.INFO)
     a.initAllGroup()
