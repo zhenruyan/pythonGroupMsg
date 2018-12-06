@@ -18,7 +18,6 @@ if __name__ == '__main__':
     a.addGroup("chat",660)
     a.addGroup("chat",661)
     a.addGroup("chat",662)
-    print(a.setGroup)
     a.sendGroup("chat","helloworldsadasdasd")
     a.sendGroup("chat","helloworldsadasdasdas")
     for _ in range(0,2):
@@ -38,6 +37,10 @@ if __name__ == '__main__':
     a.removeQueue(660)
     a.removeQueue(1)
     a.removeQueue(2)
+    print(a.allQueue)
+    a.clearQueue()
+    a.clearGroup()
+    print(a.setGroup)
     print(a.allQueue)
 
 

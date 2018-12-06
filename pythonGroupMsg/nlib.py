@@ -10,6 +10,7 @@ except Exception as e:
 from pickle import dumps, loads
 from threading import Timer
 import logging
+import cython
 
 
 ##循环loop定时器
@@ -127,7 +128,7 @@ class GroupMessage():
         self.setGroup.clear()
 
     def clearQueue(self):
-        for id in self.allQueue.keys():
+        for id in list(self.allQueue.keys()):
             del self.allQueue[id]
         self.allQueue.clear()
 
@@ -266,7 +267,7 @@ class GroupMessageUnSafe():
         self.setGroup.clear()
 
     def clearQueue(self):
-        for id in self.allQueue.keys():
+        for id in list(self.allQueue.keys()):
             del  self.allQueue[id]
         self.allQueue.clear()
 

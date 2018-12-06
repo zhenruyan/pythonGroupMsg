@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pythonGroupMsg',
-      version='0.0.5',
+      version='0.0.6',
       description='This is a packet that broadcasts redis multiple queues',
       url='https://github.com/zhenruyan/pythonGroupMsg',
       author='zhenruyan',

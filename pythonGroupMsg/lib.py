@@ -10,6 +10,7 @@ except Exception as e:
 from pickle import dumps, loads
 from threading import Timer
 import logging
+import cython
 
 
 ##循环loop定时器
@@ -48,8 +49,15 @@ class OneTimer(Timer):
 线程安全的广播
 """
 
-
+@cython.cclass
 class GroupMessage():
+    profix:cython.string
+    idlist:cython.list
+    init:cython.bint
+    log:logging
+    allQueue: cython.struct
+    setGroup: cython.struct
+    @cython.infer_types(True)
     def __init__(self, profix="", idlist=[], loglevel=logging.ERROR):
         self.profix = profix
         self.idlist = idlist
@@ -58,11 +66,15 @@ class GroupMessage():
         self.log.basicConfig(level=loglevel,
                              format=self.__class__.__name__ + " %(asctime)s - %(levelname)s - - %(message)s",
                              datefmt="%Y-%m/%d %H:%M:%S %p")
+        self.allQueue = {}
+        self.setGroup = {}
 
+
+    @cython.infer_types(True)
     def initAllGroup(self):
         try:
-            self.allQueue = {}
-            self.setGroup = {}
+
+            id:cython.long
             for id in self.idlist:
                 self.allQueue[self.profix + str(id)] = Queue()
             self.init = True
@@ -71,25 +83,27 @@ class GroupMessage():
             self.log.debug(e)
             return False
 
+    @cython.infer_types(True)
     def removeQueue(self, id):
         if self.profix + str(id) in self.allQueue.keys():
             del self.allQueue[self.profix + str(id)]
             return True
         return False
-
     def sendAllQueue(self, message=""):
         try:
+            queue: cython.char
             for queue in self.allQueue.keys():
                 self.allQueue[queue].put(message)
             return True
         except Exception as e:
             self.log.debug(e)
             return False
-
+    @cython.infer_types(True)
     def addAllQueue(self, id):
         self.allQueue[self.profix + str(id)] = Queue()
         self.idlist.append(id)
 
+    @cython.infer_types(True)
     def addGroup(self, group="", id=None):
         if (self.profix + str(id)) in self.allQueue.keys():
             if group in self.setGroup.keys():
@@ -108,7 +122,7 @@ class GroupMessage():
                 self.setGroup[group] = set()
                 self.setGroup[group].add(self.profix + str(id))
                 return self.setGroup[group]
-
+    @cython.infer_types(True)
     def removeIdOfGroup(self, group, id):
         if group in self.setGroup.keys():
             if (self.profix + str(id)) in self.setGroup[group]:
@@ -116,21 +130,22 @@ class GroupMessage():
                 return True
             return False
         return False
-
+    @cython.infer_types(True)
     def removeGroup(self, group):
         if group in self.setGroup.keys():
             del self.setGroup[group]
             return True
         return False
-
+    @cython.infer_types(True)
     def clearGroup(self):
         self.setGroup.clear()
-
+    @cython.infer_types(True)
     def clearQueue(self):
-        for id in self.allQueue.keys():
+        for id in list(self.allQueue.keys()):
             del self.allQueue[id]
         self.allQueue.clear()
 
+    @cython.infer_types(True)
     def sendGroup(self, group="", message=""):
         if group in self.setGroup.keys():
             self.log.debug(self.setGroup[group])
@@ -142,7 +157,7 @@ class GroupMessage():
             return True
         else:
             return False
-
+    @cython.infer_types(True)
     def push(self, id=None, message=""):
         if self.profix + str(id) in self.allQueue.keys():
             try:
@@ -159,7 +174,7 @@ class GroupMessage():
             except Exception as e:
                 self.log.debug(e)
                 return False
-
+    @cython.infer_types(True)
     def poll(self, id=None):
         if self.profix + str(id) in self.allQueue.keys():
             try:
@@ -266,7 +281,7 @@ class GroupMessageUnSafe():
         self.setGroup.clear()
 
     def clearQueue(self):
-        for id in self.allQueue.keys():
+        for id in list(self.allQueue.keys()):
             del  self.allQueue[id]
         self.allQueue.clear()
 
